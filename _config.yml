@@ -9,7 +9,7 @@ description: ''
 keywords:
 author: John Doe
 language: en
-timezone: ''
+timezone: 'Europe'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -102,4 +102,7 @@ theme: keep
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/HeningWang/my_blog.github.io
+  branch: gh-pages
+  message: [message]
