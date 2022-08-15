@@ -2,14 +2,24 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#  Your basic info
+# ---------------------------------------------------------------------------------------
+#base_info:
+#  title: My Blog
+#  author: Hening Wang
+#  url: https://heningwang.github.io/my_blog/
+  # Logo image (You can use local image, image external link or don’t fill)
+#  logo_img:
+# ---------------------------------------------------------------------------------------
+
 # Site
-title: Hexo
+title: My Blog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Hening Wang
 language: en
-timezone: 'Europe'
+timezone: 'Europe/Berlin'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -78,7 +88,7 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: DD-MM-YYYY
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
@@ -97,7 +107,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-remote_theme: keep
+theme: keep
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,4 +115,58 @@ deploy:
   type: git
   repo: https://github.com/HeningWang/my_blog.github.io
   branch: gh-pages
+# ---------------------------------------------------------------------------------------
+# Theme style settings
+# ---------------------------------------------------------------------------------------
+style:
+  # Theme primary color
+  primary_color: "#0066CC"
+
+  # Avatar (You can use local image or image external link)
+  avatar: /images/avatar.svg
+
+  # Favicon (You can use local image or image external link)
+  favicon: /images/logo.svg
+
+  # Article image align position, value: left | center
+  article_img_align: left
+
+  # Left side width
+  left_side_width: 260px
+
+  # Content area max width
+  content_max_width: 920px
+
+  # Mouse hover
+  hover:
+    shadow: false # shadow effect when the mouse hover
+    scale: false # scale effect when the mouse hover
+
+  # First screen
+  first_screen:
+    enable: true
+    background_img: /images/bg.svg # You can use local image or image external link
+    description: Keep writing and Keep loving.
+
+  # Scroll style settings
+  scroll:
+    progress_bar:
+      enable: false
+    percent:
+      enable: false
+
+# ---------------------------------------------------------------------------------------
+# Social contact link
+# ---------------------------------------------------------------------------------------
+social_contact:
+  enable: false
+  links:
+    github: # your GitHub URL
+    weixin: # your WeChat QR-Code URL
+    qq: # your QQ QR-Code URL
+    weibo: # your WeiBo URL
+    zhihu: # your ZhiHu URL
+    twitter: # your twitter URL
+    facebook: # your facebook URL
+    email: # your email
 

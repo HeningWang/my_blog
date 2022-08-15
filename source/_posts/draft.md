@@ -20,15 +20,48 @@ hexo init
 ```
 will automatically set up the folder into a hexo blog project. **Important!** The folder must be a empty folder.
 
-TODO: Add git
+## Add git 
 ```
 git init
 ```
 Create an empty Git repository or reinitialize an existing one
+Then open Github Desktop to publish an existing repository
 
-TODO: set up git page
+TODO: How to add contents from a local repository to an existing online repository
 
-TODO: How to add a code chunk
+## Set up Github Page
+To set up a git page as a free user, you need to change the visibility of your repository from private to public: go to Settings -> General-> change visibility
+Then go to Settings -> Pages -> Build and deployment, set the branch to master
+add the following configurations in _config.yml
+```
+deploy:
+  type: git
+  repo: <repository url> # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  branch: [branch]
+  message: [message]
+```
+Deploy your site hexo clean && hexo deploy.
 
-TODO: How to add super link
+
+
+# Some useful commands
+```
+hexo g
+```
+This command has the similar function like "git add .", should be used each time after you made some changes and want to save them staticly.
+```
+hexo d
+```
+This command has the similar function like "git commit". This can push the changes to the Github Page branch and make it public.
+
+## Add a code chunk
+To add a code chunk, you need 
+```
+    ``` [specify the language ]
+    ```
+```
+
+## add super link
+```
 [Link text Here](https://link-url-here.org)
+```
