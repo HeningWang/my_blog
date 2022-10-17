@@ -11,4 +11,5 @@ See more about projects or problems that I'm currently working on [here](/my_blo
 
 See more about my background and publications [here](/my_blog/about/index.html).
 
+Contact me: hening.wang@outlook.com
 This site is still under construction.
