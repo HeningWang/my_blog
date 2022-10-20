@@ -9,7 +9,7 @@
     
     <title>
         
-            How to build a personal blog with hexo |
+            Kupfer,Jaeger(2016) |
         
         Hening Wang
     </title>
@@ -158,7 +158,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">How to build a personal blog with hexo</span>
+            <span class="title-hover-animation">Kupfer,Jaeger(2016)</span>
         </div>
 
         
@@ -178,15 +178,26 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2022-08-11 16:13:06</span>
-        <span class="mobile">2022-08-11 16:13</span>
+        <span class="pc">2021-01-04 13:24:59</span>
+        <span class="mobile">2021-01-04 13:24</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-10-14 11:54:06</span>
+        <span class="pc">2022-10-20 18:24:10</span>
     </span>
     
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/my_blog/categories/Linguistics/">Linguistics]</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -194,11 +205,15 @@
             <ul>
                 
                     <li>
-                        <a href="/my_blog/tags/technical/">technical</a>&nbsp;
+                        <a href="/my_blog/tags/Cognition/">Cognition</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/my_blog/tags/blogs/">blogs</a>&nbsp;
+                        | <a href="/my_blog/tags/Psycholinguistic/">Psycholinguistic</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/my_blog/tags/Language-Comprehension/">Language Comprehension</a>&nbsp;
                     </li>
                 
             </ul>
@@ -217,30 +232,11 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="Install-and-Initialise-Hexo-on-Mac-OS"><a href="#Install-and-Initialise-Hexo-on-Mac-OS" class="headerlink" title="Install and Initialise Hexo on Mac OS"></a>Install and Initialise Hexo on Mac OS</h1><h2 id="Install-and-setting-up-nvm"><a href="#Install-and-setting-up-nvm" class="headerlink" title="Install and setting up nvm"></a>Install and setting up nvm</h2><p>Follow the tutorial on this website: <a class="link"   target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#" >https://github.com/nvm-sh/nvm#<i class="fas fa-external-link-alt"></i></a> to install nvm. (nvm, Node Version Manager, allows you to avoid EACES permission issues on Mac.)<br>After successfully installing nvm, add the following lines to .zprofile to launch nvm in every new zsh terminal session.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># open a new terminal window</span><br><span class="line">cd ~/</span><br><span class="line">touch .zprofile # skip this if the file is already there </span><br><span class="line">open .zprofile</span><br><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
-<p>Using the following lines to install node, and check if node.js and nvm are successfully installed:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm install node</span><br><span class="line">node -v</span><br><span class="line">command -v nvm</span><br></pre></td></tr></table></figure>
-<h2 id="Install-hexo"><a href="#Install-hexo" class="headerlink" title="Install hexo"></a>Install hexo</h2><p>Follow the tutorial on this website: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >https://hexo.io/docs/<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo #verify installation</span><br></pre></td></tr></table></figure>
-<h2 id="Initialise-the-blog-and-some-relevant-init-configurations"><a href="#Initialise-the-blog-and-some-relevant-init-configurations" class="headerlink" title="Initialise the blog and some relevant init configurations"></a>Initialise the blog and some relevant init configurations</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>will automatically set up the folder into a hexo blog project. <strong>Important!</strong> The folder must be a empty folder.</p>
-<h2 id="Add-git"><a href="#Add-git" class="headerlink" title="Add git"></a>Add git</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>Create an empty Git repository or reinitialize an existing one<br>Then open Github Desktop to publish an existing repository</p>
-<h2 id="Set-up-Github-Page"><a href="#Set-up-Github-Page" class="headerlink" title="Set up Github Page"></a>Set up Github Page</h2><p>To set up a git page as a free user, you need to change the visibility of your repository from private to public: go to Settings -&gt; General-&gt; change visibility<br>Then go to Settings -&gt; Pages -&gt; Build and deployment, set the branch to master<br>add the following configurations in _config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt; </span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
-<p>Deploy your site hexo clean &amp;&amp; hexo deploy.</p>
-<h2 id="Fix-deploy-problem-of-node-12-to-node-16"><a href="#Fix-deploy-problem-of-node-12-to-node-16" class="headerlink" title="Fix deploy problem of node 12 to node 16"></a>Fix deploy problem of node 12 to node 16</h2><p>See this article in Chinese: <a class="link"   target="_blank" rel="noopener" href="https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/" >https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/<i class="fas fa-external-link-alt"></i></a><br>&#x2F;&#x2F;TODO: English below: </p>
-<h1 id="Generate-workflow-guidelines"><a href="#Generate-workflow-guidelines" class="headerlink" title="Generate workflow guidelines"></a>Generate workflow guidelines</h1><h2 id="Hexo-related"><a href="#Hexo-related" class="headerlink" title="Hexo related"></a>Hexo related</h2><p>This command has the similar function like “git add .”, should be used each time after you made some changes and want to save them statically.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>This command has the similar function like “git commit”. This can push the changes to the Github Page branch and make it public.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>To create a new post or a new page, you can run the following command</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="Markdown-related"><a href="#Markdown-related" class="headerlink" title="Markdown related"></a>Markdown related</h2><h3 id="Add-a-code-chunk-in-md"><a href="#Add-a-code-chunk-in-md" class="headerlink" title="Add a code chunk in md"></a>Add a code chunk in md</h3><p>To add a code chunk, you need </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [specify the language ]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## add super link</span><br></pre></td></tr></table></figure>
-<p><a class="link"   target="_blank" rel="noopener" href="https://link-url-here.org/" >Link text Here<i class="fas fa-external-link-alt"></i></a><br>&#96;&#96;&#96;</p>
+            <h1 id="What-do-we-mean-by-prediction-in-Language-Comprehension"><a href="#What-do-we-mean-by-prediction-in-Language-Comprehension" class="headerlink" title="What do we mean by prediction in Language Comprehension?"></a>What do we mean by prediction in Language Comprehension?</h1><p><strong>一句话概括：本文是近几十年来心理语言学在给定（不完整的）语言材料的前提下，人类对句子的可能延续&#x2F;局部消除歧义的预测能力的综述。</strong><br>几个重点：computational nature，representional levels<br>从既有实证发现garten path effect中可以观察到，人类在面对这样的句子的时候表现出更慢的反应时间和更不准确的理解能力。而更易预测的上下文信息可以显著影响面对这一现象时的反应时间和理解精度。由此，从理论层面上来说，假设人类在处理语言信息时会根据已有信息预测新的信息是一个合理的假设。但，鉴于人类语言有着组合的天性，新信息自然属于意义组合的一个组件，预测行为由此属于一种资源的二次利用，是浪费。Prediction这一概念在不同的子领域和不同的研究者的眼中，意味着不同的意义，比如expectation，pre activation和以prediciton为基础的一系列语言处理概率模型。这一概念有时被低估，有时被过分强调，无论如何，基于人类在交流中快速对新信息的反应的事实，Prediciton在语言理解中起到了作用是不争的事实，但这一作用究极在何层级上有效尚未可知。</p>
+<p>第二章：根据过往研究，有很多种不同的手段（句法、语义、语音、感知）可以增强对新信息的处理<br>第三章：关于这些处于高层级的手段是否实在影响了底层级信息的处理<br>第四章：关于新信息和处于高层级的期待不符合导致的后果<br>第五章:PREDICTION在多层级树状结构中的角色</p>
+<p>第一章：prediction在最简意义上是一个graded phenomenon（同一时间只处理一种可能，如果一种后来被证实为错误的，重新考虑一个新的）还是parallel graded phenomena（同时处理不同的可能性，分边有不同的概率权重）</p>
+<p>prediction在最简意义上利用上下文环境中的信息，改变语言处理的状态，从而增强处理新信息的能力。<br>早期认为这种预测仅预测最合理的一种结构，不会浪费资源在错误的结构上。<br>但gartenpath的例子（说明句子结构的复杂程度可以影响处理速度）以及N400的例子（DeLong et al. 2005)<br>其次，Levy（2008）认为处理难度和词的surprisal正相关，同时，surprisal也和N400的振幅相关（Federmeier et al. 2007）。N400的振幅不仅会对上下文中低概率出现的词比如plane有反应，也会对上下文中性的低概率词起反应。<br>实践中，很难区分prediction是同时还是parallel的现象，但可以确认的是，具备graded的特点。</p>
+<p>Anderson (1990) Within this framework, the way that a rational comprehender can maximize the probability of accurately recognizing new linguistic input is to use all her stored probabilistic knowledge, in combination with the preceding context, to process this input.<br>Anderson和Levy的模型具备预测的特征，因为后验在线性处理过程中会自动变成下一个先验事件，同时也具备被动生成的特性。</p>
 
         </div>
 
@@ -250,11 +246,15 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/my_blog/tags/technical/">#technical</a>&nbsp;
+                        <a href="/my_blog/tags/Cognition/">#Cognition</a>&nbsp;
                     </li>
                 
                     <li class="tag-item">
-                        <a href="/my_blog/tags/blogs/">#blogs</a>&nbsp;
+                        <a href="/my_blog/tags/Psycholinguistic/">#Psycholinguistic</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/my_blog/tags/Language-Comprehension/">#Language Comprehension</a>&nbsp;
                     </li>
                 
             </ul>
@@ -266,18 +266,33 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/my_blog/2022/10/13/hello-world/"
+                           href="/my_blog/2021/02/21/Chamber-et-al-2002/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">Chamber_et_al._2002</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
                     </div>
                 
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/my_blog/2020/07/20/adjective/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">adjective</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 
             </div>
         
