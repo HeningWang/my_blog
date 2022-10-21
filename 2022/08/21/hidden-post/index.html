@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            How to hide posts in hexo |
         
         Hening Wang
     </title>
@@ -158,7 +158,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Hello World</span>
+            <span class="title-hover-animation">How to hide posts in hexo</span>
         </div>
 
         
@@ -178,16 +178,27 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2022-10-13 17:11:55</span>
-        <span class="mobile">2022-10-13 17:11</span>
+        <span class="pc">2022-08-21 11:16:56</span>
+        <span class="mobile">2022-08-21 11:16</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-10-14 11:54:06</span>
+        <span class="pc">2022-10-21 11:47:55</span>
     </span>
     
     
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/my_blog/tags/hexo/">hexo</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -202,24 +213,36 @@
         
 
         <div class="article-content markdown-body">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            <h1 id="how-to-hide-posts-in-hexo">How to hide posts in hexo</h1>
+<p>Sometimes, we want to keep certain posts invisible to the public, but
+still traceable in the source folder for later use.</p>
+<h2 id="move-files-to-_drafts-folder">Move files to _drafts folder</h2>
+<p>One way for doing that is to move a certain post to _drafts folder.
+Per default, hexo will not render and generate files in _drafts folder.
+Later one can use this command to publish it back to _posts folder.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="use-hexo-hide-post-plugin">Use hexo-hide-post plugin</h2>
+<h3 id="installation">Installation</h3>
+<p>Another solution is to install this plugin from github: <a class="link" 
+ target="_blank" rel="noopener" href="https://github.com/prinsss/hexo-hide-posts" >hexo-hide-post<i class="fas fa-external-link-alt"></i></a>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-hide-posts --save</span><br></pre></td></tr></table></figure> ### Configuration After installation, add configurations
+in your _config.yml file. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  enable: true</span><br><span class="line">  # Change the filter name to fit your need</span><br><span class="line">  filter: hidden</span><br><span class="line">  # Generators which you want to expose all posts (include hidden ones) to.</span><br><span class="line">  # Common generators: index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  public_generators: []</span><br><span class="line">  # Add &quot;noindex&quot; meta tag to prevent hidden posts from being indexed by search engines</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure> e.g. Set filter to secret, so
+you can use secret: true in front-matter instead. ### Usage Add meta
+information to the front matter of your post accordingly, e.g.
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#x27;Lorem Ipsum&#x27;</span><br><span class="line">date: &#x27;2019/8/10 11:45:14&#x27;</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
-<h1 id="using-nvm-to-install-hexo"><a href="#using-nvm-to-install-hexo" class="headerlink" title="using nvm to install hexo"></a>using nvm to install hexo</h1>
         </div>
 
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/my_blog/tags/hexo/">#hexo</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         

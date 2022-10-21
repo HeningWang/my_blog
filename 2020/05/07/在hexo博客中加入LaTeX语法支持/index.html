@@ -184,7 +184,7 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-08-08 17:31:45</span>
+        <span class="pc">2022-10-21 12:00:43</span>
     </span>
     
     
@@ -237,24 +237,21 @@
 
         <div class="article-content markdown-body">
             <p>hexo博客默认的编译器marked属于基本的markdown渲染器，只支持基本的markdown语法，不支持LaTeX数学公式的表达。若想支持LaTex语法，需要更换默认的渲染器，在这里我使用的是Pandoc。Pandoc是一款能够高质量转换文档格式的本地转换工具，其支持的语言十分丰富，而且转换后能够保持格式的完整性,被誉为文本格式转换届的瑞士军刀。</p>
-<p>获取地址：<a class="link"   target="_blank" rel="noopener" href="https://www.pandoc.org/installing.html%EF%BC%88%E5%86%85%E9%99%84%E4%B8%8D%E5%90%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%EF%BC%89" >https://www.pandoc.org/installing.html（内附不同操作系统的安装说明）<i class="fas fa-external-link-alt"></i></a></p>
+<p>获取地址：https://www.pandoc.org/installing.html（内附不同操作系统的安装说明）</p>
 <p>下载完成后可以在cmd中输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc --version</span><br></pre></td></tr></table></figure>
-
 <p>查看pandoc是否正确安装。接着，我们卸载hexo默认的渲染器，改为Pandoc。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
-
 <p>在用node安装和卸载渲染器的过程中，我碰到了以下的报错信息：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm notice created a lockfile as package-lock.json. You should commit this file.</span><br><span class="line">npm WARN fsevents@1.2.0 had bundled packages that do not match the required version(s). They have been replaced with non-bundled versions.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.0 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.0: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
-
 <p>这是由于fsevnets是MacOS系统下的插件，不支持windows和linux系统，但安装的结果显示为0，说明插件已经正确安装，不影响正常使用，忽略即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
 <p>执行以上命令清除hexo在publics文件夹中的缓存，重新生成后，即可正确地显示LaTex公式内容，以下是测试结果：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">E=mc^2.</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
-
 <p>以上代码可显示为：</p>
-<p>\begin{equation}<br>E&#x3D;mc^2.<br>\end{equation}</p>
+<p><span class="math display">\[\begin{equation}
+E=mc^2.
+\end{equation}\]</span></p>
 <p>至此，LaTeX语法支持成功。</p>
 
         </div>

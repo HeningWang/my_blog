@@ -184,7 +184,7 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-10-14 11:54:06</span>
+        <span class="pc">2022-10-21 11:58:05</span>
     </span>
     
     
@@ -194,11 +194,7 @@
             <ul>
                 
                     <li>
-                        <a href="/my_blog/tags/technical/">technical</a>&nbsp;
-                    </li>
-                
-                    <li>
-                        | <a href="/my_blog/tags/blogs/">blogs</a>&nbsp;
+                        <a href="/my_blog/tags/hexo/">hexo</a>&nbsp;
                     </li>
                 
             </ul>
@@ -217,30 +213,41 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="Install-and-Initialise-Hexo-on-Mac-OS"><a href="#Install-and-Initialise-Hexo-on-Mac-OS" class="headerlink" title="Install and Initialise Hexo on Mac OS"></a>Install and Initialise Hexo on Mac OS</h1><h2 id="Install-and-setting-up-nvm"><a href="#Install-and-setting-up-nvm" class="headerlink" title="Install and setting up nvm"></a>Install and setting up nvm</h2><p>Follow the tutorial on this website: <a class="link"   target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#" >https://github.com/nvm-sh/nvm#<i class="fas fa-external-link-alt"></i></a> to install nvm. (nvm, Node Version Manager, allows you to avoid EACES permission issues on Mac.)<br>After successfully installing nvm, add the following lines to .zprofile to launch nvm in every new zsh terminal session.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># open a new terminal window</span><br><span class="line">cd ~/</span><br><span class="line">touch .zprofile # skip this if the file is already there </span><br><span class="line">open .zprofile</span><br><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
-<p>Using the following lines to install node, and check if node.js and nvm are successfully installed:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm install node</span><br><span class="line">node -v</span><br><span class="line">command -v nvm</span><br></pre></td></tr></table></figure>
-<h2 id="Install-hexo"><a href="#Install-hexo" class="headerlink" title="Install hexo"></a>Install hexo</h2><p>Follow the tutorial on this website: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >https://hexo.io/docs/<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo #verify installation</span><br></pre></td></tr></table></figure>
-<h2 id="Initialise-the-blog-and-some-relevant-init-configurations"><a href="#Initialise-the-blog-and-some-relevant-init-configurations" class="headerlink" title="Initialise the blog and some relevant init configurations"></a>Initialise the blog and some relevant init configurations</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>will automatically set up the folder into a hexo blog project. <strong>Important!</strong> The folder must be a empty folder.</p>
-<h2 id="Add-git"><a href="#Add-git" class="headerlink" title="Add git"></a>Add git</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>Create an empty Git repository or reinitialize an existing one<br>Then open Github Desktop to publish an existing repository</p>
-<h2 id="Set-up-Github-Page"><a href="#Set-up-Github-Page" class="headerlink" title="Set up Github Page"></a>Set up Github Page</h2><p>To set up a git page as a free user, you need to change the visibility of your repository from private to public: go to Settings -&gt; General-&gt; change visibility<br>Then go to Settings -&gt; Pages -&gt; Build and deployment, set the branch to master<br>add the following configurations in _config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt; </span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
-<p>Deploy your site hexo clean &amp;&amp; hexo deploy.</p>
-<h2 id="Fix-deploy-problem-of-node-12-to-node-16"><a href="#Fix-deploy-problem-of-node-12-to-node-16" class="headerlink" title="Fix deploy problem of node 12 to node 16"></a>Fix deploy problem of node 12 to node 16</h2><p>See this article in Chinese: <a class="link"   target="_blank" rel="noopener" href="https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/" >https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/<i class="fas fa-external-link-alt"></i></a><br>&#x2F;&#x2F;TODO: English below: </p>
-<h1 id="Generate-workflow-guidelines"><a href="#Generate-workflow-guidelines" class="headerlink" title="Generate workflow guidelines"></a>Generate workflow guidelines</h1><h2 id="Hexo-related"><a href="#Hexo-related" class="headerlink" title="Hexo related"></a>Hexo related</h2><p>This command has the similar function like “git add .”, should be used each time after you made some changes and want to save them statically.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>This command has the similar function like “git commit”. This can push the changes to the Github Page branch and make it public.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>To create a new post or a new page, you can run the following command</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="Markdown-related"><a href="#Markdown-related" class="headerlink" title="Markdown related"></a>Markdown related</h2><h3 id="Add-a-code-chunk-in-md"><a href="#Add-a-code-chunk-in-md" class="headerlink" title="Add a code chunk in md"></a>Add a code chunk in md</h3><p>To add a code chunk, you need </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [specify the language ]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## add super link</span><br></pre></td></tr></table></figure>
-<p><a class="link"   target="_blank" rel="noopener" href="https://link-url-here.org/" >Link text Here<i class="fas fa-external-link-alt"></i></a><br>&#96;&#96;&#96;</p>
+            <h1 id="install-and-initialise-hexo-on-mac-os">Install and Initialise
+Hexo on Mac OS</h1>
+<h2 id="install-and-setting-up-nvm">Install and setting up nvm</h2>
+<p>Follow the tutorial on this website: https://github.com/nvm-sh/nvm#
+to install nvm. (nvm, Node Version Manager, allows you to avoid EACES
+permission issues on Mac.) After successfully installing nvm, add the
+following lines to .zprofile to launch nvm in every new zsh terminal
+session. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># open a new terminal window</span><br><span class="line">cd ~/</span><br><span class="line">touch .zprofile # skip this if the file is already there </span><br><span class="line">open .zprofile</span><br><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure> Using the following lines to install node, and
+check if node.js and nvm are successfully installed: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm install node</span><br><span class="line">node -v</span><br><span class="line">command -v nvm</span><br></pre></td></tr></table></figure> ##
+Install hexo Follow the tutorial on this website: https://hexo.io/docs/
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo #verify installation</span><br></pre></td></tr></table></figure> ## Initialise the blog and some relevant init
+configurations <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure> will automatically set up the folder into a
+hexo blog project. <strong>Important!</strong> The folder must be a
+empty folder. ## Add git <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure> Create an empty Git repository or
+reinitialize an existing one Then open Github Desktop to publish an
+existing repository ## Set up Github Page To set up a git page as a free
+user, you need to change the visibility of your repository from private
+to public: go to Settings -&gt; General-&gt; change visibility Then go
+to Settings -&gt; Pages -&gt; Build and deployment, set the branch to
+master add the following configurations in _config.yml <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt; </span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
+Deploy your site hexo clean &amp;&amp; hexo deploy. ## Fix deploy
+problem of node 12 to node 16 See this article in Chinese:
+https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/
+//TODO: English below:</p>
+<h1 id="generate-workflow-guidelines">Generate workflow guidelines</h1>
+<h2 id="hexo-related">Hexo related</h2>
+<p>This command has the similar function like "git add .", should be
+used each time after you made some changes and want to save them
+statically. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure> This command has the similar function like
+"git commit". This can push the changes to the Github Page branch and
+make it public. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure> To create a new post or a new page, you
+can run the following command <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure> ## Markdown related ### Add
+a code chunk in md To add a code chunk, you need <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [specify the language ]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## add super link</span><br></pre></td></tr></table></figure> <a class="link"   target="_blank" rel="noopener" href="https://link-url-here.org" >Link text Here<i class="fas fa-external-link-alt"></i></a>
+```</p>
 
         </div>
 
@@ -250,11 +257,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/my_blog/tags/technical/">#technical</a>&nbsp;
-                    </li>
-                
-                    <li class="tag-item">
-                        <a href="/my_blog/tags/blogs/">#blogs</a>&nbsp;
+                        <a href="/my_blog/tags/hexo/">#hexo</a>&nbsp;
                     </li>
                 
             </ul>
@@ -266,13 +269,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/my_blog/2022/10/13/hello-world/"
+                           href="/my_blog/2022/08/21/hidden-post/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">How to hide posts in hexo</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -282,10 +285,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/my_blog/2022/08/08/2018-07-01-welcome/"
+                           href="/my_blog/2022/01/28/2022-01-28-howtomakeimage/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Welcome</span>
+                                <span class="post-nav-title-item">How to insert images in blog posts based on jekyll (continuous updating)</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
