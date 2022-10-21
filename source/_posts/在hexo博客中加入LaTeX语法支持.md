@@ -3,11 +3,12 @@ title: 如何在hexo博客中加入LaTeX语法支持？
 date: 2020-05-07 13:14:21
 tags: [hexo,markdown,LaTex,blog]
 categories: [计算机]
+hidden: true
 ---
 
 hexo博客默认的编译器marked属于基本的markdown渲染器，只支持基本的markdown语法，不支持LaTeX数学公式的表达。若想支持LaTex语法，需要更换默认的渲染器，在这里我使用的是Pandoc。Pandoc是一款能够高质量转换文档格式的本地转换工具，其支持的语言十分丰富，而且转换后能够保持格式的完整性,被誉为文本格式转换届的瑞士军刀。
 
-获取地址：https://www.pandoc.org/installing.html（内附不同操作系统的安装说明）
+[下载地址](https://www.pandoc.org/installing.html)
 
 下载完成后可以在cmd中输入：
 

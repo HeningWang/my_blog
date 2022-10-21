@@ -20,6 +20,7 @@ Another solution is to install this plugin from github: [hexo-hide-post](https:/
 ```
 $ npm install hexo-hide-posts --save
 ```
+
 ### Configuration
 After installation, add configurations in your _config.yml file.
 ```
@@ -35,6 +36,7 @@ hide_posts:
   noindex: true
 ```
 e.g. Set filter to secret, so you can use secret: true in front-matter instead.
+
 ### Usage
 Add meta information to the front matter of your post accordingly, e.g.
 ```
