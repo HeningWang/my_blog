@@ -2,7 +2,8 @@
 title: 'Kupfer,Jaeger(2016)'
 date: 2021-01-04 13:24:59
 tags: [Cognition,Psycholinguistic,Language Comprehension]
-categories: Linguistics]
+categories: [Linguistics]
+hidden: true
 ---
 # What do we mean by prediction in Language Comprehension?
 **一句话概括：本文是近几十年来心理语言学在给定（不完整的）语言材料的前提下，人类对句子的可能延续/局部消除歧义的预测能力的综述。**

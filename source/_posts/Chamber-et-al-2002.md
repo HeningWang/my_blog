@@ -3,6 +3,7 @@ title: Chamber_et_al._2002
 date: 2021-02-21 23:51:57
 tags:
 categories:
+hidden: true
 ---
 Methode: Eye-Tracking
 Untersuchungsgegenstand: wie linguistische und non-linguistische Informationen bei der referentiellen Interpretion zusammenwirken

@@ -3,6 +3,7 @@ title: Altmann_Kamide_2007
 date: 2021-02-24 00:02:42
 tags:
 categories:
+hidden: true
 ---
 Experiment 1：
 

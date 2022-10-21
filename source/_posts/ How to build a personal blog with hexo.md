@@ -1,7 +1,7 @@
 ---
 title: How to build a personal blog with hexo
 date: 2022-08-11 16:13:06
-tags: [technical, blogs]
+tags: [hexo]
 ---
 # Install and Initialise Hexo on Mac OS
 ## Install and setting up nvm 

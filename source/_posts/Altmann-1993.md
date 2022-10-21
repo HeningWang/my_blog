@@ -3,6 +3,7 @@ title: Satzmodus im Deutschen Altmann(1993)文献总结
 date: 2020-06-16 12:48:18
 tags:
 categories:
+hidden: true
 ---
 ### Author Information
 Hans Altmann hat seine Promotion und Grundstudium an der LMU abgeschlossen und arbeitet seither dort. Seine Hauptforschungsbereiche sind Partikeln, Syntax-Semantik-Schnittstelle und Satzmodus.

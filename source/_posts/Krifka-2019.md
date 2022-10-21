@@ -3,6 +3,7 @@ title: Krifka-2019
 date: 2020-07-09 21:12:03
 tags:
 categories:
+hidden: true
 ---
 [four theories about assertions]
 {
