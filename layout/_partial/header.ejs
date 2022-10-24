@@ -3,11 +3,11 @@
     <div class="header-content<%- (theme.style.first_screen.enable === true && is_home() && !page.prev) ? ' has-first-screen' : '' %>">
         <div class="left">
             <% if (theme.base_info.hasOwnProperty('logo_img') && theme.base_info.logo_img) { %>
-                <a class="logo-image" href="/">
+                <a class="logo-image" href="/my_blog">
                     <%- image_tag(theme.base_info.logo_img) %>
                 </a>
             <% } %>
-            <a class="logo-title" href="/">
+            <a class="logo-title" href="/my_blog">
                 <%= theme.base_info.title || config.title || 'Keep Theme' %>
             </a>
         </div>
