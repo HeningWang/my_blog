@@ -2464,9 +2464,16 @@ Language. Cambridge:Cambridge University Press</p>
       </tags>
   </entry>
   <entry>
-    <title>goole-search-console</title>
+    <title>How to add Google search console to hexo blog</title>
     <url>/my_blog/2022/10/21/goole-search-console/</url>
-    <content><![CDATA[
+    <content><![CDATA[<h1 id="add-google-search-console-to-hexo-blog">Add Google search
+console to hexo blog</h1>
+<h2 id="install-hexo-sitemap">Install hexo-sitemap</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>Add configuration to _config.yml <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>

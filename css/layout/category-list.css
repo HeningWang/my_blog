@@ -10,7 +10,7 @@
 }
 .category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count {
   float: right;
-  color: var(--default-text-color);
+  color: var(--text-color-3);
 }
 .category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count::before {
   content: '[';

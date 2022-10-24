@@ -3,19 +3,20 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background: var(--background-color);
+  background: var(--background-color-1);
 keep-tablet()
 }
 .page-container .page-main-content {
   position: relative;
+  box-sizing: border-box;
   padding-top: $header-height;
 keep-tablet()
 keep-mobile()
 }
-.page-container .page-main-content.home .transparent-1 {
+.page-container .page-main-content.is-home .transparent-1 {
   background: var(--header-transparent-background-1);
 }
-.page-container .page-main-content.home .transparent-2 {
+.page-container .page-main-content.is-home .transparent-2 {
   background: var(--header-transparent-background-2);
 }
 .header-shrink .page-container .page-main-content {
@@ -60,34 +61,23 @@ keep-mobile()
 keep-tablet()
 keep-mobile()
 }
+.has-toc .page-container .page-main-content .page-main-content-middle .main-content {
+  max-width: $has-toc-content-max-width;
+}
 .page-container .page-main-content .page-main-content-bottom {
   width: 100%;
-}
-.page-container .page-aside {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: -260px;
-  z-index: $z-index-6;
-  box-sizing: border-box;
-  width: 260px;
-  height: 100%;
-  padding: 20px;
-  overflow-y: auto;
-  background: var(--background-color);
-keep-tablet()
 }
 .page-container .post-tools {
   position: fixed;
   top: $header-height$component-spacing-value;
-  right: $component-spacing-value;
+  left: calc((100vw - $content-max-width / 2) - 5rem);
+  opacity: 0;
 keep-tablet()
 keep-mobile()
 }
 .header-shrink .page-container .post-tools {
   top: $header-shrink-height$component-spacing-value;
 keep-tablet()
-keep-mobile()
 }
 .page-container .right-bottom-side-tools {
   position: fixed;
