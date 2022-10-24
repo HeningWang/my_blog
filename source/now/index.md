@@ -1,8 +1,9 @@
 ---
 layout: page
-title: now
+title: Now
 date: 2022-10-17 12:18:32
 ---
+
 This site is still under construction. Last modified: 19.10.2022.
 
 # Self-Studying 
