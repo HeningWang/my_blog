@@ -4,6 +4,7 @@ title: about
 date: 2022-08-11 16:12:42
 ---
 This site is still under construction.
+
 # Educational Background
 **2016 - 2019**: **B.A.** in German Studies (focused on Linguistics) at **Nanjing University**
 - Bachelor Thesis: Eine konstrastive Studie zu kausalen komplexen Sätzen im Chinesischen und Deutschen (A contrastiv study for causal complexe sentences in German and Chinese).
