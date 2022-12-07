@@ -121,3 +121,6 @@ hide_posts:
 # sitemap
 sitemap:
     path: sitemap.xml
+
+# post_asset_folder: false
+post_asset_folder: true
