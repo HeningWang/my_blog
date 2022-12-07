@@ -243,20 +243,6 @@ a code chunk in md To add a code chunk, you need <figure class="highlight plaint
       </tags>
   </entry>
   <entry>
-    <title>How to insert images in blog posts based on jekyll (continuous updating)</title>
-    <url>/my_blog/2022/01/28/2022-01-28-howtomakeimage/</url>
-    <content><![CDATA[<p>#the most basic way</p>
-<p>schemata:</p>
-<p>''' [descriptions]((/assets/images/...) '''</p>
-]]></content>
-      <categories>
-        <category>Technical</category>
-      </categories>
-      <tags>
-        <tag>jekyll</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>dass-V2句的功能与形态——句法和语用的界面分析</title>
     <url>/my_blog/2020/04/06/2022-01-24-dass-v2/</url>
     <content><![CDATA[<h3 id="传统视角下从句和主句的区别">传统视角下从句和主句的区别</h3>
@@ -2475,5 +2461,41 @@ console to hexo blog</h1>
       <tags>
         <tag>hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>insert-image</title>
+    <url>/my_blog/2022/12/07/insert-image/</url>
+    <content><![CDATA[<h1 id="how-to-insert-images-in-hexo-blogs">How to insert images in
+hexo-blogs</h1>
+<h2 id="via-local-resources">Via local resources</h2>
+<ol type="1">
+<li><p>change the following setting in the writing session in
+_config.yml of hexo (At least for me, it's already there, just need to
+change the value. But if there isn't, add this command manually.)
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line"># originally</span><br><span class="line"># post_asset_folder: false</span><br></pre></td></tr></table></figure></p></li>
+<li><p>install plugin packages <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Generate the resource folder</p></li>
+</ol>
+With asset folder management enabled, Hexo will create a folder every
+time you make a new post with the hexo new [layout]
+<title>
+<p>command. This asset folder will have the same name as the markdown
+file associated with the post. Place all assets related to your post
+into the associated folder, and you will be able to reference them using
+a relative path, making for an easier and more convenient workflow.</p>
+<ol start="4" type="1">
+<li>Import images Put images into the folder, then import the image in
+the following format. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![alt](folder/picture.png)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</title>]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to insert subfigures (and sub-captions) in Latex</title>
+    <url>/my_blog/2022/11/07/latex-subfigure/</url>
+    <content><![CDATA[<h1 id="using-package">Using package</h1>
+]]></content>
   </entry>
 </search>

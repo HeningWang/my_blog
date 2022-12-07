@@ -9,7 +9,7 @@
     
     <title>
         
-            How to insert images in blog posts based on jekyll (continuous updating) |
+            insert-image |
         
         Hening Wang
     </title>
@@ -165,7 +165,7 @@
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">How to insert images in blog posts based on jekyll (continuous updating)</span>
+                <span class="title-hover-animation">insert-image</span>
             </div>
 
             
@@ -185,26 +185,15 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2022-01-28 00:00:00</span>
-        <span class="mobile">2022-01-28 00:00</span>
+        <span class="pc">2022-12-07 15:27:52</span>
+        <span class="mobile">2022-12-07 15:27</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-08-08 17:31:45</span>
+        <span class="pc">2022-12-07 16:06:04</span>
     </span>
     
-    
-        <span class="article-categories article-meta-item">
-            <i class="fas fa-folder"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/my_blog/categories/Technical/">Technical</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -212,7 +201,7 @@
             <ul>
                 
                     <li>
-                        <a href="/my_blog/tags/jekyll/">jekyll</a>&nbsp;
+                        <a href="/my_blog/tags/hexo/">hexo</a>&nbsp;
                     </li>
                 
             </ul>
@@ -235,10 +224,29 @@
             
 
             <div class="article-content keep-markdown-body">
-                <p>#the most basic way</p>
-<p>schemata:</p>
-<p>''' [descriptions]((/assets/images/...) '''</p>
-
+                <h1 id="how-to-insert-images-in-hexo-blogs">How to insert images in
+hexo-blogs</h1>
+<h2 id="via-local-resources">Via local resources</h2>
+<ol type="1">
+<li><p>change the following setting in the writing session in
+_config.yml of hexo (At least for me, it's already there, just need to
+change the value. But if there isn't, add this command manually.)
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line"># originally</span><br><span class="line"># post_asset_folder: false</span><br></pre></td></tr></table></figure></p></li>
+<li><p>install plugin packages <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Generate the resource folder</p></li>
+</ol>
+With asset folder management enabled, Hexo will create a folder every
+time you make a new post with the hexo new [layout]
+<title>
+<p>command. This asset folder will have the same name as the markdown
+file associated with the post. Place all assets related to your post
+into the associated folder, and you will be able to reference them using
+a relative path, making for an easier and more convenient workflow.</p>
+<ol start="4" type="1">
+<li>Import images Put images into the folder, then import the image in
+the following format. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](folder/picture.png)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</title>
             </div>
 
             
@@ -247,7 +255,7 @@
                 <ul class="post-tags-box">
                     
                         <li class="tag-item">
-                            <a href="/my_blog/tags/jekyll/">#jekyll</a>&nbsp;
+                            <a href="/my_blog/tags/hexo/">#hexo</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -256,29 +264,14 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
-                               href="/my_blog/2022/08/11/%20How%20to%20build%20a%20personal%20blog%20with%20hexo/"
-                            >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                                <span class="title flex-center">
-                                <span class="post-nav-title-item">How to build a personal blog with hexo</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                                rel="next"
-                               href="/my_blog/2020/07/20/adjective/"
+                               href="/my_blog/2022/11/07/latex-subfigure/"
                             >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">adjective</span>
+                                <span class="post-nav-title-item">How to insert subfigures (and sub-captions) in Latex</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                                 <span class="right arrow-icon flex-center">

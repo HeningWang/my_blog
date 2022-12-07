@@ -2,9 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://heningwang.github.io/my_blog/2022/12/07/insert-image/</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://heningwang.github.io/my_blog/googlee6edfc5f795da21a.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://heningwang.github.io/my_blog/2022/11/07/latex-subfigure/</loc>
+    
+    <lastmod>2022-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://heningwang.github.io/my_blog/now/index.html</loc>
     
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-10-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -146,15 +173,6 @@
   </url>
   
   <url>
-    <loc>https://heningwang.github.io/my_blog/2022/01/28/2022-01-28-howtomakeimage/</loc>
-    
-    <lastmod>2022-08-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://heningwang.github.io/my_blog/2020/04/30/Gruppenarbeit_NEU/</loc>
     
     <lastmod>2022-08-08</lastmod>
@@ -175,7 +193,7 @@
 
   <url>
     <loc>https://heningwang.github.io/my_blog</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -183,126 +201,119 @@
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/graduable-adjectives/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/pragmatics/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/semantics/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/hexo/</loc>
-    <lastmod>2022-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://heningwang.github.io/my_blog/tags/jekyll/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/Pragmatics/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/dass-V2/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/Syntax/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/R/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E7%BB%9F%E8%AE%A1/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E8%AE%A4%E7%9F%A5/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E8%AF%AD%E4%B9%89/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E8%AF%AD%E7%94%A8/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/speech-act/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E5%81%8F%E8%A7%81/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/tags/%E3%80%8A%E4%B8%8D%E5%88%86%E4%B8%9C%E8%A5%BF%E3%80%8B/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -311,35 +322,28 @@
   
   <url>
     <loc>https://heningwang.github.io/my_blog/categories/Literature-reviews/</loc>
-    <lastmod>2022-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://heningwang.github.io/my_blog/categories/Technical/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/categories/Essay/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://heningwang.github.io/my_blog/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
-    <lastmod>2022-10-24</lastmod>
+    <lastmod>2022-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
