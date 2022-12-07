@@ -191,7 +191,7 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2022-10-21 16:26:30</span>
+        <span class="pc">2022-12-07 16:48:28</span>
     </span>
     
     
@@ -224,11 +224,34 @@
             
 
             <div class="article-content keep-markdown-body">
-                <h1 id="add-google-search-console-to-hexo-blog">Add Google search
-console to hexo blog</h1>
+                <h1 id="add-google-search-console-gsc-to-hexo-blog">Add Google Search
+Console (GSC) to hexo blog</h1>
 <h2 id="install-hexo-sitemap">Install hexo-sitemap</h2>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-<p>Add configuration to _config.yml <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
+<p>Add configuration to _config.yml <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure> This will
+automatically generate a sitemap every time after deploying the
+website.</p>
+<h2 id="verify-the-ownership-of-your-site-in-gsc">Verify the ownership
+of your site in GSC</h2>
+<ol type="1">
+<li>Go to <a class="link" target="_blank" rel="noopener" href="https://search.google.com/search-console/about">GSC
+website<i class="fas fa-external-link-alt"></i></a></li>
+<li>Under URL prefix, enter your homepage URL. <img src="/my_blog/.io//property.png"></li>
+<li>Click Continue</li>
+<li>Use “Recommended verification methods”, i.e HTML file.</li>
+<li>Download the automatically generated .html file.</li>
+<li>Put this .html file into the <em>source</em> folder of your blog.
+(not _post, not anything, just root <em>source</em> folder)</li>
+<li>!IMPORTANT (This has been a big issue for me) Set layout as false in
+the frontal info of this .html file, otherwise you will get error with
+verification. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># originally:</span><br><span class="line">google-site-verification: googlee6edfc5f795da21a.html</span><br><span class="line"></span><br><span class="line"># now change to:</span><br><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line">google-site-verification: googlee6edfc5f795da21a.html</span><br></pre></td></tr></table></figure></li>
+<li>Alternative way for verification is to use HTML tag, see <a class="link" target="_blank" rel="noopener" href="https://foystor.github.io/2022/08/16/show-hexo-blog-on-google-search/">this
+post<i class="fas fa-external-link-alt"></i></a></li>
+<li>Add sitemap.xml to sitemap of GSC</li>
+<li>You are all set! After a while of waiting, tap <em>site:
+your-blog-address</em> into google search window to check if your blog
+has been properly tracked by GSC.</li>
+</ol>
 
             </div>
 

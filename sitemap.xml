@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://heningwang.github.io/my_blog/2022/10/21/google-search-console/</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://heningwang.github.io/my_blog/googlee6edfc5f795da21a.html</loc>
     
     <lastmod>2022-12-07</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://heningwang.github.io/my_blog/about/index.html</loc>
     
     <lastmod>2022-10-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://heningwang.github.io/my_blog/2022/10/21/goole-search-console/</loc>
-    
-    <lastmod>2022-10-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
