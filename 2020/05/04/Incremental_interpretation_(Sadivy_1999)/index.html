@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Hening Wang">
+    
+    <title>
+        
+            Achieving incremental semantic interpretation through contextual representation-Sadivy.et.al (1999) |
+        
+        Hening Wang
+    </title>
+    
+<link rel="stylesheet" href="/my_blog/css/style.css">
+
+    <link rel="shortcut icon" href="/my_blog/images/logo_web.png">
+    
+<link rel="stylesheet" href="/my_blog/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/my_blog/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/my_blog/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/my_blog/font/css/brands.min.css">
+
+    
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"heningwang.github.io","root":"/my_blog/","language":"en","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","logo":"/images/logo.png","favicon":"/images/logo_web.png","avatar":"/images/avatar.png","font_size":null,"font_family":null,"hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"header_transparent":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"trigger":"auto","unescape":false,"preload":true},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":false},"comment":{"enable":true,"use":"gitalk","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"enable":true,"github_id":"Hening Wang","github_admins":null,"repository":"my_blog_gitalk","client_id":"f839ec64088f22ac969d","client_secret":"4316bdc5014af888cb59b04c0409a606ff712683"},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"left","word_count":{"enable":false,"wordcount":false,"min2read":false},"author_label":{"enable":false,"auto":false,"custom_label_list":["Trainee","Engineer","Architect"]}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"version":"3.7.1"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/my_blog/images/logo.png">
+                </a>
+            
+            <a class="site-name" href="/">
+               Hening Wang
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/my_blog/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/my_blog/archives"
+                            >
+                                BLOGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/my_blog/now"
+                            >
+                                NOW
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/my_blog/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/my_blog/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/my_blog/archives">BLOGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/my_blog/now">NOW</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/my_blog/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+
+                
+
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+
+        <div class="article-content-container border-box">
+
+            <div class="article-title">
+                <span class="title-hover-animation">Achieving incremental semantic interpretation through contextual representation-Sadivy.et.al (1999)</span>
+            </div>
+
+            
+                <div class="article-header border-box">
+                    <div class="avatar-box border-box">
+                        <img src="/my_blog/images/avatar.png">
+                    </div>
+                    <div class="info-box">
+                        <div class="author">
+                            <span class="name">Hening Wang</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info-container border-box post">
+    <div class="article-meta-info border-box">
+        
+
+
+        
+            
+                <span class="meta-info-item article-date">
+                    <i class="icon fa-regular fa-calendar-plus"></i>&nbsp;
+                    <span class="pc">2020-05-04 14:19:22</span>
+                    <span class="mobile">2020-05-04 14:19</span>
+                </span>
+            
+
+            
+                <span class="meta-info-item article-update-date">
+                    <i class="icon fas fa-file-pen"></i>&nbsp;
+                    <span class="pc">2023-08-05 21:38:25</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul>
+                    
+                            <li class="category-item">
+                                
+                                <a href="/my_blog/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6/">语言学</a>
+                            </li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul>
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/my_blog/tags/%E8%AE%A4%E7%9F%A5/">认知</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/my_blog/tags/%E8%AF%AD%E4%B9%89/">语义</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/my_blog/tags/%E5%BD%A2%E5%AE%B9%E8%AF%8D/">形容词</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item article-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h3 id="autor-information">Autor information</h3>
+<p>Julie Sedivy is an adjunct associate professor at the Department of
+Psychology at the University of Calgary, graduated from the University
+of Rochester. Her main research interests are language and mind by using
+psychological experiments.</p>
+<h3 id="text-information">Text information</h3>
+<p>The following essay is a journal article on <em>Cognition</em>. The
+Journal of <em>Cognition</em>, the official journal of the European
+Society for Cognitive Psychology, publishes reviews, empirical articles
+(including registered reports), data reports, stimulus development
+reports, comments, and methodological notes relevant to all areas of
+cognitive psychology, including attention, memory, perception,
+psycholinguistics, and reasoning. (Retrieved from
+https://www.journalofcognition.org/, on 30.05.2020)</p>
+<h3 id="definition-of-incrementality">Definition of incrementality</h3>
+<p>"There is growing evidence that language processing is highly
+incremental, that is, processing occurs with very little lag following
+the input." (Sedivy et. al 199: 113) However, the incrementality results
+in a very specific problem, that is, some utterances that are entirely
+unambiguous could be partly, as the input comes, ambiguous.</p>
+<p>Difference to early studies: Processing occurs until certain
+syntactic boundary has been encountered.</p>
+<span id="more"></span>
+<h3 id="main-hypothesis-and-a-brief-view-of-central-arguments">Main
+hypothesis and a brief view of central arguments</h3>
+<p><strong>H0:</strong> Online semantic interpretation of context
+information is not incremental.<br>
+<strong>H1:</strong> Online semantic interpretation of context
+information is incremental.</p>
+<p>"The goal of this article was to examine evidence for incrementality
+and use of contextually-defined constraints for both intersective and
+non-intersective adjectives. To examine, how, and when, listeners make
+use of contextually-defined contrast in interpreting prenominal
+adjectives."</p>
+<p>Why choose adjectives as research objects: "First, the problem of
+referential indeterminacy has been argued to be fairly extensive for
+adjectives, and second, existing literature provides some insight into
+possible contextually-based mechanisms that might be exploited by a
+processing system in interpreting incrementally."</p>
+<p><strong>conclusion</strong>：For adjectives that appear to be heavily
+dependent upon the head noun for establishing reference, the referential
+interpretation is not delayed until the head-noun occurs, but begins
+incrementally through the interplay of the semantic content of the
+adjective and its relationship (contrast effect) to the context of
+utterance. However, this sort of interpretation is because of the
+contextual parameters not fully completed, but also needs sufficient
+contextual information to establish the denotation. In other words, the
+adjectives can denote a contrast relationship, but how the relationship
+be quantified is heavily dependent upon the context.</p>
+<h3 id="theoritical-background">theoritical background</h3>
+<h4 id="evidence-for-incremental-syntactical-sentence-processing">evidence
+for incremental syntactical sentence processing</h4>
+<p><strong>"Garden-Path-Effect"</strong>: Sentences like (1a-b) are
+temporary ambiguous until the key feature of disambiguation appears,
+which is in (1a) is the word <em>fell</em>. Furthermore, because of the
+change of syntactical structure by conjunction <em>and</em> in (1b), the
+processing of (1b) is much easier than (1a). These facts attributed to
+the point of view, that incorrect early decision making occurs at
+language processing, which differs fundamentally from the old one, that
+the processing delayed until a certain boundary of information has been
+identified.</p>
+<p>(1)  a. The horse raced past the barn fell.<br>
+b. The horse raced past the barn and fell.</p>
+<h4 id="evidence-for-incremental-semantic-processing">evidence for
+incremental semantic processing</h4>
+<p>The task of semantic is to identify the referential objectives
+describing by linguistical utterances, and must be counted in addition
+to syntactical structure parsing also into sentence processing. H0 is
+the hypothesis that denies this view, but if H1 is true, the response
+time to (2) shall have three different possibilities with different
+disambiguation conditions, as illustrated in (2a-c). In (2a), it's
+enough for the hearer to identify the target object with the first key
+description <em>large</em> in contrast to other small blocks, and in
+each (2b) and (2b) there are different trigger words for early
+identification before the head noun appears. Experiments from Eberhard
+et al. (1995) engaged these problems. According to their data, the eye
+movement, which represents the identification of referential objects,
+was started within 0.5s at the beginning of the disambiguation word.</p>
+<p>(2) the large red rectangular block<br>
+a. only one block is large among other sets of blocks<br>
+b. only one block is large <strong><em>and</em></strong> red among other
+sets of blocks<br>
+c. only one block is large <strong><em>and</em></strong> red
+<strong><em>and</em></strong> rectangular among other sets of blocks</p>
+<h4 id="classification-of-adjectives-according-to-kamp-and-partee-1995">classification
+of adjectives according to Kamp and Partee (1995)</h4>
+<ol type="1">
+<li><p><strong>intersective adjectives</strong>: The normal case of
+adjectives, independent from another predicate.has the same property as
+a one-place predicate, models the extension of an entity to a complete
+attribute like <em>red</em>. The detonation of a complex expression is
+simply the intersection of all the adjectives, e.g. <em>a red, plain
+box</em> is a box both red and plain.</p></li>
+<li><p><strong>subsective adjectives</strong>: Another class of
+adjectives can't denote entity by itself, dependent by another
+predicate. It has to combine with a head-noun in a bigger phrase, from
+which it selects a subset as its denotation. Examples for that are
+<em>good</em> both in <em>good lawyer</em> and <em>good priest</em>.
+It's impossible to pick out a set of entities in the model that
+corresponds to the predicate <em>good</em>, independently of the sets of
+entities corresponding to <em>priest</em> and <em>lawyer</em>.</p></li>
+<li><p><strong>non-subsective adjectives</strong>: They don't denote
+subset from any other entities. e.g. The by <em>fake</em> in <em>a fake
+gun</em> denoted set don't belong to any set of <em>gun</em>.</p></li>
+<li><p>(To be determined) <strong>context-dependent adjectives</strong>:
+Vague and ambiguous about the adjectives like <em>big</em>,
+<em>tall</em>, <em>small</em>.</p></li>
+</ol>
+<h3 id="experiments">Experiments</h3>
+<h4 id="experiment-1a">Experiment 1A</h4>
+<p><strong>target:</strong> intersective adjectives<br>
+<strong>goals:</strong> examine whether evidence for incremental
+processing would be obtained with less predictable materials;</p>
+<p>Different than Eberhard et al. (1995) where they used instructions
+that involve more than one aspects of the target and the target itself
+is a geometric shape (i.e. form, colour and shape "Touch the plain
+yellow square."), introductions by Sedivy et al, only included one
+adjective, and the contrast set is composed by either modified head-noun
+or non-modified head-noun, hence, it is difficult to predict the
+referential object with sole stimuli.</p>
+<p><strong>materials and factor design:</strong><br>
+ten referential expressions that included an adjective modifier
+involving colour, shape and material;</p>
+<p>late condition: disambiguation point is at the noun (have a
+competitor besides of target);<br>
+early condition: disambiguation point is at adjective (solely one
+target)</p>
+<p><strong>procedure:</strong> subject are supposed to touch the target
+after hearing the introduction<br>
+<strong>read of data:</strong><br>
+</p>
+<p>By comparing the mean of eye movement latency we can conclude that
+the condition has a significant effect on the difference of
+interpretation. Furthermore, the percentage of looks at the competitor
+from the total looks until the subject reached the target shows that
+there is also a significant difference that under late-condition the
+subject looks more frequent to the competitor than under early
+condition.</p>
+<p><strong>conclusion:</strong> The results of experiment 1A find its
+similarity with Eberhard et al. (1995) that the subjects start to find
+the referential object denoted by the adjectives after hearing it
+instead of waiting until the whole NP was expressed. However, with less
+predictable materials than Eberhard et al. (2015) the results of
+experiment 1A have a more common interpretation.</p>
+<h4 id="experiment-1b">Experiment 1B</h4>
+<p><strong>target:</strong> same as 1A<br>
+<strong>goal:</strong> establish whether the contrast effect caused by
+the adjectives modifiers can be observed with or without focus
+intonation<br>
+<strong>materials and factor design:</strong><br>
+same rules for setting referential expressions in 1A;<br>
+<br>
+2x2 factors, one condition is whether contrast effect or non-contrast
+effect, the other is whether with focus or without focus. The focus is
+realized by comparison between the first instruction which refers to the
+contrast object and the target instruction which refers either to target
+under contrast effect or to the competitor under non-contrast
+effect.<br>
+<strong>procedure:</strong> same as 1A<br>
+<strong>read of data:</strong><br>
+<br>
+there is no significant effect on the focus condition.<br>
+<strong>conclusion:</strong> Combining the experiment 1A and 1B, one can
+conclude a semantic processing model that are "undergoing continuous,
+moment-by-moment semantic interpretation, with immediate mapping onto a
+referential model.", and this effect is not dependent on whether focus
+intonation on the modified adjectives is present. This concept is based
+on the property of "simple" intersective adjectives, which have in its
+nature the function denoting entities independent of head-noun,
+therefore, surveys on other types of adjectives is necessary to support
+the incremental processing model.</p>
+<h4 id="experiment-2"><strong>Experiment 2</strong></h4>
+<p><strong>target:</strong> vague scalar adjective
+<strong>materials:</strong> </p>
+<p>Target: are either good tokens (objects that fit the description of
+the adjective, e.g. <em>a tall glass</em>) or poor token (objects that
+fit poorly the adjective, in another word, a bare-noun without scalar
+adjective e.g. <em>a glass</em>) Contrast: objects that fit the opposite
+site on the scale described by adjectives Competitor: not only don't fit
+the adjective, but also has a different head-noun</p>
+<p><strong>factor design:</strong>: 2<em>2</em>2 factors</p>
+<p>contrast v.s. non-contrast: with contrat objects, one can identify
+the target objects earlier. good tokens or poor tokens: with good tokens
+contrast effects should be stronger (typicality effect, that is, one
+have a certain expect on the noun) lang preview time vs.s short preview
+time: Contrast effects are sensitive to familiarity of the items. The
+langer one looked at the display, the stronger is the contrast
+effect.</p>
+<p><strong>read of data:</strong> </p>
+<p>a main effect of display time: short preview time related to longer
+latencies a main effect of contrast: with the presence of contrast
+object latencies are shorter a main effect of typicality: with good
+tokens the latencies are shorter</p>
+<p><strong>conclusion:</strong> a) The earliness of looks to the
+competitor suggests that the subjects are not waiting until the
+head-noun, but begin their interpretation immediately; b) The low
+latencies with contrast suggests that the information of contrast effect
+were used very early, before the head-noun shows up. With the naturally
+contrast effect of scalar adjectives, the subjects considered the
+contrast not as target early, evident in the timing of looks to the
+contrast.</p>
+<p>**The subjects are sensitive to the contrastive use of scalar
+adjectives, and this information are used incrementally. This evident in
+faster eye movement latencies to the target, the lack of a competitor
+effect in displays containing contrast and the prevalence of looks to
+the contrast. Typicality is subtle in this experiment.</p>
+<h4 id="experiment-3"><strong>Experiment 3</strong></h4>
+<p><strong>target</strong>: same as experiment 2 <strong>goal</strong>:
+to examine whether the contrast effect of scalar adjectives is dependent
+on the existence presupposition by means of the definite article
+<strong>materials</strong>: a) The target in the introduction is
+described by the indefinite article rather than definite; b) The
+existence of target is not presupposed, rather than that, the
+verification of existence is exactly what required by the instruction,
+e.g. <em>Is there a tall glass?</em>. <strong>factors design</strong>:
+same as experiment 2 <strong>read of data</strong>: </p>
+<p>a main effect of contrast was confirmed a main effect of typicality
+was confirmed display preview time doesn't have a main effect
+<strong>conclusion</strong>: Hypothesis was furthermore confirmed that
+the incremental interpretation of adjectives without stable core meaning
+is not dependent upon the presuppositions in instructions.</p>
+<h3 id="open-questions">open questions</h3>
+<ol type="1">
+<li>Where did the referential contrast effect come? -- one possible
+solution: Gricean conversational principle<br>
+### Reference:</li>
+</ol>
+<p>Kamp, H., Partee, B., 1995. Prototype theory and compositionality.
+Cognition 57, 129–191.</p>
+<p>Sedivy, J., Tanenhaus, M., Chambers, C., &amp; Carlson, G. (1999).
+Achieving incremental semantic interpretation through contextual
+representation. Cognition, 71, 109-147.</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/my_blog/tags/%E8%AE%A4%E7%9F%A5/"><i class="icon fas fa-hashtag"></i>认知</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/my_blog/tags/%E8%AF%AD%E4%B9%89/"><i class="icon fas fa-hashtag"></i>语义</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/my_blog/tags/%E5%BD%A2%E5%AE%B9%E8%AF%8D/"><i class="icon fas fa-hashtag"></i>形容词</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/my_blog/2020/05/08/2020-05-08-Leffel.et.al.2016/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item text-ellipsis">Leffel et al. (2016)--Imprecision is pragmatic Evidence from referential processing--Zusammenfassung</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/my_blog/2020/05/02/Taxonomy_of_speechacts_(Searle_1979)/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item text-ellipsis">A taxonomy of illocutionary acts Searle (1979)文献总结</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+                <div class="comment-container">
+                    
+
+
+    <div class="comments-container">
+        <div id="comments-anchor"></div>
+        <div class="comment-area-title">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        
+            
+
+    <div class="gitalk-comment-container">
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+        <script  src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+        <script >
+          function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+              __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+              Gitalk && new Gitalk({
+                clientID: 'f839ec64088f22ac969d',
+                clientSecret: '4316bdc5014af888cb59b04c0409a606ff712683',
+                repo: 'my_blog_gitalk',
+                owner: 'Hening Wang',
+                admin: 'Hening Wang',
+                id: __gitalk__pathname,
+                proxy: '',
+                language: 'en'
+              }).render('gitalk-container');
+            } catch (e) {
+              window.Gitalk = null;
+            }
+          }
+
+          if ('false' === 'true') {
+            const loadGitalkTimeout = setTimeout(() => {
+              loadGitalk();
+              clearTimeout(loadGitalkTimeout);
+            }, 1000);
+          } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                </div>
+            
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2022</span>&nbsp;-&nbsp;2023
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Hening Wang</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.7.1</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Visitor count</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Totalview</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+
+<script src="/my_blog/js/utils.js"></script>
+
+<script src="/my_blog/js/main.js"></script>
+
+<script src="/my_blog/js/header-shrink.js"></script>
+
+<script src="/my_blog/js/back2top.js"></script>
+
+<script src="/my_blog/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/my_blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/my_blog/js/post-helper.js"></script>
+
+        
+            
+<script src="/my_blog/js/libs/anime.min.js"></script>
+
+        
+        
+    
+    
+    
+</div>
+
+
+
+
+</body>
+</html>

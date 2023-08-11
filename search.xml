@@ -1,0 +1,2493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>How to build a personal blog with hexo</title>
+    <url>/my_blog/2022/08/11/%20How%20to%20build%20a%20personal%20blog%20with%20hexo/</url>
+    <content><![CDATA[<h1 id="install-and-initialise-hexo-on-mac-os">Install and Initialise
+Hexo on Mac OS</h1>
+<h2 id="install-and-setting-up-nvm">Install and setting up nvm</h2>
+<p>Follow the tutorial on this website: https://github.com/nvm-sh/nvm#
+to install nvm. (nvm, Node Version Manager, allows you to avoid EACES
+permission issues on Mac.) After successfully installing nvm, add the
+following lines to .zprofile to launch nvm in every new zsh terminal
+session. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># open a new terminal window</span><br><span class="line">cd ~/</span><br><span class="line">touch .zprofile # skip this if the file is already there </span><br><span class="line">open .zprofile</span><br><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure> Using the following lines to install node, and
+check if node.js and nvm are successfully installed: <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvm install node</span><br><span class="line">node -v</span><br><span class="line">command -v nvm</span><br></pre></td></tr></table></figure> ##
+Install hexo Follow the tutorial on this website: https://hexo.io/docs/
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo #verify installation</span><br></pre></td></tr></table></figure> ## Initialise the blog and some relevant init
+configurations <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure> will automatically set up the folder into a
+hexo blog project. <strong>Important!</strong> The folder must be a
+empty folder. ## Add git <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure> Create an empty Git repository or
+reinitialize an existing one Then open Github Desktop to publish an
+existing repository ## Set up Github Page To set up a git page as a free
+user, you need to change the visibility of your repository from private
+to public: go to Settings -&gt; General-&gt; change visibility Then go
+to Settings -&gt; Pages -&gt; Build and deployment, set the branch to
+master add the following configurations in _config.yml <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt; </span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
+Deploy your site hexo clean &amp;&amp; hexo deploy. ## Fix deploy
+problem of node 12 to node 16 See this article in Chinese:
+https://www.zywvvd.com/notes/hexo/website/36-vercel-node-upgrade/vercel-node-upgrade/
+//TODO: English below:</p>
+<h1 id="generate-workflow-guidelines">Generate workflow guidelines</h1>
+<h2 id="hexo-related">Hexo related</h2>
+<p>This command has the similar function like "git add .", should be
+used each time after you made some changes and want to save them
+statically. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure> This command has the similar function like
+"git commit". This can push the changes to the Github Page branch and
+make it public. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure> To create a new post or a new page, you
+can run the following command <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure> ## Markdown related ### Add
+a code chunk in md To add a code chunk, you need <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">``` [specify the language ]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## add super link</span><br></pre></td></tr></table></figure> <a class="link" href="https://link-url-here.org">Link text Here<i class="fas fa-external-link-alt"></i></a>
+```</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dass-V2句的功能与形态——句法和语用的界面分析</title>
+    <url>/my_blog/2020/04/06/2022-01-24-dass-v2/</url>
+    <content><![CDATA[<h3 id="传统视角下从句和主句的区别">传统视角下从句和主句的区别</h3>
+<p>在《Handwörterbuch der Deutschen Gegenwartssprahce》（HDG，Kempcke
+1984）中，从句被定义为 <strong>“von einer Subjunktion
+einleitend”</strong> 以及 <strong>“einem Hauptsatz
+unterordnend”</strong>。这里的Subjunktion指的是 <em>dass</em>,
+<em>ob</em>和<em>weil</em>为代表的从句连词，被认为是Konjunktion大类下的一个分支，与Konjunktion这种叫法不同的是，这样的定义特别强调后一个关键词，也就是
+<strong>einem Hauptsatz unterornend</strong>
+这一特点。传统来说，从句和主句的最大区别就是在动词定式的位置上，一般来说，从句的动词定式被放在最后一位，既Verb-End-Stellung（下简称VE），主句的动词定式被放在句子的第二位，既Verb-Zweit-Stellung（下简称V2)。用框架模型表现如下:</p>
+<ol type="1">
+<li><ol type="a">
+<li>dass die sieben Zwerge das Schneewittchen verehrt haben.
+<strong>Verb-End</strong></li>
+</ol></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Verb-End</th>
+<th>LSK</th>
+<th>Mittelfeld</th>
+<th>RSK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>dass</td>
+<td>die sieben Zwerge das Schneewittchen</td>
+<td>verehrt haben</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="a">
+<li>Die sieben Zwerge haben das Schneewittchen verehrte.
+<strong>Verb-Zweit</strong></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Verb-Zweit</th>
+<th>Vorfeld</th>
+<th>LSK</th>
+<th>Mittelfeld</th>
+<th>RSK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Die sieben Zwerge</td>
+<td>haben</td>
+<td>das Schneewittchen</td>
+<td>verehrt</td>
+</tr>
+</tbody>
+</table>
+<p>然而随着语言的发展，我们在日常生活也可以看到以下的句子：</p>
+<ol start="2" type="1">
+<li>a.Er sagte, er sei krank gewesen.
+<ol start="2" type="a">
+<li>Ich hab' gehört, dass in London sind die Busse rot.</li>
+</ol></li>
+</ol>
+<p>(2)中的分句在句子中起到宾语的语法作用，按理来说应该属于宾语从句，然而有别于传统的VE句式，（2）中的分句都呈现出V2的特征，既传统意义上主句的特征。其中，（2a）没有显性的从句连词，有悖于之前提到的
+<strong>“von einer Subjunktion
+einleitend”</strong>，（2b）虽然有从句连词<em>dass</em>，但却呈现出V2的句式，有悖于
+<strong>“einem Hauptsatz
+unterordnend”</strong>。由此可以提出以下问题：<br>
+1. dass-V2属于主从句连接（Hypotaxe）还是并列句连接（Parataxe）？<br>
+2. dass-V2有哪些形态和功能上的特点？<br>
+3. dass-V2会出现在哪些特定的上下文中？<br>
+<span id="more"></span> ### dass-V2的语法功能<br>
+(3) Subjekt</p>
+<p>Dazu kommt AUCH, dass manche OBER
+flächenbeschichtungensilikonharzfarben, dispersionsfarben-
+<em>enthalten</em> -organische BEImengungen, und das in der kombination
+ist ein gefundenes fressen, buchstäblich, für die mikroorganismen.<br>
+(Quelle:Deutschlandfunk, Interview, 12.11.2014)</p>
+<ol start="4" type="1">
+<li>direktes Objekt</li>
+</ol>
+<p>Ich weiß, <em>dass</em> Herr LAACK <em>hat</em> eine STIFtung
+gegründet.<br>
+(ARD, Talkshow Sabine Christiansen, 06.08.2006)</p>
+<p>(5)Präpositionalobjekt mit Korrelat</p>
+<p>Das liegt einfach DAran, dass KINder, die hiv-infiziert sind, stellen
+keinen Markt für die pharmaindustrie DAR.<br>
+(Deutschlandfunk, Interview, 14.07.2014)</p>
+<ol start="6" type="1">
+<li>Prädikativ</li>
+</ol>
+<p>Das wesentliche DAran ja, <em>dass</em> der Regisseur <em>sitzt</em>
+UNten und <em>sieht</em> mich von Kopf bis ZEH. (AGD, RIAS,
+Diskussionsrunde, 1962)</p>
+<ol start="7" type="1">
+<li>Attribut zu einem Nomen</li>
+</ol>
+<p>aber ich habe MANCHmal, an manchen stellen den Eindruck,
+<em>dass</em> HIER <em>steht</em> der poeta doctus dem Dichter im WEG.
+(Deutschlandfunk, DIsskusionsrunde, 20.10.2004)</p>
+<p>一个dass-V2句可以在不影响原句语义的基础上通过简单的动词移位变为dass-VL句，但会影响原句的语用效果。见(6)的VL变体(8):</p>
+<ol start="8" type="1">
+<li>Das liegt einfach daran, <em>dass</em> Kinder, die HIV-infiziert
+sind, keinen Markt für die Pharmaindustrie <em>darstellen</em>.</li>
+</ol>
+<p>(6)中的dass句表达的是说话人的断言Assertion，(8)中表达的是说话人的命题Proposition。这两句的相同点在于使句子成立的真值条件完全相同，也即两句话在语义LF层面上是相同的，见(9a-b)。但是，与(8)不同的是，(6)中的主语Kinder得以被放在主题的位置上强调，使整句起到了补充说明的作用，(8)则起到陈述的作用。</p>
+<h3 id="dass-v2在语篇中的语用功能">dass-V2在语篇中的语用功能</h3>
+<p>结合上面的例子可以看出，dass-V2和dass—VL在语义层面以及语法功能上具有相同的结构，主要的差异体现在于语用功能上。</p>
+<p>关于语用功能的讨论可以进一步细分为两个方面:a)V2和VL的功能差异；b)dass句和其他从句连词的功能差异</p>
+<p>V2句式和VL句式在语用上最大的区别在于V2句式拥有前场Vorfeld，前场里的元素常常是句子的主题(9)，或者是框架限定元素，如时间状语、地点状语等，(10)：</p>
+<ol start="9" type="1">
+<li>Das wesentliche ist daran ja, <em>dass</em> der Regisseur
+<em>sitzt</em> unten und <em>sieht</em> mich von Kopf bis Zeh. (AGD.
+Diskussioonsrunde. RIAS, 1962)</li>
+</ol>
+<ol type="a">
+<li></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Verb-Zweit</th>
+<th>Vorfeld</th>
+<th>LSK</th>
+<th>Mittelfeld</th>
+<th>RSK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dass</td>
+<td>der Regisseur</td>
+<td>sitzt/sieht</td>
+<td>unten und mich von Kopf bis Zeh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Verb-End</th>
+<th>LSK</th>
+<th>Mittelfeld</th>
+<th>RSK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>dass</td>
+<td>der Regisseur unten und mich von Kopf bis Zeh</td>
+<td>sitzt/sieht</td>
+</tr>
+</tbody>
+</table>
+<ol start="10" type="1">
+<li>A: Welche Farbe haben denn die Omnibusse in Großbritannien?<br>
+B: Keine Ahnung! ...
+<ol type="a">
+<li>#Sie sind in LONdon ROT.<br>
+</li>
+<li>In London sind sie ROT.<br>
+</li>
+<li>Ich habe gehört, dass sie in LONdon rot sind.<br>
+</li>
+<li>*Ich habe gehört, dass in LONdon sie ROT sind.<br>
+</li>
+<li>Ich habe gehört, dass in LONDdon sind sie rot.</li>
+</ol></li>
+</ol>
+<p>(9)中的<em>der
+Regisseur</em>使用了定冠词限定，是上下文中的已知信息，也是本句中谓语结构的主题。通过V2的句式，该成分被人为地放在了前场中(9a)，起到了强调的作用，而如果是一个VL句式，则该成份会被放在中场(9b)，在上下文中的显著性便没有在前场中那样强烈。(10)中的地点状语<em>In
+London</em>属于框架限定状语rahmenssetzende Adverbiale (Frey/Pittner
+1998),根据他们的观点，这类状语是作为CP的Modifikator基础生成在前场中的，所以(10d)相比于(10e)来说是不合语法的，这一例子充分说明了在特定的语用环境下，dass-V2句具有自身结构上的合理性，而不仅仅是一些语言批评者口中的语言使用者的“表现错误”。</p>
+<p>除先置的dass句以外，dass句在语用上通常起到引入新信息的作用，这一作用在dass-V2句中被尤其地放大了。dass-V2句中的主句的信息量大幅减少，主要的信息则嵌入在dass-V2句中，由此具备了几个特殊的语用/语篇功能:a)对接收者注意力的影响；b)对主体态度/证据/评价的表达；c)在语篇中起到主题转换的作用：</p>
+<ol start="10" type="1">
+<li><p>Das SPANnende <strong>daran</strong> ist, <em>dass</em> die
+Lehrerinnen <em>haben</em> das Lehrbuch SELber gemacht. (Hörbeleg,
+niedersächs. Hintergrund 2003）</p></li>
+<li><p>a.Aber ich <strong>glaube</strong>, <em>dass</em> wenn man da
+eine Umfrage im Deutschen oder in Österreich machen würde, erübrigt sic
+hjede DIskussion. (SAT 1. 02. 08. 1994)<br>
+</p></li>
+</ol>
+<ol start="2" type="a">
+<li>Jaja, gut, ich <strong>mein</strong> die wissen ja <em>dass</em> man
+<em>kann</em> ja nur en richtpreis schreiben. (AGD. Beratungsgespräch,
+Freiburg. 1972)<br>
+</li>
+<li>und nachher ahben wir dann wohl <strong>erfahren</strong>,
+<em>dass</em> die Rumänen und die Ungarn, die <em>haben</em> sich
+geweigert, die sind da überhaupt gar nicht mit ausgelaufen. (AGD.
+initiierter Erzählmonolog, Nordniedersächsisch. 1958)<br>
+</li>
+<li>Ich hab <strong>gelesen</strong>, <em>dass</em> in Sizilien gibt's
+welche, die sind'n paar hundert Jahre alt. (Hörbeleg, Gespräch über
+Olivenbäum, mittelbair. Hintergrund, 2003)<br>
+</li>
+<li>Das finde ich übrigens <strong>interesSANT</strong>, <em>dass</em>
+der orb und der MDR <em>zeigen</em> fort WÄHrend solche Sendeungen.
+(Hörbeleg, mittelbair Hintergrund 2003)<br>
+</li>
+<li>Aber das <strong>Gute</strong> ist, <em>dass</em> ich <em>hab</em>
+bisher nur PARKdinger. (Hörbeleg. Gespräch über Strafzettel.
+niedersächs. Hintergrund, 2003)</li>
+</ol>
+<ol start="12" type="1">
+<li>die abstakte Form des Gegenstandes was für ihn eigentlich eine - ein
+Vorwand für eine imagonär - imaginäre oder vielleicht auch für eine
+wirkliche..komposition. Also..der Gegenstand selbst hat ihn nicht
+interessiert, sondern nur die lichtreflexe des Gegenstandes. Interessant
+ist vielleicht <strong>noch</strong>,<em>dass</em> natürlich
+<em>hat</em> sich auch die - der Kunsthistoriker mit diesen Dingen
+befasst.</li>
+</ol>
+<p>(10)中的<em>daran</em>属于先行词，dass从句中的内容回指了该先行词，从而起到了引起信息接收者注意的作用。这样的先行词除这里的代副<em>daran</em>外，还有内涵名词，如Eindruck,
+Meinung,
+Erinnerung等。dass-V2句在这一结构中扮演类似定语从句的角色，起到解释说明的作用，这可以归结为dass在语法化过程曾作为定语从句连词出现过。在这样的句子中，主句承载的信息量大幅减少，甚至有时没有承载任何语义元素，仅仅起到呼出dass句的作用.(11)中的主句分别表达了主体的态度(Einstellung)/证据(Evidenz)/评价(Bewertung),这类句子的主句是对dass句内容在情状上的限定，是主观性与客观性的结合，主句承担主体在语言行为中不同的功能，dass-V2则承担主要的信息和语用重心，达到断言/宣告/描述/表达的功能。尤其是在信息的来源方面，主体使用不同的限定会对到信息的真实性产生很大的影响，如(13)所示：</p>
+<ol start="13" type="1">
+<li></li>
+</ol>
+<ol type="a">
+<li>It rained. (that's an established fact.)<br>
+</li>
+<li>It rained. (I know because I was there and saw it.)<br>
+</li>
+<li>It rained. (I was told.)<br>
+</li>
+<li>It rained. (I heard the drops on the roof.)<br>
+</li>
+<li>It rained. (Everything is wet.)</li>
+</ol>
+<p>除此之外，在两个主题不同的语篇之间，dass-V2结构还可以起到承接的作用。如(12)所示，关键词<strong>noch</strong>标记了语篇之间的界限，紧跟的dass-V2结构引出了语篇的转折，并把后者的内容和前一个语篇进行连接。这样的表达常见于口语中说话人对语句块进行整理的过程中，作为一种新兴的语法现象，在运用上没有严格的规则，具有非必要性，和主句的句法连接更松散，在一定程度上体现出并列连接的特点，可以被dass-VE替代。除<strong>noch</strong>以外，在语料中还可以找到<strong>dazu
+kommen noch</strong>以及<strong>daraus folgt dann auch</strong>等。</p>
+<h3 id="总结">总结</h3>
+<p>总的来说，无论是在句法上还是语用上，dass-V2都是一个完全异于传统dass-VE的结构，在这种结构中，从句和主句在句法上的连结更加松散，更体现出并列连接的特点，然而从语义角度看，dass-V2总是从属于主句的谓语结构下，由此填补了主句中动词开启的空位，在语义上又呈现出主从连接的特点，在这里我援引Catasso
+(2017)和Pasch(2000)的观点，除简单的从句法层面对并列/主从连接进行分类以外，还需要加入语义层面和语用层面的标准，对于形散意合(中文中的许多并列句连接都属于这一种方式)和形合意散的连接方式进行细分。dass-V2具有自身特殊的句法和语用功能，体现为：a)对接收者注意力的影响；b)对主体态度/证据/评价的表达；c)在语篇中起到主题转换的作用；d)开启前场以放置主题及框架限定状语，在实际语言使用中具备自身的合理性，不能简单地当作是表现错误来对待，尤其对于外语学习者来说，必须意识到这种结构的特殊性，既不主动地去进行模仿，也不一刀切地否定这一结构在语言发展中的地位.外语教师应在教学过程中主动向学生们介绍这一特例，避免学生自己在课堂外的渠道接收到这样的信息之后要么全盘否定，要么形成不良的使用习惯，影响对于dass-VE句的掌握。</p>
+<h3 id="文献">文献</h3>
+<p>Catasso, N. (2017). V2-Einbettung im Spannungsfeld von Hypotaxe und
+Parataxe.</p>
+<p>Frey, W. and K. Pittner (1998). "Zur Positionierung der Adverbiale im
+deutschen Mittelfeld; On adverbial placement in German middle field; Sur
+le positionnement des adverbiaux dans la partie centrale de la phrase
+allemande." Linguistische Berichte(176): 489-534.</p>
+<p>Freywald, U. (2008). "Zur Syntax und Funktion von dass-Sätzen mit
+Verbzweitstellung."</p>
+<p>Pasch, R. (2000). Vorschlag für eine Neuordnung der
+"subordinierenden" Konjunktionen des Deutschen. Subordination in Syntax,
+Semantik und Textlinguistik. M. Lefèvre. Tübingen, Stauffenburg Verlag:
+23-33.</p>
+]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>Pragmatics</tag>
+        <tag>dass-V2</tag>
+        <tag>Syntax</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Leffel et al. (2016)--Imprecision is pragmatic Evidence from referential processing--Zusammenfassung</title>
+    <url>/my_blog/2020/05/08/2020-05-08-Leffel.et.al.2016/</url>
+    <content><![CDATA[<h3 id="autor-information">Autor Information</h3>
+<p>Timothy Leffel arbeitet zurzeit als Data Scientist an der Universität
+Chicago. Er hat sein PhD in Linguisitk von der Universität New York
+erlangt, sein Hauptforschungsinteresse besteht aus Semantik, Pragmatik
+und Psycholinguistik.</p>
+<h3 id="text-information">Text Information</h3>
+<p>Diese Arbeit ist auf der jährlichen Konferenz SALT (Semantics and
+Linguistic Theory) veröffentlicht, die auf Bereichen Semantik und
+Pragmatik spezialisiert.</p>
+<h3 id="einführung-wichtiger-begriffe">Einführung wichtiger
+Begriffe</h3>
+<p><strong>Gradable Adjectives (GAs)</strong>: sind Adjektive, die
+Skalaren in gewissen Stufen bilden können. Repräsentativ dafür sind
+<em>groß</em> oder <em>lang</em>.</p>
+<p><strong>Relative and Absolute GAs</strong>: Die relativen GAs wie
+<em>groß</em> oder <em>lang</em> in (1) sind in ihrer Natur
+<strong>vage</strong> und kontextabhängig; Die absoluten GAs wie
+<em>voll</em> oder <em>gerade</em> in (2) kann (aber muss nicht) genau
+interpretiert werden. In der Degree Semantik wird angenommen, dass die
+Vagheit der beiden GAs von einem im Kontext salienten Schwellenwert
+(<strong>semantic threshold</strong>) modifiziert wird, das, ähnlich wie
+bei Pronomen, durch eine freie Variable zugeordnet wird, wobei die
+absoluten GAs einen höchsten Wert als Endpunkt haben (geschlossene
+Skalaren), und die relativen GAs offene Skalaren bilden.</p>
+<p><strong>Imprecision</strong>: Dabei geht es um die absoluten GAs, die
+normalerweise eine genaue Menge denotieren können, aber im Kontext auch
+das Potenzial haben, als ungenau interpreitert zu werden, wie in
+(2).</p>
+<p>(1)<br>
+a. Das Zimmer ist überfüllt.<br>
+b. Es gibt viele Menschen hier.<br>
+c. Die Antenne ist lang.</p>
+<p>(Übersetzt von (1) in Leffel et.al 2016)</p>
+<p>(2)<br>
+a. Das Zimmer ist voll.<br>
+b. Es gibt ein hundert Menschen hier.<br>
+c. Die Antenne ist gerade.</p>
+<p>(Übersetzt von (2) in Leffel et al. 2016)</p>
+<span id="more"></span>
+<h3 id="kernbotschaft-und-nullhypothese">Kernbotschaft und
+Nullhypothese</h3>
+<p><strong>Nullhypothese H0</strong>: Es gibt keinen semantischen
+Unterschied zwischen absoluten und relativen GAs: die beiden haben
+ähnlihche skalare Struktur. Der Endpunkt der absoluten GAs hat keinen
+besonderen Status in der Semantik, er ist nichts anders als ein normaler
+Punkt auf der Skalar, trägt nur den höchsten Wert. Und bei ungenauer
+Verwendung der absoluten GAs bekommt der semantische Schwellenwert einen
+kleineren Wert als Endpunkt auf der Skalar im Kontext. (In der Literatur
+wird auch als <strong>HS</strong> genannt.)</p>
+<p><strong>Hauptthese H1</strong>: Imprecision (absolute GAs) ist
+unterschiedlich als Vagheit (relative GAs) nicht auf rein semantischen
+Ebenen, sondern ein pragmatisches Phänomen. So unterscheidet die
+Funktion der absoluten GAs fundamental von relativen GAs, ihre
+Lexikoneinträge werden in (3a-b) angegeben. Zusätzlich führt Leffel et
+al. (2016: 839) <strong>pragmatic threshold</strong> <span class="math inline">\(\theta_{A}^{imp}\)</span> in (3c) ein, das den
+Grad eines absoluten GAs von seiner ursprünlichen lexikalischen
+Bedeutung im Kontext abweichen erlaubt. Hier <span class="math inline">\(max_{A}\)</span> ist der höchste Wert der Skalar
+und <span class="math inline">\(\theta_{A}^{imp}\)</span> ist die
+Differenz zum höchsten Wert. Dieser pragmatische Schwellenwert entspannt
+die lexikalische Bedeutung im Kontext. (In der Literatur wird auch als
+<strong>HP</strong> genannt.)</p>
+<p>(3)<br>
+a. <span class="math inline">\([[pos_{\mathrm{rel}}(A)]]=\lambda
+x[\mu_{A}(x) \geq \theta_{A}]\)</span>---für relative GAs<br>
+b. <span class="math inline">\([[pos_{\mathrm{max}}(A)]]=\lambda
+x[\mu_{A}(x) \geq max_{A}]\)</span>---für absolute GAs<br>
+c. <span class="math inline">\(\left(A_{p o s}\right)=\left\{\lambda
+x.\mu_{A}(x) \geq\left(\max _{A}-\theta_{A}^{i m p}\right) \theta_{A}^{i
+m p} \text { is a pragmatic threshold }\right\}\)</span></p>
+<p>((4) und (6) in Leffel et al. 2016)</p>
+<p><strong>Zentraler Unterschied zwishcne HS und HP</strong>:
+<strong>HS</strong> gibt an, dass die Lösungsstrategie für Die
+Kontextabhängigkeit sowohl für relative als auch für absolute GAs gleich
+sein sollte. nämlich, welche Strategie für die Festlegung des
+semantischen Schwellenwerts relevant ist. Im Gegensatz dazu sagt
+<strong>HP</strong>, dass die Lösungsstrategie vom Adjektivtyp abhängt.
+Beide Aspekte könnten zur gleichen Bedeutung im Kontext führen, aber sie
+haben unterschiedlichen Zeitverläufe und psychologische
+Eigenschaften.</p>
+<h3 id="methoden">Methoden</h3>
+<p>Um die Interaktion zwischen Spracheverarbeitung in Echtzeit und
+visuellem Kontext zu untersuchen, verwenden Leffel et al. das
+<strong>visual world paradigm (VWP)</strong>. Die Idee ist ähnlich wie
+in Sadivy et al. (1999), dass es zwei Bildschirme mit unterschiedlichen
+Faktorstufen eingerichtet sind, der eine ist mit Kontrast-Bedingung und
+der andere ist ohne Kontrast-Bedingung. Die Probanden sollten unter
+einer akustischen Anleitung das richtige Zielobjekt im Bildschirm
+identifizieren, was durch die Bewegung der Augen beweist werden kann.
+Die Probanden können das Ziel schneller identifizieren mit
+Kontrastbedingung wegen <strong>referential contrast effect</strong>,
+dafür argumentieren Leffel et al. (2016: 842), dass zwei Faktoren zu
+diesem Kontrasteffekt beitragen können: a) <strong>Manner
+Contrast</strong>; b) <strong>Threshold Contrast</strong>. Der erste ist
+auf Basis der Grice'schen Bedeutungsanreicherung über die restiktive
+Modifikation, d.h. Adjektive wie <em>groß</em> ist restriktiv, es ist
+nur sinnvoll, wenn es zwei Objekte zugleich existieren und mit
+<em>groß</em> eines von der beiden zu trennen (<strong>Maxime der
+Quantität</strong>); der letzte ist auf Basis des skalaren Unterschieds.
+Die relativen GAs werden sowohl von Manner Contrast als auch von
+Threshold contrast beeinflusst, dagegen werden die absoluten GAs nur von
+Threshold Contrast beeinflusst. (vgl. Aparicio et al. 2015)</p>
+<p>Davon ausgehend gestaltet Leffel et al. das Experiment wie
+folgend:</p>
+<p>Wenn <strong>(HS)</strong> wahr ist, dass absolute GAs einen
+semantischen Schwellenwert haben, sollten eine Kontrastbedingung die
+Verarbeitung erleichtern auf die gleiche Weise wie für relative GAs.
+Aber wenn <strong>(HP)</strong> wahr ist, dass ein nicht höchste Wert
+der absoluten GAs einen pragmatisch abgeleiteten Schwellenwert haben,
+sollte Threshold Contrast Effekte für absolute GAs nur dann auftreten,
+wenn sie ungenau verwendet werden: in diesem Fall verhälten sich
+absolute GAs "relativ-ähnlich".</p>
+<h3 id="vorgehensweise-der-experimente">Vorgehensweise der
+Experimente</h3>
+<p>Im ersten Experiment (<strong>T&lt;C</strong>) besitzten Zielobjekte
+einen geringeren Grad der relevanten Eigenschaft als Konkurrenten. Dies
+bedeutet, dass die Teilnehmer bei absoluten GAs gezwungen waren, das
+Adjektiv ungenau zu interpretieren und ein Nicht-Endpunkt-Ziel
+auszuwählen. Im zweiten Experiment (<strong>T&gt;C</strong>) besitzen
+Zielobjekte einen größeren Grad der Eigenschaft als Konkurrenten, so
+dass das Ziel den höchsten Wert erreichen kann (genaue Interpretation),
+aber die Konkurrenten sind dann ungenau.</p>
+<p><strong>Probanden</strong>: sind insgesamt 55 englische
+Muttersprachler, am Ende hat man 21 Ergebnisse für Experiment 1
+(<strong>T&lt;C</strong>) und 22 für Experiment 2
+(<strong>T&gt;C</strong>), nachdem die unpassenden Ergebnissen
+ausgenommen werden.</p>
+<p><strong>Stimulus</strong>: Die Probanden werden durch eine akustische
+Anleitung "click on the Adj. Noun" aufgefordert, das Zielobjekt auf dem
+Birdschirm zu identifizieren.</p>
+<p><strong>Faktoren und Bedingungen</strong>: illustiert in Grafik
+unten</p>
+<p><img src="/assets/images/Leffel_(2016)/figure4.jpg"> ###
+Schlussfolgerung</p>
+<p><img src="/assets/images/Leffel_(2016)/figure5.png"></p>
+<p><strong>T&lt;C</strong> Zusammenfassung: Die Ergebnisse zeigen
+unterschiedliche Auswirkungen des Referenzkontrasts auf die Verarbeitung
+relativer und ungenauer absoluter GAs. Bei Beschreibungen mit absoluten
+GAs als Modifikatoren identifizierten die Teilnehmer Zielobjekte bei
+Vorhandensein eines Kontrastobjekts schneller als ohne. Noch bevor
+Nomeninformationen verfügbar sind (im zweiten Fenster), gibt es einen
+eindeutigen RCE, der sich als frühere Präferenz für Ziele in
+Kontrastelementen als in kontrastlosen Elementen manifestiert.</p>
+<p><img src="/assets/images/Leffel_(2016)/figure6.png"></p>
+<p><strong>T&gt;C</strong> Zusammenfassung: Bei absoluten Adjektiven
+fanden Leffel et al. nur eine marginale referentielle Kontrastwirkung
+bei präzisen Zielen und unpräzisen Konkurrenten. Relative Adjektive
+hingegen sind mit einem spät auftretenden Kontrasteffekt verbunden, wenn
+das Ziel ein besseres Exemplar ist als der Konkurrent. Beide Befunde
+weichen von den Ergebnissen des ersten Experiments
+<strong>T&lt;C</strong> ab, in dem ein RCE bei absolut GAs, aber nicht
+bei relativ GAs beobachtet wurde.</p>
+<h3 id="hinweis-auf-die-kritik-von-qing-et-al.-2018">Hinweis auf die
+Kritik von Qing et al. (2018)</h3>
+<p>Bei der Interpretation der <strong>VWP</strong> Daten geht man häufig
+davon aus, dass der Blick auf das Objekt die Wahrnehmung des Zuhörers
+widerspiegelt, dass das Objekt das beabsichtigte Zielobjekt ist. Während
+dies intuitiv plausibel ist (zumindest für Paradigmen, in denen die
+Aufgabe die Auswahl eines Referenten erfordert), ist relativ wenig
+darüber bekannt, wie genau der Anteil der Blicke auf ein Objekt mit der
+aktuellen Wahrnehmung des Hörers über dieses Objekt zusammenhängt. Die
+Experimentsergebnisse von Qing et al. (2018) deuten darauf hin, dass der
+Grad, in dem ein Objekt als der Referent angesehen wird, nur ein Faktor
+ist, der die Augenbewegungen bei referentiellen Aufgaben beeinflusst.
+Sie deuten darauf hin, dass auch Äußerungserwartungen eine Rolle bei der
+Bestimmung der Korrelation zwischen Klicks und Blicken spielen. ("Click
+or Chosse the Adj. Noun") Wenn das Adjektiv am meisten erwartet wird,
+werden die höchsten Korrelationen beobachtet, d.h. die Wahrnehmung ist
+ein besserer Prädiktor für Augenbewegungen. Auf der Grundlage dieser
+Ergebnisse argumentieren sie, dass die Proportionen der Blicke in
+Eye-Tracking-Experimenten der visuellen Welt mit größerer Vorsicht
+interpretiert werden sollten und schlagen vor, die Verknüpfungshypothese
+explizit anzugeben und sie mit der inkrementellen Entscheidungsaufgabe
+zu testen.</p>
+<h3 id="literatur">Literatur</h3>
+<p>Aparicio, Helena, Ming Xiang &amp; Chris Kennedy. 2015. Processing
+gradable adjectives in context: A visual world study. In Sarah
+D’Antonio, Mary Moroney &amp; Carol Rose Little (eds.), Semantics and
+Linguistic Theory (SALT) 25, 413–432.</p>
+<p>Leffel, T., Xiang, M., &amp; Kennedy, C. (2016). Imprecision is
+pragmatic: Evidence from referential processing. Semantics and
+Linguistic Theory, 26, 836-854.</p>
+<p>Qing, C., Lassiter, D., &amp; Degen, J. (2018). What do eye movements
+in the visual world reflect? A case study from adjectives. Cognitive
+Science.</p>
+]]></content>
+      <categories>
+        <category>Literature reviews</category>
+      </categories>
+      <tags>
+        <tag>graduable adjectives</tag>
+        <tag>pragmatics</tag>
+        <tag>semantics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Achieving incremental semantic interpretation through contextual representation-Sadivy.et.al (1999)</title>
+    <url>/my_blog/2020/05/04/Incremental_interpretation_(Sadivy_1999)/</url>
+    <content><![CDATA[<h3 id="autor-information">Autor information</h3>
+<p>Julie Sedivy is an adjunct associate professor at the Department of
+Psychology at the University of Calgary, graduated from the University
+of Rochester. Her main research interests are language and mind by using
+psychological experiments.</p>
+<h3 id="text-information">Text information</h3>
+<p>The following essay is a journal article on <em>Cognition</em>. The
+Journal of <em>Cognition</em>, the official journal of the European
+Society for Cognitive Psychology, publishes reviews, empirical articles
+(including registered reports), data reports, stimulus development
+reports, comments, and methodological notes relevant to all areas of
+cognitive psychology, including attention, memory, perception,
+psycholinguistics, and reasoning. (Retrieved from
+https://www.journalofcognition.org/, on 30.05.2020)</p>
+<h3 id="definition-of-incrementality">Definition of incrementality</h3>
+<p>"There is growing evidence that language processing is highly
+incremental, that is, processing occurs with very little lag following
+the input." (Sedivy et. al 199: 113) However, the incrementality results
+in a very specific problem, that is, some utterances that are entirely
+unambiguous could be partly, as the input comes, ambiguous.</p>
+<p>Difference to early studies: Processing occurs until certain
+syntactic boundary has been encountered.</p>
+<span id="more"></span>
+<h3 id="main-hypothesis-and-a-brief-view-of-central-arguments">Main
+hypothesis and a brief view of central arguments</h3>
+<p><strong>H0:</strong> Online semantic interpretation of context
+information is not incremental.<br>
+<strong>H1:</strong> Online semantic interpretation of context
+information is incremental.</p>
+<p>"The goal of this article was to examine evidence for incrementality
+and use of contextually-defined constraints for both intersective and
+non-intersective adjectives. To examine, how, and when, listeners make
+use of contextually-defined contrast in interpreting prenominal
+adjectives."</p>
+<p>Why choose adjectives as research objects: "First, the problem of
+referential indeterminacy has been argued to be fairly extensive for
+adjectives, and second, existing literature provides some insight into
+possible contextually-based mechanisms that might be exploited by a
+processing system in interpreting incrementally."</p>
+<p><strong>conclusion</strong>：For adjectives that appear to be heavily
+dependent upon the head noun for establishing reference, the referential
+interpretation is not delayed until the head-noun occurs, but begins
+incrementally through the interplay of the semantic content of the
+adjective and its relationship (contrast effect) to the context of
+utterance. However, this sort of interpretation is because of the
+contextual parameters not fully completed, but also needs sufficient
+contextual information to establish the denotation. In other words, the
+adjectives can denote a contrast relationship, but how the relationship
+be quantified is heavily dependent upon the context.</p>
+<h3 id="theoritical-background">theoritical background</h3>
+<h4 id="evidence-for-incremental-syntactical-sentence-processing">evidence
+for incremental syntactical sentence processing</h4>
+<p><strong>"Garden-Path-Effect"</strong>: Sentences like (1a-b) are
+temporary ambiguous until the key feature of disambiguation appears,
+which is in (1a) is the word <em>fell</em>. Furthermore, because of the
+change of syntactical structure by conjunction <em>and</em> in (1b), the
+processing of (1b) is much easier than (1a). These facts attributed to
+the point of view, that incorrect early decision making occurs at
+language processing, which differs fundamentally from the old one, that
+the processing delayed until a certain boundary of information has been
+identified.</p>
+<p>(1)  a. The horse raced past the barn fell.<br>
+b. The horse raced past the barn and fell.</p>
+<h4 id="evidence-for-incremental-semantic-processing">evidence for
+incremental semantic processing</h4>
+<p>The task of semantic is to identify the referential objectives
+describing by linguistical utterances, and must be counted in addition
+to syntactical structure parsing also into sentence processing. H0 is
+the hypothesis that denies this view, but if H1 is true, the response
+time to (2) shall have three different possibilities with different
+disambiguation conditions, as illustrated in (2a-c). In (2a), it's
+enough for the hearer to identify the target object with the first key
+description <em>large</em> in contrast to other small blocks, and in
+each (2b) and (2b) there are different trigger words for early
+identification before the head noun appears. Experiments from Eberhard
+et al. (1995) engaged these problems. According to their data, the eye
+movement, which represents the identification of referential objects,
+was started within 0.5s at the beginning of the disambiguation word.</p>
+<p>(2) the large red rectangular block<br>
+a. only one block is large among other sets of blocks<br>
+b. only one block is large <strong><em>and</em></strong> red among other
+sets of blocks<br>
+c. only one block is large <strong><em>and</em></strong> red
+<strong><em>and</em></strong> rectangular among other sets of blocks</p>
+<h4 id="classification-of-adjectives-according-to-kamp-and-partee-1995">classification
+of adjectives according to Kamp and Partee (1995)</h4>
+<ol type="1">
+<li><p><strong>intersective adjectives</strong>: The normal case of
+adjectives, independent from another predicate.has the same property as
+a one-place predicate, models the extension of an entity to a complete
+attribute like <em>red</em>. The detonation of a complex expression is
+simply the intersection of all the adjectives, e.g. <em>a red, plain
+box</em> is a box both red and plain.</p></li>
+<li><p><strong>subsective adjectives</strong>: Another class of
+adjectives can't denote entity by itself, dependent by another
+predicate. It has to combine with a head-noun in a bigger phrase, from
+which it selects a subset as its denotation. Examples for that are
+<em>good</em> both in <em>good lawyer</em> and <em>good priest</em>.
+It's impossible to pick out a set of entities in the model that
+corresponds to the predicate <em>good</em>, independently of the sets of
+entities corresponding to <em>priest</em> and <em>lawyer</em>.</p></li>
+<li><p><strong>non-subsective adjectives</strong>: They don't denote
+subset from any other entities. e.g. The by <em>fake</em> in <em>a fake
+gun</em> denoted set don't belong to any set of <em>gun</em>.</p></li>
+<li><p>(To be determined) <strong>context-dependent adjectives</strong>:
+Vague and ambiguous about the adjectives like <em>big</em>,
+<em>tall</em>, <em>small</em>.</p></li>
+</ol>
+<h3 id="experiments">Experiments</h3>
+<h4 id="experiment-1a">Experiment 1A</h4>
+<p><strong>target:</strong> intersective adjectives<br>
+<strong>goals:</strong> examine whether evidence for incremental
+processing would be obtained with less predictable materials;</p>
+<p>Different than Eberhard et al. (1995) where they used instructions
+that involve more than one aspects of the target and the target itself
+is a geometric shape (i.e. form, colour and shape "Touch the plain
+yellow square."), introductions by Sedivy et al, only included one
+adjective, and the contrast set is composed by either modified head-noun
+or non-modified head-noun, hence, it is difficult to predict the
+referential object with sole stimuli.</p>
+<p><strong>materials and factor design:</strong><br>
+ten referential expressions that included an adjective modifier
+involving colour, shape and material;</p>
+<p>late condition: disambiguation point is at the noun (have a
+competitor besides of target);<br>
+early condition: disambiguation point is at adjective (solely one
+target)</p>
+<p><strong>procedure:</strong> subject are supposed to touch the target
+after hearing the introduction<br>
+<strong>read of data:</strong><br>
+</p>
+<p>By comparing the mean of eye movement latency we can conclude that
+the condition has a significant effect on the difference of
+interpretation. Furthermore, the percentage of looks at the competitor
+from the total looks until the subject reached the target shows that
+there is also a significant difference that under late-condition the
+subject looks more frequent to the competitor than under early
+condition.</p>
+<p><strong>conclusion:</strong> The results of experiment 1A find its
+similarity with Eberhard et al. (1995) that the subjects start to find
+the referential object denoted by the adjectives after hearing it
+instead of waiting until the whole NP was expressed. However, with less
+predictable materials than Eberhard et al. (2015) the results of
+experiment 1A have a more common interpretation.</p>
+<h4 id="experiment-1b">Experiment 1B</h4>
+<p><strong>target:</strong> same as 1A<br>
+<strong>goal:</strong> establish whether the contrast effect caused by
+the adjectives modifiers can be observed with or without focus
+intonation<br>
+<strong>materials and factor design:</strong><br>
+same rules for setting referential expressions in 1A;<br>
+<br>
+2x2 factors, one condition is whether contrast effect or non-contrast
+effect, the other is whether with focus or without focus. The focus is
+realized by comparison between the first instruction which refers to the
+contrast object and the target instruction which refers either to target
+under contrast effect or to the competitor under non-contrast
+effect.<br>
+<strong>procedure:</strong> same as 1A<br>
+<strong>read of data:</strong><br>
+<br>
+there is no significant effect on the focus condition.<br>
+<strong>conclusion:</strong> Combining the experiment 1A and 1B, one can
+conclude a semantic processing model that are "undergoing continuous,
+moment-by-moment semantic interpretation, with immediate mapping onto a
+referential model.", and this effect is not dependent on whether focus
+intonation on the modified adjectives is present. This concept is based
+on the property of "simple" intersective adjectives, which have in its
+nature the function denoting entities independent of head-noun,
+therefore, surveys on other types of adjectives is necessary to support
+the incremental processing model.</p>
+<h4 id="experiment-2"><strong>Experiment 2</strong></h4>
+<p><strong>target:</strong> vague scalar adjective
+<strong>materials:</strong> </p>
+<p>Target: are either good tokens (objects that fit the description of
+the adjective, e.g. <em>a tall glass</em>) or poor token (objects that
+fit poorly the adjective, in another word, a bare-noun without scalar
+adjective e.g. <em>a glass</em>) Contrast: objects that fit the opposite
+site on the scale described by adjectives Competitor: not only don't fit
+the adjective, but also has a different head-noun</p>
+<p><strong>factor design:</strong>: 2<em>2</em>2 factors</p>
+<p>contrast v.s. non-contrast: with contrat objects, one can identify
+the target objects earlier. good tokens or poor tokens: with good tokens
+contrast effects should be stronger (typicality effect, that is, one
+have a certain expect on the noun) lang preview time vs.s short preview
+time: Contrast effects are sensitive to familiarity of the items. The
+langer one looked at the display, the stronger is the contrast
+effect.</p>
+<p><strong>read of data:</strong> </p>
+<p>a main effect of display time: short preview time related to longer
+latencies a main effect of contrast: with the presence of contrast
+object latencies are shorter a main effect of typicality: with good
+tokens the latencies are shorter</p>
+<p><strong>conclusion:</strong> a) The earliness of looks to the
+competitor suggests that the subjects are not waiting until the
+head-noun, but begin their interpretation immediately; b) The low
+latencies with contrast suggests that the information of contrast effect
+were used very early, before the head-noun shows up. With the naturally
+contrast effect of scalar adjectives, the subjects considered the
+contrast not as target early, evident in the timing of looks to the
+contrast.</p>
+<p>**The subjects are sensitive to the contrastive use of scalar
+adjectives, and this information are used incrementally. This evident in
+faster eye movement latencies to the target, the lack of a competitor
+effect in displays containing contrast and the prevalence of looks to
+the contrast. Typicality is subtle in this experiment.</p>
+<h4 id="experiment-3"><strong>Experiment 3</strong></h4>
+<p><strong>target</strong>: same as experiment 2 <strong>goal</strong>:
+to examine whether the contrast effect of scalar adjectives is dependent
+on the existence presupposition by means of the definite article
+<strong>materials</strong>: a) The target in the introduction is
+described by the indefinite article rather than definite; b) The
+existence of target is not presupposed, rather than that, the
+verification of existence is exactly what required by the instruction,
+e.g. <em>Is there a tall glass?</em>. <strong>factors design</strong>:
+same as experiment 2 <strong>read of data</strong>: </p>
+<p>a main effect of contrast was confirmed a main effect of typicality
+was confirmed display preview time doesn't have a main effect
+<strong>conclusion</strong>: Hypothesis was furthermore confirmed that
+the incremental interpretation of adjectives without stable core meaning
+is not dependent upon the presuppositions in instructions.</p>
+<h3 id="open-questions">open questions</h3>
+<ol type="1">
+<li>Where did the referential contrast effect come? -- one possible
+solution: Gricean conversational principle<br>
+### Reference:</li>
+</ol>
+<p>Kamp, H., Partee, B., 1995. Prototype theory and compositionality.
+Cognition 57, 129–191.</p>
+<p>Sedivy, J., Tanenhaus, M., Chambers, C., &amp; Carlson, G. (1999).
+Achieving incremental semantic interpretation through contextual
+representation. Cognition, 71, 109-147.</p>
+]]></content>
+      <categories>
+        <category>语言学</category>
+      </categories>
+      <tags>
+        <tag>认知</tag>
+        <tag>语义</tag>
+        <tag>形容词</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Statistische Methoden</title>
+    <url>/my_blog/2020/04/30/Gruppenarbeit_NEU/</url>
+    <content><![CDATA[<p>Dozent: Dr. Fabian Schlotterbeck Deutsches Seminar, Universität
+Tübingen</p>
+<span id="more"></span>
+<p>load package and data frame</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">library<span class="punctuation">(</span>lme4<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## Loading required package: Matrix</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">library<span class="punctuation">(</span>lmerTest<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## 
+## Attaching package: &#39;lmerTest&#39;
+
+## The following object is masked from &#39;package:lme4&#39;:
+## 
+##     lmer
+
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     step</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">library<span class="punctuation">(</span>ggplot2<span class="punctuation">)</span></span><br><span class="line">load<span class="punctuation">(</span><span class="string">&quot;data_zur_Bearbeitung.RData&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p>Zunächst werden die Faktoren und Faktorstufen definiert.</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">factor1 <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;level1.1&quot;</span><span class="punctuation">,</span><span class="string">&quot;level1.2&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">factor2 <span class="operator">&lt;-</span> as.factor<span class="punctuation">(</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;level2.1&quot;</span><span class="punctuation">,</span><span class="string">&quot;level2.2&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p>aggregate…</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">agg_data <span class="operator">&lt;-</span> aggregate<span class="punctuation">(</span>rt<span class="operator">~</span>factor1<span class="operator">+</span>factor2<span class="operator">+</span>participant<span class="punctuation">,</span> data<span class="punctuation">,</span> mean<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<p>Aufgabe 1 Werft einen Blick auf die Verteilungen der Reaktionszeiten
+in den vier Bedingungen. Histogram aller Reaktionszeiten in den vier
+Bedingungen</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">par<span class="punctuation">(</span>mfrow<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line"><span class="keyword">for</span> <span class="punctuation">(</span>i <span class="keyword">in</span> levels<span class="punctuation">(</span>factor1<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="keyword">for</span> <span class="punctuation">(</span>j <span class="keyword">in</span> levels<span class="punctuation">(</span>factor2<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    hist<span class="punctuation">(</span>data<span class="punctuation">[</span>data<span class="operator">$</span>factor1<span class="operator">==</span>i <span class="operator">&amp;</span> data<span class="operator">$</span>factor2<span class="operator">==</span>j<span class="punctuation">,</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">,</span> main <span class="operator">=</span> paste<span class="punctuation">(</span>i<span class="punctuation">,</span>j<span class="punctuation">,</span> sep<span class="operator">=</span><span class="string">&quot;, &quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>##Beschreibung der Aufgabe 1:
+Die vier Histogramme zeigen deutlich, wie die Reaktionszeiten in den vier Bedingungen verteilt sind. Auf der x-Achse sind die Reaktionszeiten angegeben, während auf der y-Achse die Häufigkeit aufgeführt ist. 
+Im Vergleich zu den anderen vier Bedingungen ist der Zahlenraum der Bedingung [level1.2, level2.2] am größten, nämlich von 0 bis 2500, danach kommt die Bedingung [level1.1, level2.1], dann die Bedingung [level1.1, level2.2] und zuletzt die Bedingung [level1.2, level2.1]. 
+Es lässt sich eine deutliche Tendenz erkennen: die meisten Reaktionszeiten in den ersten drei Diagrammen sind von 300 bis 700. Die Bedingung [level1.2, level2.2] ist etwas anders, der Großteil reagiert im Zeitraum von 800 bis 1200.
+Wie die y-Achse auch zeigt, ist die Häufigkeit der Bedingung [level1.1, level2.1] am höchsten und der Zahlenraum der Bedingung [level1.1, level2.1] ist am größten.</code></pre>
+<p>Aufgabe 2 Betrachtet eine simulierte Versuchsperson genauer.
+Histogram der Reaktionszeiten des ersten Teilnehmers in den vier
+Bedingungen</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">sub1 <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>data<span class="punctuation">,</span> participant<span class="operator">==</span><span class="string">&quot;pp1&quot;</span><span class="punctuation">)</span></span><br><span class="line">par<span class="punctuation">(</span>mfrow<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line"><span class="keyword">for</span> <span class="punctuation">(</span>i <span class="keyword">in</span> levels<span class="punctuation">(</span>factor1<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="keyword">for</span> <span class="punctuation">(</span>j <span class="keyword">in</span> levels<span class="punctuation">(</span>factor2<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    hist<span class="punctuation">(</span>sub1<span class="punctuation">[</span>sub1<span class="operator">$</span>factor1<span class="operator">==</span>i <span class="operator">&amp;</span> sub1<span class="operator">$</span>factor2<span class="operator">==</span>j<span class="punctuation">,</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">,</span> main <span class="operator">=</span> paste<span class="punctuation">(</span>i<span class="punctuation">,</span>j<span class="punctuation">,</span> sep<span class="operator">=</span><span class="string">&quot;, &quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>Quantil der Reaktionszeiten des ersten Teilnehmers in den vier
+Bedingungen</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">par<span class="punctuation">(</span>mfrow<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="number">2</span><span class="punctuation">,</span><span class="number">2</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line"><span class="keyword">for</span> <span class="punctuation">(</span>i <span class="keyword">in</span> levels<span class="punctuation">(</span>factor1<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="keyword">for</span> <span class="punctuation">(</span>j <span class="keyword">in</span> levels<span class="punctuation">(</span>factor2<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">&#123;</span></span><br><span class="line">    qqnorm<span class="punctuation">(</span>sub1<span class="punctuation">[</span>data<span class="operator">$</span>factor1<span class="operator">==</span>i <span class="operator">&amp;</span> data<span class="operator">$</span>factor2<span class="operator">==</span>j<span class="punctuation">,</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">,</span> main <span class="operator">=</span> paste<span class="punctuation">(</span>i<span class="punctuation">,</span>j<span class="punctuation">,</span> sep<span class="operator">=</span><span class="string">&quot;, &quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">    qqline<span class="punctuation">(</span>sub1<span class="punctuation">[</span>data<span class="operator">$</span>factor1<span class="operator">==</span>i <span class="operator">&amp;</span> data<span class="operator">$</span>factor2<span class="operator">==</span>j<span class="punctuation">,</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">,</span> main <span class="operator">=</span> paste<span class="punctuation">(</span>i<span class="punctuation">,</span>j<span class="punctuation">,</span> sep<span class="operator">=</span><span class="string">&quot;, &quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>Anhand der Form des Histograms und Quantils ist es deutlich, dass die Verteilung grob der Normalverteilung folgt.
+
+Beschreibung der Aufgabe 2:
+In der Bedingung [level1.1, level2.1]:
+µ = 615.4299
+σ = 202.0015
+In der Bedingung [level1.1, level2.2]:
+µ =419.1368
+σ = 206.9496
+In der Bedingung [level1.2, level2.1]:
+µ =377.204
+σ = 208.7926
+In der Bedingung [level1.2, level2.2]:
+µ =913.4193
+σ = 266.4935
+Wir nennen pp1 als simulierte Versuchsperson. Wie das Schaubild darstellt, folgt die Reaktionszeit der Bedingung [level1.1, level2.1] der Normalverteilung. Der Mittelwert ist 615.4299, es entspricht dem Diagram.
+Die Standardabweichung der Bedingung 1 ist fast gleich wie die der Bedingung 2 und Bedingung 3, deshalb sehen die Verteilungen von diesen drei Bedingungen ähnlich aus.
+Bei der Bedingung [level1.2, level2.2] ist alles anders. der Mittelwert ist 913.4193, er ist viel größer als die Mittelwerte der anderen 3 Bedingen. Obwohl die Reaktionszeiten der Bedingung 4 fast der Normalverteilung folgen, ist die Standardabweichung ein bisschen größer als die der anderen drei.</code></pre>
+<p>Aufgabe 3 Bildet für alle Versuchspersonen die Mittelwerte der
+Reaktionszeiten in den vier Bedingungen.</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">aggregate<span class="punctuation">(</span>rt<span class="operator">~</span>factor1<span class="operator">+</span>factor2<span class="punctuation">,</span> data<span class="punctuation">,</span> mean<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>##    factor1  factor2        rt
+## 1 level1.1 level2.1  605.0275
+## 2 level1.2 level2.1  361.4941
+## 3 level1.1 level2.2  357.7497
+## 4 level1.2 level2.2 1048.5678
+
+Beschreibung der Aufgabe 3:
+Die Tabelle zeigt die Mittelwerte der Reaktionszeiten in den vier Bedingungen für alle Versuchspersonen. 
+Aus dieser Tabelle ist ersichtlich, dass die Mittelwerte der Bedingung [level1.2, level2.1] und der Bedingung [level1.1, level2.2] fast gleich sind, nämlich 361.4941 und 357.7497. 
+Es fällt auf, dass der Mittelwert von der Bedingung 4 1048.5678 ist, fast dreimal so viel wie die in den zweiten und dritten Bedingungen. Der Wert von der Bedingung [level1.1, level2.1] (605.0275) ist auch größer als die der anderen drei.</code></pre>
+<p>Aufgabe 4 Beschreibt die Verteilungen der Versuchspersonenmittelwerte
+in den vier Bedingungen. Da die Verteilung der Reaktionszeiten der
+Normalverteilung ähnelt, verwenden wir Mittelwert als Lagemaße und
+Standard Derivation als Streuungsmaße. Lage- und Streuungsmaße von
+Bedingung 1</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">Bedingung_1 <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>agg_data<span class="punctuation">,</span> factor1<span class="operator">==</span><span class="string">&quot;level1.1&quot;</span> <span class="operator">&amp;</span> factor2<span class="operator">==</span><span class="string">&quot;level2.1&quot;</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_1.means<span class="operator">&lt;-</span><span class="built_in">round</span><span class="punctuation">(</span>mean<span class="punctuation">(</span>Bedingung_1<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_1.sd <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>sd<span class="punctuation">(</span>Bedingung_1<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_1.se <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>Bedingung_1.sd<span class="operator">/</span><span class="built_in">sqrt</span><span class="punctuation">(</span><span class="number">60</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_1.means=&quot;</span><span class="punctuation">,</span>Bedingung_1.means<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_1.means= 605.0275&quot;</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_1.sd=&quot;</span><span class="punctuation">,</span>Bedingung_1.sd<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_1.sd= 31.5911&quot;</code></pre>
+<p>Lage- und Streuungsmaße von Bedingung 2</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">Bedingung_2 <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>agg_data<span class="punctuation">,</span> factor1<span class="operator">==</span><span class="string">&quot;level1.1&quot;</span> <span class="operator">&amp;</span> factor2<span class="operator">==</span><span class="string">&quot;level2.2&quot;</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_2.means <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>mean<span class="punctuation">(</span>Bedingung_2<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_2.sd <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>sd<span class="punctuation">(</span>Bedingung_2<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_2.se <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>Bedingung_2.sd<span class="operator">/</span><span class="built_in">sqrt</span><span class="punctuation">(</span><span class="number">60</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_2.means=&quot;</span><span class="punctuation">,</span>Bedingung_2.means<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_2.means= 357.7497&quot;</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_2.sd=&quot;</span><span class="punctuation">,</span>Bedingung_2.sd<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_2.sd= 41.9532&quot;</code></pre>
+<p>Lage- und Streuungsmaße von Bedingung 3</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">Bedingung_3 <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>agg_data<span class="punctuation">,</span> factor1<span class="operator">==</span><span class="string">&quot;level1.2&quot;</span> <span class="operator">&amp;</span> factor2<span class="operator">==</span><span class="string">&quot;level2.1&quot;</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_3.means <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>mean<span class="punctuation">(</span>Bedingung_3<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_3.sd <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>sd<span class="punctuation">(</span>Bedingung_3<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_4.se <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>Bedingung_3.sd<span class="operator">/</span><span class="built_in">sqrt</span><span class="punctuation">(</span><span class="number">60</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_3.means=&quot;</span><span class="punctuation">,</span>Bedingung_3.means<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_3.means= 361.4941&quot;</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_3.sd=&quot;</span><span class="punctuation">,</span>Bedingung_3.sd<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_3.sd= 33.524&quot;</code></pre>
+<p>Lage- und Streuungsmaße von Bedingung 4</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">Bedingung_4 <span class="operator">&lt;-</span> subset<span class="punctuation">(</span>agg_data<span class="punctuation">,</span> factor1<span class="operator">==</span><span class="string">&quot;level1.2&quot;</span> <span class="operator">&amp;</span> factor2<span class="operator">==</span><span class="string">&quot;level2.2&quot;</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_4.means <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>mean<span class="punctuation">(</span>Bedingung_4<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_4.sd <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>sd<span class="punctuation">(</span>Bedingung_4<span class="operator">$</span>rt<span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">Bedingung_4.se <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>Bedingung_4.sd<span class="operator">/</span><span class="built_in">sqrt</span><span class="punctuation">(</span><span class="number">60</span><span class="punctuation">)</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_4.means=&quot;</span><span class="punctuation">,</span>Bedingung_4.means<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_4.means= 1048.5678&quot;</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">paste<span class="punctuation">(</span><span class="string">&quot;Bedingung_4.sd=&quot;</span><span class="punctuation">,</span>Bedingung_4.sd<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## [1] &quot;Bedingung_4.sd= 82.6853&quot;
+
+Beschreibung der Aufgabe 4:
+Da die Verteilung der Reaktionszeiten der Normalverteilung ähnelt, verwenden wir Mittelwert als Lage Maße und Standard Derivation als Streuungsmaße. Weil die Mittelwerte schon in Aufgabe 3 beschrieben wurden, legen wir hier mehr Wert auf die Standard Derivation.
+Die Standard Derivation der Bedingungen [level1.1, level2.1], [level1.2, level2.2] und [level1.1, level2.2] sind fast gleich, sie liegen im Raum 31 bis 42. Das heißt, die Graden der Korrelation der Anzahlen in den ersten drei Bedingungen sind ziemlich ähnlich. Die Standard Derivation der Bedingungen [level1.2, level2.2] (82.6853) ist im Vergleich zu der von anderen Bedingungen sehr groß. Laut diesem Wert ist es möglich, dass die Statistiken der Bedingung 4 unregelmäßig sind. Es kann auch sein, dass die Schätzfunktion bei Bedingung 4 nicht gut funktioniert.</code></pre>
+<p>Aufgabe 5 Berechnet Konfidenzintervalle für die
+Versuchspersonenmittelwerte in den vier Bedingungen.</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">Liste_aller_vier_Bedin. <span class="operator">&lt;-</span> <span class="built_in">list</span><span class="punctuation">(</span>Bedingung_1<span class="punctuation">,</span>Bedingung_2<span class="punctuation">,</span>Bedingung_3<span class="punctuation">,</span>Bedingung_4<span class="punctuation">)</span></span><br><span class="line">t.test<span class="punctuation">(</span>Bedingung_1<span class="operator">$</span>rt<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  Bedingung_1$rt
+## t = 148.35, df = 59, p-value &lt; 2.2e-16
+## alternative hypothesis: true mean is not equal to 0
+## 95 percent confidence interval:
+##  596.8666 613.1883
+## sample estimates:
+## mean of x 
+##  605.0275</code></pre>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">upper <span class="operator">&lt;-</span> <span class="built_in">rep</span><span class="punctuation">(</span><span class="literal">NA</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">lower <span class="operator">&lt;-</span> <span class="built_in">rep</span><span class="punctuation">(</span><span class="literal">NA</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="punctuation">(</span>i <span class="keyword">in</span> <span class="number">1</span><span class="operator">:</span><span class="number">4</span><span class="punctuation">)</span> <span class="punctuation">&#123;</span></span><br><span class="line">  lower<span class="punctuation">[</span>i<span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>t.test<span class="punctuation">(</span>Liste_aller_vier_Bedin.<span class="punctuation">[[</span>i<span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">)</span><span class="operator">$</span>conf.int<span class="punctuation">[</span><span class="number">1</span><span class="punctuation">]</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line">  upper<span class="punctuation">[</span>i<span class="punctuation">]</span> <span class="operator">&lt;-</span> <span class="built_in">round</span><span class="punctuation">(</span>t.test<span class="punctuation">(</span>Liste_aller_vier_Bedin.<span class="punctuation">[[</span>i<span class="punctuation">]</span><span class="punctuation">]</span><span class="operator">$</span>rt<span class="punctuation">)</span><span class="operator">$</span>conf.int<span class="punctuation">[</span><span class="number">2</span><span class="punctuation">]</span><span class="punctuation">,</span><span class="number">4</span><span class="punctuation">)</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line">cis <span class="operator">&lt;-</span> cbind<span class="punctuation">(</span>lower<span class="punctuation">,</span>upper<span class="punctuation">)</span></span><br><span class="line">cis</span><br></pre></td></tr></table></figure>
+<pre><code>##          lower     upper
+## [1,]  596.8666  613.1883
+## [2,]  346.9121  368.5874
+## [3,]  352.8339  370.1543
+## [4,] 1027.2079 1069.9277
+
+Beschreibung der Aufgabe 5:
+In der 5. Aufgabe wird ein einseitiger T-Test verwendet, um die Konfidenzintervalle (LB auf der linken Seite der Tabelle und UB auf der rechten Seite) in allen 4 Bedingungen auszurechnen. Hier fällt auf, dass die Spannweite der KIs je nach Bedingung unterschiedlich ist. Der Grund dafür liegt daran, dass wir stets verschiedene Stichprobenmittelwerte und Standardabweichungen haben . 
+In [1,] und [3,] sind die Konfidenzintervalle am engsten (613.1883-596.86664=~16.3 für [1,] und 370.1543-352.8339= ~17.3 für [3,]). Dies hängt von der Stichprobengröße und der Variation ab, d.h. in [1,] liegen LB und UB am engsten beieinander, weil der Variant kleiner wird. Daher lässt sich auch sagen, dass Bedingung [2,] und [4,] ein breiteres Konfidenzintervall haben und eine größere Varianz (368.5874-346.9121= ~21.7 für [2,] und 1069.9277-1027.2079= ~42,7 für [4,]). Laut unserem T-test liegen LB und UB bei Bedingung [4,] am allerweitesten voneinander. </code></pre>
+<p>Aufgabe 6</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">summary<span class="punctuation">(</span>lmer<span class="punctuation">(</span>rt<span class="operator">~</span>factor1<span class="operator">*</span>factor2<span class="operator">+</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">|</span>participant<span class="punctuation">)</span><span class="punctuation">,</span> data <span class="operator">=</span> agg_data<span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
+## Formula: rt ~ factor1 * factor2 + (1 | participant)
+##    Data: agg_data
+## 
+## REML criterion at convergence: 2547.2
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -3.1900 -0.5747  0.0101  0.5876  3.8684 
+## 
+## Random effects:
+##  Groups      Name        Variance Std.Dev.
+##  participant (Intercept)  197.3   14.05   
+##  Residual                2482.4   49.82   
+## Number of obs: 240, groups:  participant, 60
+## 
+## Fixed effects:
+##                                 Estimate Std. Error       df t value Pr(&gt;|t|)
+## (Intercept)                      605.027      6.683  232.222   90.53   &lt;2e-16
+## factor1level1.2                 -243.533      9.096  177.000  -26.77   &lt;2e-16
+## factor2level2.2                 -247.278      9.096  177.000  -27.18   &lt;2e-16
+## factor1level1.2:factor2level2.2  934.351     12.864  177.000   72.63   &lt;2e-16
+##                                    
+## (Intercept)                     ***
+## factor1level1.2                 ***
+## factor2level2.2                 ***
+## factor1level1.2:factor2level2.2 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Correlation of Fixed Effects:
+##             (Intr) fc11.2 fc22.2
+## fctr1lvl1.2 -0.681              
+## fctr2lvl2.2 -0.681  0.500       
+## fc11.2:22.2  0.481 -0.707 -0.707
+
+Beschreibung der Aufgabe 6:
+Ein gemischtes lineares Modell der aggregierten Daten wird in der 6. Aufgabe berechnet und die Nullhypothese getestet. Was die fixen Effekten angeht, sind alle Variablen (sowohl bei dem Interzept als auch bei factor1level1.2 und factor2level2.2) hochsignifikant (***=&lt;0.001). Außerdem liegt eine hochsignifikante Interaktion zwischen den beiden Faktoren vor. Pr(&gt;|t|) wird hier als p-Wert interpretiert. Da der p-Wert bei allen Variablen erheblich weniger als 0.05 auftaucht, verwerfen wir die Hypothese, dass β=0 sei und neigen der Alternativenhypothese zu, dass β nicht gleich 0 sei. Die T-Werte bei dem Interzept und factor1level1.2:factor2level2.2 sind größer als 2 und signifikant. Die Variablen factor1level1.2 und factor2level2.2 haben dagegen einen negativen T-Wert. </code></pre>
+<p>Aufteilung der Aufgaben: Hening Wang ist zuständig fürs Programieren
+des R-Codes und Erstellen und Zusammenfassen der RMD-Datei. Yuanyuan Hou
+ist zuständig für die Beschreibung der Aufgabe 1-4. Ingibjörg
+Steingrímsdóttir ist zuständig für die Beschreibung der Aufgabe 5-6.</p>
+]]></content>
+      <categories>
+        <category>语言学</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>统计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>A taxonomy of illocutionary acts Searle (1979)文献总结</title>
+    <url>/my_blog/2020/05/02/Taxonomy_of_speechacts_(Searle_1979)/</url>
+    <content><![CDATA[<h3 id="author-information">Author information</h3>
+<p>John R. Searle is an American philosopher, graduated from Oxford
+University in the UK, worked for the University California Berkley. His
+main research interests are the philosophy of language and philosophy of
+mind.</p>
+<h3 id="text-information">Text information</h3>
+<p>The following literature is chapter II from the monography
+<em>Expression and Meaning</em> (Searle 1979). These essays represent a
+continuation of a line of research begun in Speech Acts (Searle,
+1969).</p>
+<h3 id="main-focus">main focus</h3>
+<p>Searle wants to answer in the present essay two central questions: a)
+how many types of speech acts are there; b) how to define them. He
+begins his work based on Austin's classification of 5 types (verdictive,
+expositive, exercitive and commissiv), presuppose a distinction between
+illocutionary force and its propositional content in a formal way: <span class="math inline">\(F(P)\)</span>, and finally shows the syntactical
+differences.</p>
+<h3 id="most-important-aspects-of-12-criteria">3 most important aspects
+of 12 criteria</h3>
+<p>Searle distinguishes illocution acts from illocution verbs, the
+latter is language specified, the former is not constrained in one
+single language like English or German, but large-spread phenomena in
+the human language. A classification of illocutionary acts is hence not
+equal to the classification of illocutionary verbs. He suggests 12
+criteria, and three most crucial of them are listed below: a)
+illocutionary points or purpose; b) direction of fit between the worlds
+and words; c) psychological states</p>
+<p><strong>illocutionary points or purpose</strong>: The illocutionary
+point corresponds to the essential conditions. Different then
+illocutionary force, it is one of the most important elements that lead
+to illocutionary force. From this point of view, the illocutionary
+points of question and request are the same, since in both scenarios the
+hearers are obliged to do something.</p>
+<p><strong>direction of fit</strong>: There are two directions, one is
+that words fit the worlds, the so-called <em>word-to-world</em>
+direction, symbolized in <span class="math inline">\(\downarrow\)</span>; one is that worlds fit the
+words, the so-called <em>world-to-word</em> direction, symbolized with
+<span class="math inline">\(\uparrow\)</span>. (To the notion of the
+symbols, the words are at the top, and the worlds are at the bottom.)
+Examples for the former case are assertive, for the latter are
+commissive and directive. There are some acts allowing the fit from both
+directions <span class="math inline">\(\updownarrow\)</span> as with
+declarative or none fit <span class="math inline">\(\emptyset\)</span>
+as with expressive.</p>
+<p><strong>psychological states</strong>: In all of the speech acts, the
+speaker brings a certain psychological attitude towards a certain
+proposition, such like belief, regret, intension or desire, this
+corresponds to the sincerity conditions. Linguistical evidence are that
+the speaker cannot deny his psychological state explicitly with
+performative verbs: <em>*I state that p, and I don't believe that.</em>
+In a formal way, the psychological states are* expressed with <span class="math inline">\(B(Belief)\)</span>, <span class="math inline">\(W(want)\)</span>, <span class="math inline">\(I(intend)\)</span> so on.</p>
+<h3 id="illustration-of-searles-taxonomy-with-example-assertive-directive-and-expressive">illustration
+of Searle's taxonomy with example <em>assertive</em>, <em>directive</em>
+and <em>expressive</em></h3>
+<p><strong>Assertive</strong>: <span class="math display">\[\downarrow
+B(p)\]</span></p>
+<ul>
+<li>the illocutionary point: To commit the speaker (in varying degrees)
+to something's being the case, to the truth of the expressed
+proposition.</li>
+<li>the direction of fit: word-to-world, the propositional content shall
+fit the world</li>
+<li>the psychological state: belief</li>
+<li>example verb classes: <em>conclude, state, deduce</em></li>
+</ul>
+<p><strong>Directive</strong>: <span class="math display">\[!\uparrow
+W(H does A)\]</span></p>
+<ul>
+<li>the illocutionary point: There are attempts (in varying degrees of
+desire) by the speaker to get the hearer to do something.</li>
+<li>the direction of fit: world-to-word</li>
+<li>the psychological state: want or desire</li>
+<li>example verb classes: <em>ask order, deduce</em></li>
+<li>problematic aspects: In this point of view, questions are a subclass
+of directives, which, in most of the languages,differ from each other in
+the sentence type.</li>
+</ul>
+<p><strong>Expressive</strong>: <span class="math display">\[E\emptyset
+(P)(S/H+property)\]</span></p>
+<ul>
+<li>the illocutionary point: The speaker expresses his attitude to the
+by the propositional content p specified property that related to either
+the speaker or the hearer</li>
+<li>the direction of fit: not world-to-word, nor word-to-world, the
+truth of propositional contents is presupposed.</li>
+<li>the psychological state: determined by the variable P, P is a
+psychological state</li>
+<li>example verb classes: <em>thank, regret, congratulate</em></li>
+<li>problematic aspects: In this point of view, questions are a subclass
+of directives, which, in most of the languages,differ from each other in
+the sentence type.</li>
+</ul>
+<h3 id="problems-of-searles-taxonomy">Problems of Searle's taxonomy</h3>
+<ol type="1">
+<li>Seale didn't specify the difference between orders and questions,
+instead of that, he treated them both as subclasses of directive. But,
+these two speech acts have different sentence modus in German:</li>
+</ol>
+<p>(1)<br>
+a. Koch die Hirsebrei! b. Kochst du die Hirsebrei? c. Du kochst die
+Hirsebrei.</p>
+<p>It is hard to treat this three sentence-modus (imperative,
+interrogative, declarative) only in two speech act classes.</p>
+<ol start="2" type="1">
+<li>Questions are by Searle attempts by S to get H to answer. This is in
+principle wrong idea since what the speaker expects from his question
+are not the answer this action itself, by the content of the answer. In
+a formal way:</li>
+</ol>
+<p>(2)<br>
+a. Order(H(p))--by Searle same as question<br>
+b. Question(H(Assertive(p)))</p>
+<h3 id="references">References</h3>
+<p>https://en.wikipedia.org/wiki/John_Searle (cited on 02.05.2020)</p>
+<p>Searle, John R. (1979). Expression and Meaning. Studies in the Theory
+of Speech Acts. Cambridge: Cambridge University Press</p>
+]]></content>
+      <categories>
+        <category>语言学</category>
+      </categories>
+      <tags>
+        <tag>语用</tag>
+        <tag>speech act</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>What&#39;s speech act? (Levinson 1983)文献总结</title>
+    <url>/my_blog/2020/04/22/What&#39;s%20speech%20act.%20Levinson%201983%E6%96%87%E7%8C%AE%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h3 id="author-information">Author information</h3>
+<p>Stephen C.Levinson is a British linguist, educated at Cambridge in
+the UK and UCB in the USA, known for his studies of pragmatics and the
+relationship between human language and cognition. He is currently one
+of the scientific directors of the MPI for Psycholinguistics in
+Nijmegen.</p>
+<h3 id="text-information">Text information</h3>
+<p>The following literature is the fifth chapter of a textbook
+<em>Pragmatics</em>, which is the first comprehensive textbook in this
+field (1983). This book is based on the work of Gricean conversation
+implicatures and Austin's speech acts, contains the most general
+theories of pragmatic: deixis, implicatures, presuppositions, and speech
+acts.</p>
+<h3 id="introduction">Introduction</h3>
+<p>Speech act theory is the most interesting theory around language
+usage, has aroused many studies in other disciplines besides
+linguistics. This chapter neglect the discussions that come from the
+basic theory, but only focus on the crucial issues and general problems.
+<span id="more"></span><br>
+### A brief sketch of philosophical background</p>
+<h4 id="about-austins-work">About Austin's work</h4>
+<p>The original thought comes from <strong>logical positivism</strong>,
+a central tenet of which was that unless sentence can be
+<em>verified</em> (i.e. tested for its truth or falsity), it was
+strictly speaking meaningless. This point of view is based on Frege's
+compositional principles that the meaning of a sentence is to fulfill
+the conditions that make the sentence true. But many other utterances in
+our daily life can't be verified or falsified, rather than
+<em>saying</em> things they are simply <em>doing</em> things:</p>
+<p>(1)  a. I bet you six pence it will rain tomorrow.<br>
+b. I dub thee Sir Walter.<br>
+c. I hereby christen this ship the H.M.S. Flounder.<br>
+d. I declare war on Zanzibar.<br>
+(Example (1) from Levinson 1983: 228)</p>
+<p>Once those sentences have been said, some facts happened, just like
+in (1d), it can't be verified or falsified. One cannot asset truth
+values to them, but only to say they are infelicitous or felicitous.
+Instead of truth conditions, Austin suggested felicity conditions as
+following at first and distinguish the performative utterances that
+realized by them from the constatives, the older class of utterances
+like statements, assertions so on.</p>
+<hr>
+<p>Felicity conditions:<br>
+A. (i) There must be a conventional procedure having a conventional
+effect.<br>
+(ii) The circumstances and persons must be appropriate, as specified in
+the procedure.<br>
+B. The procedure must be executed (i) correctly and (ii)
+completely.<br>
+C. Often, (i) the persons must have the requisite thoughts, feelings,
+and intentions, as specified in the procedure, and (ii) if consequent
+conduct is specified, then the relevant parties must so do. ***</p>
+<p>To define what performatives are, Austin has two different
+approaches, one from lexical aspects and one from the syntax: The
+performatives are triggered by a special category of verbs that he
+called <strong>performative verbs</strong> by seeing whether they can
+occur with <em>hereby</em>: see only (3a) is pragmatically correct; they
+also have the form of first-person indicative active sentences in the
+simple present: see only (4 a) can be uttered performatively, the others
+act more like a reminder.</p>
+<p>(3)<br>
+a. I hereby declare you Mayor of Casterbridge.<br>
+b. ?I hereby now beat the eggs till fluffy.<br>
+c. ?I hereby jog ten miles on Sundays.<br>
+(Example (9) from Levinson 1983: 232)</p>
+<p>(4)  a. I bet you five pounds it'll rain tomorrow.<br>
+b. I am betting you five pounds it'll rain tomorrow.<br>
+c. I did bet you five pounds it'll rain tomorrow.<br>
+d. He bets you five pounds it'll rain tomorrow.<br>
+(Example (7) from Levinson 1983: 232)</p>
+<p>Later on, the category of performatives has extended to
+<strong>explicit</strong> and <strong>implicit</strong>. Utterances that
+don't match the criteria above can also perform certain acts, for
+instance, <em>Go!</em> or <em>Therefore, X</em> instead of <em>I
+conclude that X</em>, are considered as <strong>implicit</strong>. And
+some of the constatives can perform an action and issue a prediction at
+the same time:</p>
+<p>(5) <br>
+I warn you the bull will charge.<br>
+(Example (16) from Levinson 1983: 234)</p>
+<p>Last but not least, to fulfill the felicity conditions one also has
+to consider the presupposition of the utterance, which is either true or
+false; a statement can also be vague in the truth conditions in (6).</p>
+<p>(6)<br>
+France is hexagonal.<br>
+Oxford is forty miles from London.<br>
+(Example (21) from Levinson 1983: 235)</p>
+<p>So Austin abandoned the dichotomy between performatives and
+constatives, and claimed that all utterances, in addition to meaning,
+they also perform specific actions through having specific
+<strong>forces</strong>. Austin isolates three basic senses in which in
+saying something one is doing something, and hence three kinds of acts
+that are simultaneously performed:</p>
+<hr>
+<ol type="i">
+<li><strong>locutionary act</strong>: the utterance of a sentence with
+determinate sense and reference; the <strong>constatives</strong></li>
+<li><strong>illocutionary act</strong>: the making of a statement,
+offer, promise, etc. in uttering a sentence, by virtue of the
+conventional <strong>force</strong> associated with it (or with its
+explicit performative paraphrase); the
+<strong>performatives</strong></li>
+<li><strong>perlocutionary act</strong>: the bringing about of effects
+on the audience by means of uttering the sentence, such effects being
+special to the circumstances of utterance. ***</li>
+</ol>
+<p>Differences between illocutionary and perlocutionary acts: the former
+is in accord with a conventional procedure, therefore independent from
+the circumstances; the later is determined by certain circumstances. The
+crucial test is to paraphrase an utterance into explicit performatives,
+if one can, the act performed is illocutionary, otherwise
+perlocutionary.</p>
+<h4 id="about-searles-work">About Searle's work</h4>
+<p>Searle systematized speech acts into sub acts and clarified how
+illocutionary force and illocutionary force indicating devices work. In
+contrast to Austin, Searle suggested that felicity conditions don't
+determine whether the speech acts can or cannot be performed. they are
+speech acts themselves.</p>
+<p>Felicity conditions according to Searle are: propositional contents;
+preparatory; sincerity; essential (X counts as doing Y)</p>
+<p>For example: see HA1, Aufgabe 1 and 2.</p>
+<h3 id="these-speech-acts-are-irreducible-to-matters-of-truth-and-falsity">These:
+speech acts are irreducible to matters of truth and falsity</h3>
+<h4 id="key-message-speech-acts-independent-of-the-matters-of-truth-and-falsity-and-belongs-firmly-in-the-realm-of-action-not-in-the-realm-of-meaning.">Key
+message: Speech acts independent of the matters of truth and falsity,
+and belongs firmly in the realm of <strong>action</strong>, not in the
+realm of <strong>meaning</strong>.</h4>
+<ol type="1">
+<li>All utterances not only serve to express propositions, but also
+<strong>perform actions</strong>.</li>
+<li>Of the many ways in which one could say that in uttering some
+linguistic expression a speaker was doing something, there is one
+privileged level of action that can be called the illocutionary act,
+which must be associated by conventions.</li>
+<li>illocutionary force can have different forms, but there is always at
+least a normal form of utterance as <strong>explicit
+performatives</strong>, for instance in English:</li>
+</ol>
+<p>(7) I hereby V you that S.</p>
+<p>V is a performative verb, conjugated the simple present indicative
+active. The other alternatives to perform an action like by using
+different sentence types e.g. <em>imperative</em>,
+<em>interrogative</em>, <em>declarative</em> called <strong>implicit
+performatives.</strong></p>
+<ol start="4" type="1">
+<li>The proper characterization of illocutionary force is provided by
+specifying the set of <strong>felicity conditions</strong> for each
+force.</li>
+</ol>
+<h4 id="arguments-utterances-with-same-propositional-contents-but-different-illocutionary-acts">Arguments:
+utterances with same propositional contents but different illocutionary
+acts</h4>
+<p>(8)<br>
+a. I predict that you will go home.<br>
+b. Go home!<br>
+c. Are you going to go home?<br>
+d. I advise you to go home.<br>
+(Example (27) from Levinson 1983: 245)</p>
+<p>From the conventional semantical view, these utterances in (8) share
+the same propositional contents that the addressee will go home. But
+they would normally be used with different illocutionary forces, which
+are in (8a) assertion, in (8b) order, (8c) question, and (8d) advising.
+Unlike propositional contents that describe the state of affairs, and
+can be captured with conditions under which they would be true, the
+illocutionary forces can only be characterized with felicity conditions.
+They are independent of the matters of truth and falsity, and belongs
+firmly in the realm of <strong>action</strong>, not in the realm of
+<strong>meaning</strong>.</p>
+<h3 id="antithesis-the-reduction-of-illocutionary-forces-to-ordinary-syntax-and-semantics">Antithesis:
+the reduction of illocutionary forces to ordinary syntax and
+semantics</h3>
+<h4 id="key-message-performative-analysis---illocutionary-forces-as-an-underlying-clause-in-syntactical-structure">Key
+message: Performative analysis - illocutionary forces as an underlying
+clause in syntactical structure</h4>
+<ol type="1">
+<li><p>Every sentence when uttered has what appears to be an
+illocutionary force is accounted for by the guaranteed presence of an
+underlying or overt performative clause like as in (7) - i.e. a
+structure that corresponds to the overt prefix in the explicit
+performative, whether or not it is an overt or explicit performative in
+surface structure.</p></li>
+<li><p>Attack on Austin's opinion that illocutionary cannot be captured
+by truth conditions, they are, similar to the sentences in (9), just
+always true:</p></li>
+</ol>
+<p>(9)<br>
+a. I am here.<br>
+b. I can speak some English.<br>
+c. I can speak this loud.<br>
+(Example (28) from Levinson 1983: 247)</p>
+<p>In (9a), because of the deixis <em>here</em> this utterance is true
+as soon as it has been said. Just like if you say <em>I hereby warn
+you</em>, then what you have said is true, indeed you have warned
+somebody. The illocutionary forces of performative verbs are embedded in
+the meaning of those verbs, capturable either in terms of entailment or
+semantic presupposition. They have the peculiar property of being true
+simply by virtue of being felicitously said - hence the intuition that
+it makes no sense to consider its falsity.</p>
+<h4 id="argument-1-interpretation-of-reflexiv-pronomina">Argument 1:
+Interpretation of reflexiv pronomina</h4>
+<p>(10)<br>
+a. The President said that solar energy was invented by God and
+himself.<br>
+b. Solar energy was invented by God and myself.<br>
+c. ? Solar energy was invented by God and herself.<br>
+d. <del>I say to you that</del> Solar energy was invented by God and
+myself.<br>
+(Example (29-32) from Levinson 1983: 248)</p>
+<p>A pronoun in subordinate clause must have its antecedents in the main
+clause, that licensed <em>himself</em> in (10a) to refer to <em>The
+President</em> in the main clause, and also makes (10c) ungrammatical,
+while <em>herself</em> cannot finds anaphoric antecedents. However,
+(10b) is grammatical, and hence <em>myself</em> must refer to something
+underlying in the syntactic structure, i.e. the performative clause in
+(10d).</p>
+<h4 id="argument-2-modification-of-speech-acts-adverbiale">Argument 2:
+Modification of speech-acts adverbiale</h4>
+<p>(11)<br>
+a. Frankly, I prefer white meat.<br>
+b. What's the time, because I've got to go out at eight?<br>
+(Example (35-36) from Levinson 1983: 249)</p>
+<p><em>frankly</em> in (11a) modified directly the performative verb in
+underlying performative clause <em>I tell you frankly, I prefer the
+white meat.</em>, as the causal adverbial in (11b) modified not the main
+clause, but the question act, i.e. the performative clause.</p>
+<h3 id="collapse-of-antithesis">Collapse of Antithesis</h3>
+<h4 id="argument-1-semantical-dilemma">Argument 1: semantical
+dilemma</h4>
+<p>(12)  a. Snow is green.<br>
+b. I state that snow is green.<br>
+c. I stated that snow is green.<br>
+(Example (44-46) from Levinson 1983: 253)</p>
+<p>If, according to Antithesis, (12b) is always true, then (12a) as its
+subordinate clause and implicit performative clause must also be true,
+which is according to our world knowledge impossible.</p>
+<h4 id="argument-2-problems-on-performative-adverbial">Argument 2:
+problems on performative adverbial</h4>
+<p>(13)<br>
+a. I tell you frankly you're a swine.<br>
+b. Frankly, you're a swine.<br>
+c. John told Bill frankly that he was a swine.</p>
+<p><em>Frankly</em> has three different usages in (13). As according to
+Antithesis <em>frankly</em> modified the performative verb "tell" in the
+performative clause, it acts more like warning in (13b), and in (13c) as
+manner adverbial. Also, the causal adverbial deliver certain problems,
+as described in (14):</p>
+<p>(14)<br>
+a. John's at Sue's house because of his car's outside.<br>
+b. I state John's at Sue's house because of his car's outside.<br>
+c. I know John's at Sue's house because of his car's outside.</p>
+<p>According to Antithesis, the causal adverbial should modify the
+performative verb in (14b), yet there is another alternative in (14c),
+where the adverbial acts epistemically. Rather, it seems to be
+appropriate to provide evidence in such a clause that certain pragmatic
+conditions on the speech act hold.</p>
+<h4 id="argument-3-collapse-of-the-highest-clause-theory-by-multiple-illocutionary-forces-in-the-same-matrix-sentence">Argument
+3: collapse of the highest clause theory by multiple illocutionary
+forces in the same matrix sentence</h4>
+<h3 id="ha-1">HA 1</h3>
+<ol type="1">
+<li>Geben Sie für folgendes Beispiel die Teilakte nach Searle an.
+Erläutern Sie außerdem, wie Levinson (1983, 236f.) die Unterscheidung
+von perlokutionärem und illokutionärem Akt nach Austin
+zusammenfasst!</li>
+</ol>
+<p>(20) Ist Martha im kleinen Laden um die Ecke?</p>
+<p>Äußerungsakt: [ɪst maɐ̯ta ɪm klaɪnən la:dən ʊm di: ɛkə]
+Propositionaler Akt: Die logische Form von (20) Illokutionärer Akt:
+Frage Perlokutionärer Akt: Hörer gibt die Antwort, die der Sprecher
+verlangt.</p>
+<p>Der Unterschied zwishcen illokutionärem und perlokutionärem Akt: Der
+illokutionäre Akt ist vorausgesetzt durch Konventionen, dagegen ist der
+perlokutionäre Akt abhängig von Kontexten und Umgebungen. Außerdem hat
+nur der illokutionäre Akt den Potenzial, anhand sprachlicher Materialien
+in explizite Performative umzuwandeln.</p>
+<ol start="2" type="1">
+<li>Geben Sie möglichst plausible Glückensbedingungen für den
+illokutionären Akt 'Mitteilung'an!</li>
+</ol>
+<p><strong>Äußerungsakt</strong>: Mitteilung <strong>Propositionaler
+Gehalt</strong>: eine Behauptung B über einen Sachverhalt von S
+<strong>Einleitung</strong>: 1. Die Information B ist für H relevant. 2.
+S glaubt, dass H B vorher nicht weiß und auch ohne seine Handlung nicht
+allein wissen kann. <strong>Aufrichtigkeit</strong>: S will H dazu
+bringen, B zu wissen. <strong>Wesentlich</strong>: Gilt als Versuch, H
+dazu zu bringen, B zu wissen</p>
+<ol start="3" type="1">
+<li>Kommentieren Sie mit Blick auf die Überlegungen zu expliziten
+Performativen Besonderheiten/ Aufälligkeiten/ Probleme, die mit
+folgenden Beispielen einhergehen!</li>
+</ol>
+<p>(21) a. # Hiermit tschüss!<br>
+b. # Ich taufe Dich hiermit auf den Namen eine Katze.<br>
+c. # Hiermit beleidige ich Dich!<br>
+d. Ich verspreche Dir, ich war es wirklich nicht.<br>
+[s. Meibauer (2001, 99), Aufg. 2]</p>
+<p>(21a) ist schräg, weil allein der Ausdruck <em>Tschüss</em> zwar
+illokutionäre Kraft als Verabschied hat, aber ist nicht in der Form als
+explizite Performative, daher nicht kompatibel mit dem Testwort von
+exliziter Performative <em>hiermit</em>. (21b) ist schräg, weil eine
+Katze kein Eigenname ist, sondern ein Prädikat. (21c) ist schräg, weil
+<em>beleidige</em> kein performatives Verb ist, daher nicht kompatibel
+mit <em>hiermit</em>. Der illokutionäre Akt von (21c) ist eine
+Behauptung. (21d) ist kein Versprechen Akt, weil ein konventionelles
+Versprechen die Vorhersage über ein in der Zukunft passiertes Ereignis
+macht. Dagegen ist das <em>Versprechen</em> in (21d) eine Behauptung,
+dass der Sachverhalt des Nebensatzes wahr ist. Das liegt daran, dass
+<em>versprechen</em> als performatives Verb mehrere Einträge im Lexikon
+hat. Es gibt auch andere Verwendung, wo <em>Versprechen</em> nicht als
+Verpsrechen sondern als Zusicherung verwendet wird.</p>
+<h3 id="gruppenarbeit-aufgabe-3">Gruppenarbeit Aufgabe 3</h3>
+<p>Die folgenden drei Beispiele werfen syntaktische Probleme für die
+Antithese auf. Erläutern Sie jeweils auf der Basis von Levinson (1983,
+260-264), welche das sind. Seien Sie hinreichend ausführlich, aber
+möglichst konzise und prägnant.</p>
+<p>(14) Hiermit wird das Geheimnis gelüftet, dass Hanno der Gewinner
+ist.</p>
+<p>In (14) handelt es sich um unindentifizierbares Handlungssubjekt. Der
+Antithese entsprechend hat der Sprechakt eine Grundform wie <em>Ich
+hiermit Vp (dass)</em> in der syntaktischen Struktur, dementspreched
+bezieht sich das Handlungssubjekt immer auf den Sprecher. Jedoch in (14)
+ist das Handlungssubjekt nur schwer zu identifizieren, weil es hier um
+ein unpersönliches Passiv geht: Das Handlungssubjekt wird in der
+syntaktischen Struktur nicht deutlich gemacht.</p>
+<p>(15) Ist Hanno, der ja gar keinen Führerschein hat, den Traktor
+gefahren?</p>
+<p>In (15) handelt es sich um plurale Sprechakte in einem Matrixsatz,
+dabei widerspricht es der Antithese, dass jeder Satz nur einen
+illokutionären Akt in der unterliegenden syntaktischen Struktur
+einbettet. Der nicht restriktive Relativsatz <em>der ja gar keinen
+Führerschein hat</em>, der sich auf <em>Hanno</em> im Matrixsatz
+bezieht, kann als wahr oder falsch bewertet werden und ist daher eine
+Assertion, dagegen ist der Matrixsatz mit seiner Verb-Erst-Stellung und
+dem Fragezeichen ein Fragesatz. In einem Matrixsatz haben wir nun zwei
+verschiedene Sprechakte: der einer ist Assertion im Nebensatz und der
+anderer ist Frage im Matrixsatz.</p>
+<p>(16) a. Ich baue alte Tomatensorten an, weil, ganz ehrlich, sie am
+besten schmecken.<br>
+b. Ich sage Dir, dass ich alte Tomatensorten anbaue, weil ich Dir ganz
+ehrlich sage, dass sie am besten schmecken.</p>
+<p>In (16) handelt es sich um Distribution der Performativen Adverbiale,
+die, unter Annahme der Antithese, immer den Sprechakt auf der höchsten
+Ebene der unterliegenden syntaktischen Struktur modifizieren. Geht man
+von dieser Annahme aus, hat man (16b) als Ergebnis. In (16b) modifiziert
+das <em>weil</em>-Adverbial den assertiven Sprechakt. Das bedeutet
+nämlich, dass das Sagen selbst der Grund für den Anbau der alten
+Tomatensorten wäre, wobei es nicht der ursprüngliche Fall in (16a) ist.
+Das <em>weil</em>-Adverbial modifiziert eigentlich den übergeordneten
+Matrixsatz in (16a) <em>Ich baue alte Tomatensorten an</em> und gibt
+Auskunft, warum der Sprecher alte Tomatensorten anbaut, aber nicht warum
+der Sprecher diese Aussage macht, d.h. es modifiziert nicht den
+assertiven Sprechakt auf der höchsten Ebene. Sein Status ist noch dem
+Matrixsatz unterliegend.</p>
+<h3 id="reference">Reference</h3>
+<p>https://en.wikipedia.org/wiki/Stephen_Levinson (cited on
+22.04.2020)</p>
+<p>https://www.mpi.nl/people/levinson-stephen (cited on 22.04.2020)</p>
+<p>Levinson, S. (1983). Pragmatics (Cambridge Textbooks in Linguistics).
+Cambridge: Cambridge University Press. 226-283.</p>
+]]></content>
+      <categories>
+        <category>语言学</category>
+      </categories>
+      <tags>
+        <tag>语用</tag>
+        <tag>speech act</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>adjective</title>
+    <url>/my_blog/2020/07/20/adjective/</url>
+    <content><![CDATA[<h1 id="incrementelle-verarbeitung-i">Incrementelle Verarbeitung I</h1>
+<h2 id="sedivy-et-al.-1999">Sedivy et al. (1999):</h2>
+<p><strong>Hauptthese:</strong> Früher wird nur die syntaktische
+Verarbeitung am Beispiel von Garten Path Effect als inkrementell
+verstanden, nun beweisen Sedivy et al., dass die semantische
+Interpretation auch inkrementell verarbeitet werden kann.</p>
+<p><strong>Untersuchungsgegenstände:</strong> intersektive und skalre
+Adjektive</p>
+<p><strong>Theoretische Grundlagen:</strong></p>
+<p>intersektive Adjektive: Ein rotes, viereckiges Zeichen ist sowohl rot
+als auch viereckig. d.h. die von beiden ein-stelligen Prädikaten
+denotierten Mengen intersektieren sich.</p>
+<p>skalare Adjektive: Adjektive wie groß bilden Skalen auf Basis einens
+kontextuell salieten Schwellenwert. Sie sind auch komparatierbar.</p>
+<p>Typikalität des Zielobjektes: ein gutes und typisches Beispiel (good
+token) des Zielobjektes erleichtet die semantische Interpretation von
+skalaren Adjektive</p>
+<p>kontext-abhängiges Kontrasteffekt: das Vorhandensein eines
+Kontrast-Objektes erleichtet die semantische Interpretation von skalaren
+Adjektive</p>
+<p><strong>Methoden:</strong></p>
+<p>eye-tracking paradigm and visual contexts: Es gibt manipulierte
+Objekte (Zielobjekte, Konkurrenten, Kontrastobjekte und
+Ablehkungsobjekte) in vier Ecken des Bildschirm, das in 3x3 Blöcke
+eingeteilt sind. Die Augenbewegung, die von einem Apparaten aufgenommen
+wird, beginnt immer von dem zentralen Punkt. Die Idee dahinter ist, die
+extensionelle Bedeutung der Adjektive und Nomen ist eine Funktion von
+Individuen in der realen Welt in Wahrheitswerte. Und wenn man die von
+den sprachlichen Ausdrücken denotierten Individuen sieht, beginnt die
+Interpretation von der Bedeutung dieser Ausdrücke. Es braucht eine
+Reaktionszeit, bis die Blicke auf das Zielobjekt fixiert sind und in
+dieser Zeit bewegen sich die Augen stetig von einem Objekt zu dem
+anderen. (Skadde) Je kürzer die Reaktionszeit ist, desto schneller ist
+die Verarbeitung der semantischen Interpretation.</p>
+<p>Man sieht deutlich, wie der visuelle Kontextinformationen zur
+Auflösung der vorläufigen ambigen Referenten beitragen.</p>
+<p><strong>Experimente:</strong> Experiment 1A liefert weitere Evidenzen
+für inkrementelle semantische Interpretation bei intersektiven
+Adjektiven</p>
+<p>Experiment 1B besagt, dass man erwartet einen Kontrasteffekt bei
+Interpretation der intersektiven Adjektiven. Faktoren: zwei blau
+objekte, aber nur eines davon hat ein Kontrastobjekt.</p>
+<p>Experiment 2 und 3 untersuchen, ob man bei semantischer
+Interpretation der skalaren Adjektive die Information von Kopfnomen
+benutzt oder Information im visuellen Kontext. Faktor 1: Kopfnomen -
+Typikalität des Zielobjektes Faktor 2: Kontrasteffekt - Präsenz eines
+Kontrastobjektes Resultat: Man verarbeitet die Bedeutung von Adjektiven
+anhand Kontrasteffekt vor der Präsenz des Kopfnomens. Die Typikalität
+des Kopfnomens spielt bis weiteres sogar keine Rolle im Vergleich zu
+einem Kontrastobjektes.</p>
+<p><strong>Ergebnis:</strong> For adjectives that appear to be heavily
+dependent upon the head noun for establishing reference, the referential
+interpretation is not delayed until the head-noun occurs, but begins
+incrementally through the interplay of the semantic content of the
+adjective and its relationship (contrast effect) to the context of
+utterance. However, this sort of interpretation is because of the
+contextual parameters not fully completed, but also needs sufficient
+contextual information to establish the denotation. In other words, the
+adjectives can denote a contrast relationship, but how the relationship
+be quantified is heavily dependent upon the context.</p>
+<h2 id="aparicio-et-al.-2015">Aparicio et al. (2015)</h2>
+<p><strong>Zentrale Frage:</strong> Ist die Verarbeitung von RAs und AAs
+mithilfe von Kontextinformationen gleich?</p>
+<p><strong>Hauptthese:</strong> Die Verarbeitung der gradulierbaren
+Adjektiven ist schneller, wenn der visuelle Kontext eine restriktive
+Interpretation verlangt. Aber bei AAs ist dieser Effekt marginal. Für
+RAs, der Kontrasteffekt ist auf die lexikalische Bedeutung des
+Prädikates zurückzuführen, aber für AAs spielen pragmatische Resourcen
+eine Rolle.</p>
+<p><strong>Untersuchungsgegenstände</strong>: relative adjectives und
+absolute adjectives</p>
+<p><strong>Theoretische Grundlagen</strong>: Beide RAs und AAs sind
+kontextabhängig. Aber:</p>
+<p>RAs sind auf <strong>Schwellenwert</strong> basiert, der relativ frei
+variable im Kontext ist. Es ist auch möglich, einen toddler als groß zu
+bezeichnen.</p>
+<p>AAs sind auf *+Endpunktwert** basiert, der relativ steif und nur
+einen Schwellenwert in der Nähe vom Endpunktwert erlaubt.</p>
+<p>zwei Theorien über AAs: a) der lexikalische Kern bei AAs ist gleich
+wie RAs, legt einen kontextabhängigen Schwellenwert fest. b) der
+lexikalische Kern bei AAs ist kontextunabhängig, fixiert nur auf den
+Endpunktwert. Die ungenaue Verwendung ist pragmatischer Effekt.</p>
+<p>Was ist <strong>restriktive Modifer</strong>? Nur ein Zielobjekt im
+Kontext ist kompatible mit dem Modifer; der Modifer denotiert ein
+einziges Individum im Kontext.</p>
+<p>Mit gradierbaren Adjektive meint der Author sowohl RAs als auch AAs?
+<strong>Ja!</strong></p>
+<p><strong>zwei Annahmen für Contrast Effekt</strong> I. Referential
+Contrast Effekt, der von einem restriktiven Modifer hevorgerufen ist,
+ist pragmatiscer Effekt, Maxime der Quantität. Man erwartet eine andere
+Menge Referenten die im Kontrast zur von Modifier denotierten Menge.</p>
+<p>Erwartung von I: Solange der Kontext einen restriktiven
+Interpretation des Modifers verlangt, ist der RCE.</p>
+<ol start="2" type="I">
+<li>Threshold Contrast Effekt ist wegen des lexikalischen Kerns der RAs.
+Die Bedeutungs der RAs sagt voraus, dass eine Kontrastklasse im Kontext
+vorliegt. Der Grund, warum man einen Kontrasteffekt erwartet, ist ein
+Teil der semantischen Interpretation. Erwartung von II: Solange ein
+Adjektive hat keine Kontrastklasse in lexikalischen Bedeutung, soll kein
+Contrasteffekt erwartet werden.</li>
+</ol>
+<p>Nur II ist falsch. Aber nur I ist dann auch falsch. Für manche
+Adjektive wie RAs, beide Effekte sind da. Für manche Adjektive wie
+Farben, nur I da.</p>
+<p><strong>Experimente</strong> H0: Alle Adjektive haben RCE, farben
+adjektive als Beispiel. H1: RAs sollte durch Kontrastobjekte früher und
+verstärkt werden, weil beiden RCE und TCE spielen Rolle. H2: Wenn der
+leixikalische Bedeutung von AAs gleich mit RAs ist, der Effekt sollte
+auch gleich sein. Beide Effekte spielen Rolle.</p>
+<p><strong>Ergebnis</strong>: RAs und AAs interagieren sich
+unterschiedlich mit dem Kontext. RAs nutzt die kontextuellen
+Informationen früher und dies besagt, dass sie einen kontextabhängigen
+Schwellenwert haben.</p>
+<p>Ähnlichkeit mit RAs: AAs sind auch kontextabhängig Unterschiede mit
+RAs: AAs braucht höheren Verarbeitungsaufwand, der Kontrasteffekt kommt
+erst bis der Kopfnomen vorkommt.</p>
+<p>Aparicio schlägt vor, der Grund liegt an Ungenauigkeit
+Calculation.</p>
+<h2 id="qing-et-al.-2018">Qing et al. (2018)</h2>
+<p>H0：看向物体的目光反映了受试者的信念，即他相信他所看到的物体就是目标物体</p>
+<p>结论：目光只是一个因素，对表达的期待值也起作用</p>
+<p>根据Leffel的HS，如果AAs和RAs的语义相同，都是解析threshold，应该期待同样的解析图像。</p>
+<p>但，解析threshold发生在computational
+level，虽然方法一样，但是过程不一定一样，可以和做加法类比。</p>
+<p>所以需要加入进一步的假设：a）threshold
+contrast对于两种形容词来说是以同样的方式影响辨认策略的；b）辨认物体的图像对于两种形容词来说是以同样的方式反应辨认策略的</p>
+<p>对于a）计算的结论是建立在John is tall这样的表达上的，a tall
+cylinder不一定是同样的方式，就算是，也不能保证b是对的。</p>
+<p>实验设计：不是看而是点，每点一次下一个词会出来
+结果解读：一个句子越到后面，N的时候，点和看的差别越大，一开始没有什么区别；在adj的时候，形容词的种类会影响点和看的关系，但相对于Allopena影响小
+为什么？
+因为一开始对材料不熟悉，到处乱看，这个时候目光不能作为反应信念的证据，越到后面越可信</p>
+<p><strong>所谓点和看的核心差别：</strong>点直接说明了大家辨认物体的信念，是决定性的，但是看不是决定性的，之前的VWP认为，看向T也能反应出大家辨认出了T。但实际上，也可能是因为大家对场景不熟悉，每个物体都要看，这个时候看向T的目光不能反应辨认T的信念，反之，如果大家听到一个高期待值的形容词，目光就会直接投向T，这个时候能说明，目光反应了辨认T的信念。</p>
+<p>因为allopena的实验让大家先熟悉了target的样子，有更高的期待值，leffel的实验中形容词在no对比的条件下是不必要的，大家听到一个低期待值得形容词需要更多的时间来熟悉场景，辨认形容词的特质作用在哪个物体上，点和看之间得差距会更小，反之，如果听到一个高期待的形容词，大家立刻就会找到符合这个形容词特征的物体，点和看的差距则会更高</p>
+<p>第二个实验验证了以上猜想：在RAs的对比条件下，期待值最高，因此点和看的差别最大；其他三个条件下差别都不大，说明期待值也会影响目光，而不只是大家对目标物体的辨认。</p>
+<p>至此，假设B得到了片面的证实，不是只有对正确物体的信念影响目光，期待值也会。换句话说，在AAs
+ungenau的对比条件下，如果目光在adj窗口偏向了目标，不能推出这是大家相信找到正确目标的信念作用的结果，也可能是对形容词的出现期待值过低的结果。在Qing的图5中说明，如果让大家对AAs
+ungenau有对比条件的物体有足够的观察时间，对AAs的期待会让他们更倾向于选C而不是T。</p>
+<p>总体来说，在控制变量X能使得目光更多投向T的实验中，目光的走向常常被解读为X促进了processing过程，反映了大家辨认正确T的信念，这种说法大体上是正确的，如果信念和目光的关系在控制X的过程中一直保持一致。在Qing的实验中，通过点和看的差别，直接测试大家辨认T的信念，反映了如果大家对实验材料很熟悉，对形容词的出现有更高的期待值，就会点到C上而不是T，目光的作用就不能反应大家对解析物体的信念，因为期待值已经帮助完成了辨认物体。这说明，Leffel的结果解读需要被进一步检验，排除期待值问题的干扰，才能只留下目光和辨认物体信念的关系。</p>
+<h1 id="inkrementelle-verarbeitung-ii">Inkrementelle Verarbeitung
+II</h1>
+<h2 id="leffel-et-al.-2016">Leffel et al. (2016)</h2>
+<p><strong>Ein Vergleich zwischen Sedivy (1999), Aparicio (2015) und
+Leffel et al. (2016)</strong> Hallo Fabian, Hallo Michelle und
+Anna-Maria, Hallo liebe Leute!</p>
+<p>Zuerst werde ich die zwei Arten Kontrasteffekte - Manner Kontrast und
+Threshold Kontrast - näher erläutern, und dann auf die Ähnlichkeiten und
+Unterschiede zwischen Leffel et al. (2016) und Aparicio et al. (2015)
+auf Basis deren eingehen. Inzwischen hoffe ich, dass Michelle und
+Anna-Maria hier Antworten auf ihre eigene Fragen finden könnten. Wenn
+noch etwas Unklares bleibt, würde ich gerne mit euch weiter
+diskutieren.</p>
+<p>Um den Unterschied der zwei Kontrasteffekte besser zu verstehen, ist
+eine Rekapitulation zwei theoretischer Annahmen zu absoluten Adjektiven
+(im Folgenden AAs) und relativen Adjektiven (im Folgenden RAs)
+erwünschenswert: Der Lexikoneintrag der RAs ist in Literatur relativ
+unumstritten, dass sie einen frei variablen Schwellenwert (Threshold) im
+Kontext festlegen. In diesem Fall ist die Kontextabhängigkeit auf den
+Lexikoneintrag der RAs zurückzuführen und daher rein semantisch. Im
+Gegensatz dazu gibt es zwei verschiede Annahmen zum Lexikoneintrag der
+AAs. Die eine schlägt vor, dass der Lexikoneintrag der AAs genau so wie
+RAs ist, dass sie auch Skalen auf basis eines kontextabhängigen
+Schwellenwert bilden; der andere aber sagt, dass der Lexikoneintrag der
+AAs immer auf den Endpunktwert fixiert und nicht kontextabhängig ist,
+die kontextabhängige ungenaue Verwendung der AAs ist nicht auf
+semantischen Ebenen, sondern pragmatischen. Die letzte Annahme nehmen
+Leffel et al. (2016) und Aparicio et al. (2015) in ihren Arbeiten.</p>
+<p>(Eine Nebenbemerkung zu Michelle: Vielleicht meinst du mit
+Kontextunabhängigkeit der AAs deren Lexikoneintrag? In diesem Sinne: Ja,
+sie ist immer auf einem Endpunkt der Skalen basiert, aber die ungenaue
+Verwendung der AAs ist kontextabhängig, vgl. das Beipsiel des Kinosaals,
+dazu spielen pragmatische Resourcen eine Rolle.)</p>
+<p>Nun zu zwei Kontrasteffekten:</p>
+<p>Sedivy (1999) macht es deutlicher, dass es generell ein Referencial
+Contrast Effect (RCE) gibt bei der Verarbeitung der Adjektiven.
+Allerdings unterscheidet sich der RCE in folgende Teileffekte:</p>
+<p>Manner Kontrast ist basiert auf Grice'schen Koorperationsprinzipien.
+Wenn ein Adjektive als restriktive Modifer (d.h. es trennt eine Menge
+Individuen mit gleicher Eigenschaft von anderen Individuen im Kontext
+ab) verwendet wird, erwartet die Adressee -folgt der Maxime der
+Quantität, dass der Sprecher die maximale Informationen wie nötig gibt-
+noch andere Objekte im Kontext, die anders als die von dem Adjektive
+denotierte Eigenschaften haben. Die Präsenz eines Kontrastobjekts
+verstärkt diesen Effekt und hilft bei der Verarbeitung des
+Adjektives.</p>
+<p>Threshold Kontrast ist basiert auf semantischem Schwellenwert, der in
+der Natur des semantischen Lexikoneintrags der RAs liegt. Wie oben
+erwähnt, die Verwendung der RAs sagt natürlich voraus, dass es eine
+Kontrastklasse im Kontext gibt. Die Präsenz eines Kontrastobjekts wird
+eben diesen Effekt weiter verstärken.</p>
+<p>Zum Schluss werde ich auf die Ähnlichkeiten und Unterschiede zwischen
+Leffel et al. (2016) und Aparicio et al. (2015) eingehen:</p>
+<p>Ähnlichkeiten: In beiden Arbeiten sind die funktionalen Unterschiede
+zwischen zwei Kontrasteffekte im zentralen Vordergrund und die
+Definition deren ist gleich. Sie werden identisch definiert. Außerdem
+akzeptieren beide Arbeiten die letztere Annahme zum Lexikoneintrag der
+AAs, dass sie immer auf Endpunkt basiert, und nicht auf im Kontext
+variablen Schwellenwert.</p>
+<p>Beiträge von Aparicio et al. (2015): Sie machen es in Bezug auf
+Sedivy et al. (1999, 2003) deutlicher, welche Teileffekte denn, Manner
+Kontrast oder Threshold Kontrast, für den RCE bei Verarbeitung der
+Adjektiven zuständig ist. Ihre Experimentergebnisse besagen, dass Manner
+Kontrast generell bei alle drei Adjektiven, Farben, RAs oder AAs bei
+restriktiven Verwendung vorkommt. Dass der RCE bei RAs allerdings im
+gleichen Zeitfenster kommt als bei Farbenadjektiven im verschiedenen,
+liegt es nahe, dass neben Manner Kontrast auch Threshold Kontrast
+beiträgt, der auf dem semantischen Lexikoneintrag der RAs zurückzuführen
+ist. Bei AAs ist zwar ein RCE auch vorhanden, aber er kommt später als
+bei RAs. Angenommen, dass der Lexikoneintrag der AAs gleich wie RAs
+wäre, sollte die Teileffekte, dass sowohl Manner Kontrast als auch
+Threshold Kontrast vorkommen, für den RCE auch gleich sein. Dass der RCE
+bei AAs anders als bei RAs aussieht, könnte eine Indiz dafür sein, dass
+der Lexikoneintrag der AAs anders als RAs ist, aber die Ergebnisse von
+Aparicio et al. sind noch nicht stark genug für diese Feststellung.</p>
+<p>Beiträge von Leffel et al. (2016): Auf Basis der offenen Frage
+entwickeln Leffel et al. ihre Experimente mit dem Fokus darauf, ob der
+Threshold Kontrast tatsächlich bei AAs beitragen kann. Gegeben der
+Tatsache, dass es nur marginalen RCE -dazu nur Manner Kontrast- bei
+genauer Verwendung der AAs gibt und bei ungenauer Verwendung der RCE
+signifikanter -dazu sowohl Manner als auch Threshold Kontrast- ist, ist
+der Lexikoneintrag der AAs anders als RAs, d.h. die zweite Annahme ist
+richtig, dass sie auf einen kontextunabhängigen Endpunktwert basiert. In
+diesem Fall verhalten sich die AAs in gewissen Maßen wie RAs und haben
+einen pragmatischen Schwellenwert. Unerwartet aber ist kein
+signifikanter RCE bei RAs zu beobachten, wenn die Zielobjekte kleiner
+als die Konkurrenten sind, was kompatible mit der ungenauer Verwendung
+der AAs. Dieses Ergebnis weicht von Aparicio et al. (2015) ab, dass RAs
+immer einen RCE in Bezug auf Manner Kontrast haben. Die Erklärung von
+Leffel et al. dazu ist, dass der Threshold Kontrast sich mit dem Manner
+Kontrast korrelieren: Der erste will einen möglichen größeren
+Schwellenwert im Kontext festlegen, damit diese Eigenschaft für wenige
+Objekte zutrifft, in diesem Fall selegiert der Threshold Kontrast den
+Konkurrenten, weil er größer ist; der zweite aber hat keine Präferenz,
+sowohl das Zielobjekt als auch Konkurrent sind mögliche Kandidat. Die
+beiden konkurrieren sich. Aber was sie bei AAs entdecken haben, dass der
+RCE anders aussieht als bei RAs, sind kompatible mit der Beobachtung von
+Aparicio et al. (2015).</p>
+<h2 id="stolterfoht-2008">Stolterfoht (2008)</h2>
+<p>问题：Stolterfoht的研究对象，声称是具有极值的（Maximum，Minimum
+Standard）graduable形容词，也就是AAs,
+但我感觉，straight，dead，empty和clean和dirty是不一样的，后两个的极值没有那么绝对。这是不是他们的结论和Leffel不同的原因？</p>
+<p><strong>min的意思是非0，max的意思是最大</strong>（empty显然是个极值0，voll是最大值）</p>
+<p>问题2：为什么clean是max，dirty是min，不能反过来么？不能理解是分别在坐标轴两个方向上的最大么？When
+A is a maximum standard adjective like dry, a zero amount of its minimum
+standard antonym B (wet) is clear. (Why is
+that?)一个毛巾是干的我就能确定什么是湿的标准么？</p>
+<p>H0：Obligatory Scale Hypothesis denotation of AAs introduce a
+threshold value 这个value是kontextabhangig的么？</p>
+<p>几个证据：</p>
+<p>实验1：测试了slighty修饰max和min两种形容词的接受程度 2a This table is
+slightly clean （这个不行） 2b This table is slightly dirty （这个行）
+解释：clean规定一个最大值，slightly规定一个比不是最大值的值，这两种效应冲突了。
+问题，那为什么2b可以啊？解释：min规定的是非零的值，slightly可以是个比非零值小的值。</p>
+<p>实验2：测试了completely修饰max和min两种形容词的接受程度 3a The two
+towels are completely dry, but the red one is a little bit wetter than
+the blue one. （这个不行） 3b The two towels are completely wet, but the
+red one is a little bit wetter than the blue one. （这个行）
+解释：dry要最大值，completely也要最大值，但后半部分说明不是最大值，矛盾了：wet要非0值，completely加深了这个非0值，但是还是没到0，所以可以比较，后半句成立</p>
+<p>实验1+2说明了：Max和Min属于两种不同的class，表现不同。</p>
+<p>实验3：提供了一个中立的解读环境，而不是像12那样的特殊上下文。测试是否存在一个Obligatory
+Scale。假定存在，那么在ungenau运用的时候，就会花更多的解读时间。 4. a.
+This table is slightly clean right now, and the new bus boy is clearly
+responsible. He seems very young, this new guy. b.This table is slightly
+dirty right now, and the new bus boy is clearly responsible. He seems
+very young, this new guy. c.This table is completely clean right now,
+and the new bus boy is clearly responsible. He seems very young, this
+new guy. d.This table is completely dirty right now, and the new bus boy
+is clearly responsible. He seems very young, this new guy.
+解释：4a和4c解读时间更长，4b4d更短。Initial reading是初读，second pass
+reading是第二次回去读，total
+reading是加合。significance出现在第二次回去读，说明解读出现了困难需要回头看。由于上下文中立，说明Scale的存在是obligatorisch的。</p>
+<p>实验4：测试max和min加量词。可能出现两种读法，量词作用在程度上或者作用在数量上。由于max有个强制scale，应该会倾向程度读法，min应该倾向数量读法。
+•(5) a.The dishes were mostly clean. b.The dishes were mostly dirty
+解释：max要求极值，也就是百分百，此时程度上百分之八十是有意义的进一步描述；min要求非0值，程度上对一个模糊数值的百分之八十描述没有意义，此时更有可能描述的数量百分之八十。</p>
+<p>实验3.4证明了obligatorisch scale h，和leffel et al（2016）类似</p>
+<h1 id="vagheit-i">Vagheit I</h1>
+<h2 id="schmidt-2009">Schmidt (2009)</h2>
+<p>核心问题：T是如何被确定的，按照什么样的标准？ 两个模型：基于T的 a
+priori给定前件推后件；posterio是给定后件推前件
+实验一：验证模型预测结果，差值越小模型越准确
+实验二：给定分布，测试用高的概率，与模型预测结果相比较，排除了RHSD
+基于类型的，CLUS模型，comparison class里的值是按照一定的类型划分的。
+RA-R和CLUS模型对T的确定更为准确</p>
+<h2 id="solt-2012">Solt (2012)</h2>
+<p>核心问题：找到T的本质 两个假设： 1.排名 2.degree
+degree可分为abstract和derivation，前者强调不可定义，跟上下文有关，后者认为有个常量百分比存在
+degree比ranking好</p>
+<p>排名跟ranking order挂钩 degree分两种 ordinal degree是有序排列
+mesurement degree是对全体加合求平均分成不同的类比 点与点之间有距离
+这样的结构信息量更大 因为集中程度更高</p>
+<p>实验一：给定C的分布，测试S的评价根据哪种更准确
+如果根据Ranking，C的分布改变不影响总评价。
+如果根据degree，C的平移不影响总评价。 结论：根据degree，不根据Rank</p>
+<p>实验二：给定C的分布，测试分布的图像是分类的还是连续的
+degree也是分cluster的degree，而不是顺序排列的degree，中间有空白，等级分区域</p>
+<p>CLUS模型更精准一点，形容词有没有messsystem对T的确定没有影响</p>
+<h2 id="qing-2014">Qing (2014)</h2>
+<p>核心问题：1.T如何被确定
+2.解释了AA和RA的区别，RA的vagheit是因为对comparison
+class分布的不确定导致的，AA是S的不准确使用导致的，跟T的分布无关。</p>
+<p>结论：1.解释了T是如何被确定的 2.
+提供了一个S导向的模型预测S使用RAs的概率 3.
+从语义上区分了AAs和RAs，AAs的T是固定极值，不知道T的分布对解读无影响，RAs依靠上下文确定的T，T的分布对解读有影响</p>
+<h2 id="solt-2015">Solt (2015)</h2>
+<p>两种类型vagheit Typ I就是RAs 属于threshold不确定问题 Typ II是AAs
+属于impresicion 但threshold应该是确定的一个极值</p>
+<h2 id="schöller-2016">Schöller (2016)</h2>
+<p>对象：few和many 基本思路：存在schwellenwert
+核心问题：schwellenwert是如何被确定的，存在一个全局阈值么GTM，还是每个对比组有独立的阈值ITM。用统计和data
+driven的方法解决Threshold不容易被量化的问题，statistical modelling of
+empirical data。
+两种假说：阈值可以是百分比80%propotional，前者加合计算区间概率；或者固定数值cardinal，后者是独立计算每个区间的概率
+CMK semantics：引入a prior
+expection，用于阈值的确定。支持存在一个constant
+阈值，支持百分比而不是固定数值。“cardinal suprising
+reading”对比的是和期望值差距的百分比，而不是固定数值，因为不同的上下文期待值不同。
+结论：GTM和ITM都生效，无法区分哪个更好；
+模型预测了PE的分布，以及many使用的概率
+实验一测试了：对于一个给定的上下文来说，S自然的PE分布
+实验二根据实验一确定的PE，测试从哪个区间开始S会使用many。
+实验三根据模型，和给定的many使用，倒推PE的分布。
+核心作用是提供了一个能够验证理论的emirical 方法。
+我有一个理论，根据这个理论设计一个计算模型，预测一下结果，接着收集高度简化的语言使用数据，对比数据和模型之间的关系，如果预测结果相信说明理论可信。</p>
+<h1 id="abfolgepräferenz">Abfolgepräferenz</h1>
+<h2 id="fukumura-2019">Fukumura (2019)</h2>
+<p>两个H： H1：discriminatory
+efficiency认为S会倾向于使用最能帮助辨认目标的形容词。
+H2：availability-base
+ordering认为S会使用最available的形容词帮助前期的语言组织，通常是颜色的形容词，而不是材料和图案。</p>
+<p>实验设计3个条件，C相关，P相关，CP都相关 实验1
+在P相关条件里，P大于C的顺序验证了H1.
+同时，总体三个条件，C更多的过度修饰，和C大于P总体来说更普遍，验证了H2.</p>
+<p>实验2和3以对话形式进行，测试S的顺序primed
+by（被刺激）另一个人的顺序，以及测试是否conjoined</p>
+<p>实验2
+以对话形式进行，测试priming另一个人使用的顺序对自己使用顺序的影响
+总体三个条件，C出现的更多，过度修饰，验证了H2.
+虽然C优先和priming贡献更多，但在P相关条件更倾向使用P还是验证了H1.
+S使用的顺序倾向于与同伴使用的顺序保持一致，验证了priming的作用。</p>
+<p>实验3 测试倾向于使用并列还是单个
+层级式的结构，这种看法适用于认知范畴的分类，用来说明先大小再颜色的顺序倾向，以及H1和H2的验证；并列式的结构，认为这样的顺序倾向应该被单独计算，每个形容词对名词的修饰也被单独考虑，比如汉语就没有限制，根据实验操控的情景不同，顺序的倾向应该是可变的，目前的句法结构认为即使并列也是不对称的，但实验结果说明H1和H2单独都不能决定顺序
+总体三个条件，H1和H2影响顺序，对于并列和单个都是。
+单个的情况下，倾向C大于P，验证了H1. 并列的情况下，倾向P大于C，验证了H2.
+并列比单个受priming的影响更大，说明句法上更可能是并列结构。</p>
+<p>最后给出一个PASS模型，描述H1和H2是如何同时作用于顺序选择的。</p>
+<h2 id="scontras-et-al.-2017">Scontras et al. (2017)</h2>
+<p>核心问题：主观性与形容词顺序的影响 实验一 整体接受度测试
+1+0的排列组合 实验二 在corpus中验证实验一的接受度出现的频率 实验三
+测试主观性的程度 实验四 用pott反驳测试验证实验三主观性测试的准确程度</p>
+<p>实验五 验证以上全部结论 让S主动产出回答 看是否与期待值相符合
+结论：基本符合，但是契合度不高，只有50，拿掉干扰因素有70%，没有找到原因
+结论：less主观的，颜色，在近点0，more主观的，大小，在远点1</p>
+<h2 id="trotzke-2018">Trotzke (2018)</h2>
+<h2 id="dye-et-al.-2017">Dye et al. (2017)</h2>
+<p>德语定冠词的词性变化降低名词的熵值 英语定冠词没有这个作用</p>
+<p>但是 英语的形容词之后紧跟名词的比例大于德语</p>
+<p>说明英语形容词的作用与德语定冠词相近 可以降低名词熵值 说明
+英语词汇的多样性小于德语 因为定冠词没有语义成分</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>How to add Google search console to hexo blog</title>
+    <url>/my_blog/2022/10/21/google-search-console/</url>
+    <content><![CDATA[<h1 id="add-google-search-console-gsc-to-hexo-blog">Add Google Search
+Console (GSC) to hexo blog</h1>
+<h2 id="install-hexo-sitemap">Install hexo-sitemap</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>Add configuration to _config.yml <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure> This will
+automatically generate a sitemap every time after deploying the
+website.</p>
+<h2 id="verify-the-ownership-of-your-site-in-gsc">Verify the ownership
+of your site in GSC</h2>
+<ol type="1">
+<li>Go to <a class="link" href="https://search.google.com/search-console/about">GSC
+website<i class="fas fa-external-link-alt"></i></a></li>
+<li>Under URL prefix, enter your homepage URL. <img src="/my_blog/.io//property.png"></li>
+<li>Click Continue</li>
+<li>Use “Recommended verification methods”, i.e HTML file.</li>
+<li>Download the automatically generated .html file.</li>
+<li>Put this .html file into the <em>source</em> folder of your blog.
+(not _post, not anything, just root <em>source</em> folder)</li>
+<li>!IMPORTANT (This has been a big issue for me) Set layout as false in
+the frontal info of this .html file, otherwise you will get error with
+verification. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># originally:</span><br><span class="line">google-site-verification: googlee6edfc5f795da21a.html</span><br><span class="line"></span><br><span class="line"># now change to:</span><br><span class="line">---</span><br><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line">google-site-verification: googlee6edfc5f795da21a.html</span><br></pre></td></tr></table></figure></li>
+<li>Alternative way for verification is to use HTML tag, see <a class="link" href="https://foystor.github.io/2022/08/16/show-hexo-blog-on-google-search/">this
+post<i class="fas fa-external-link-alt"></i></a></li>
+<li>Add sitemap.xml to sitemap of GSC</li>
+<li>You are all set! After a while of waiting, tap <em>site:
+your-blog-address</em> into google search window to check if your blog
+has been properly tracked by GSC.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to hide posts in hexo</title>
+    <url>/my_blog/2022/08/21/hidden-post/</url>
+    <content><![CDATA[<h1 id="how-to-hide-posts-in-hexo">How to hide posts in hexo</h1>
+<p>Sometimes, we want to keep certain posts invisible to the public, but
+still traceable in the source folder for later use.</p>
+<h2 id="move-files-to-_drafts-folder">Move files to _drafts folder</h2>
+<p>One way for doing that is to move a certain post to _drafts folder.
+Per default, hexo will not render and generate files in _drafts folder.
+Later one can use this command to publish it back to _posts folder.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="use-hexo-hide-post-plugin">Use hexo-hide-post plugin</h2>
+<h3 id="installation">Installation</h3>
+<p>Another solution is to install this plugin from github: <a class="link" href="https://github.com/prinsss/hexo-hide-posts">hexo-hide-post<i class="fas fa-external-link-alt"></i></a>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-hide-posts --save</span><br></pre></td></tr></table></figure></p>
+<h3 id="configuration">Configuration</h3>
+<p>After installation, add configurations in your _config.yml file.
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  enable: true</span><br><span class="line">  # Change the filter name to fit your need</span><br><span class="line">  filter: hidden</span><br><span class="line">  # Generators which you want to expose all posts (include hidden ones) to.</span><br><span class="line">  # Common generators: index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  public_generators: []</span><br><span class="line">  # Add &quot;noindex&quot; meta tag to prevent hidden posts from being indexed by search engines</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure> e.g. Set filter to secret, so you can use secret: true in
+front-matter instead.</p>
+<h3 id="usage">Usage</h3>
+<p>Add meta information to the front matter of your post accordingly,
+e.g. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#x27;Lorem Ipsum&#x27;</span><br><span class="line">date: &#x27;2019/8/10 11:45:14&#x27;</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>insert-image</title>
+    <url>/my_blog/2022/12/07/insert-image/</url>
+    <content><![CDATA[<h1 id="how-to-insert-images-in-hexo-blogs">How to insert images in
+hexo-blogs</h1>
+<h2 id="via-local-resources">Via local resources</h2>
+<ol type="1">
+<li><p>change the following setting in the writing session in
+_config.yml of hexo (At least for me, it's already there, just need to
+change the value. But if there isn't, add this command manually.)
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line"># originally</span><br><span class="line"># post_asset_folder: false</span><br></pre></td></tr></table></figure></p></li>
+<li><p>install plugin packages <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Generate the resource folder</p></li>
+</ol>
+With asset folder management enabled, Hexo will create a folder every
+time you make a new post with the hexo new [layout]
+<title>
+<p>command. This asset folder will have the same name as the markdown
+file associated with the post. Place all assets related to your post
+into the associated folder, and you will be able to reference them using
+a relative path, making for an easier and more convenient workflow.</p>
+<ol start="4" type="1">
+<li>Import images Put images into the folder, then import the image in
+the following format. <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![alt](folder/picture.png)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</title>]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to insert subfigures (and sub-captions) in Latex</title>
+    <url>/my_blog/2022/11/07/latex-subfigure/</url>
+    <content><![CDATA[<h1 id="using-package">Using package</h1>
+]]></content>
+  </entry>
+  <entry>
+    <title>Speech act总结（语言行为）</title>
+    <url>/my_blog/2020/07/11/speech-act/</url>
+    <content><![CDATA[<p><strong>写在前面：</strong></p>
+<p>本文是基于PD Dr. Bücking于SS20在图宾根大学开设的OS Sprechakte对speech
+act（语言行为）这一理论的框架性总结，内容涵盖课上讨论到的从理论的起源(Austin
+1962)到最新研究成果(Krifka
+2019)期间等多位研究者的贡献。本文的重点放在核心定义的复述，核心论点的总结以及核心论证的梳理上，作者本人对这一问题的思考体现在不同视角的重新整合和有机联系。本文语言大体上使用汉语，某些概念和论证过程仍沿用论文原语言（德语、英语）。本文材料一部分源于Herr
+Bücking课上的讲稿，他为我们挑选了文献，确定了阅读顺序，对每个文献辅以讲稿进行讲解，并且布置、批改了很多练习。在此向他表示诚挚的感谢。</p>
+<h1 id="引言">引言</h1>
+<p>Speech act由J.L. Austion于1962在他的论文How to do things with
+words中提出（详细定义和论证见第一章），至此打开了人类认识语言的新视角：从前人们将语言视作是精神领域的产物，是看不见摸不着的东西，而speech
+act则是把语言和物理世界联系了起来，从而使得对语言的社会影响、仪式行为、会话功能等一系列着眼于实际的研究成为可能。这一想法自提出以来，获得了大量跨学科的关注，涉及语言哲学、语言学、社会学、性别研究、人类学、文学等。Speech
+act的概念在几十年的发展中变得十分丰富多样，涉及的现象也越来越广，很难找到一个统一完整的描述来定义它。实际上，根据研究者视角的不同，定义与定义之间可能会差别非常大甚至毫无关联，这在接下来提到的数篇论文中就可以得到体现。因此,与其说speech
+act是一个系统的理论倒不如说他是对一类现象的新发现，就像发现分子之下还有原子一样，这会引发一系列的新思考，以及打开旧观念的新视角。本文所涉及的speech
+act则主要是这一现象在语言材料中的体现，具体可以归结以下几个问题：1.从语言内部的视角中，speech
+act的合理性是如何被确立并定义的，它和传统真值语义有何不同？(Levinson
+1983); 2.在语言材料允许的表达中，speech
+act分为几类，分类的标准应该如何？(Searle 1986; Zäfferer 2001); 3.
+隐性speech act应该怎么理解/解读？(Levinson 1983);
+4.怎么用表层语言现象的不同形式（动词位置、语调、语法特征等）和speech
+act建立联系？(Altmann 1993); 5. 以echo-wh-question为例，speech
+act和语言之间究竟属于简单的对应关系还是深层的生成关系？(Reis 1999); 6.
+以陈述行为为例，如何用语言内部视角的X-bar语法理论构建speech act? (Krifka
+2019)。</p>
+<h1 id="什么是speech-actlevinson-1983">什么是speech act？(Levinson
+1983)</h1>
+<h2 id="speech-act及其sub-act的定义和条件">Speech act及其sub
+act的定义和条件</h2>
+<p>Austin
+(1962)拒绝了逻辑乐观主义，即一个句子只有在被证明为真的情况下才有意义。他观察到以下几个无法评判真假的句子：（实际上反方观点(Levinson
+1983)指出，这些句子因自身特性是永远为真的）</p>
+<p>(1)  a. I bet you six pence it will rain tomorrow.<br>
+b. I dub thee Sir Walter.<br>
+c. I hereby christen this ship the H.M.S. Flounder.<br>
+d. I declare war on Zanzibar.<br>
+(Example (1) from Levinson 1983: 228)</p>
+<p>（1a-d）中的句子一旦被说出，就会相应的在物理世界中发生一系列的事件，由此被称为Speech
+act。对这些句子的评价不是根据真值条件，而是根据这些句子是否被
+<strong>“合适”（felicitous）</strong>地说出，也就是根据
+<strong>“合适条件”（felicity conditions/
+Glückensbedingung)</strong>:</p>
+<hr>
+<p>Felicity conditions:<br>
+A. (i) There must be a conventional procedure having a conventional
+effect.<br>
+(ii) The circumstances and persons must be appropriate, as specified in
+the procedure.<br>
+B. The procedure must be executed (i) correctly and (ii)
+completely.<br>
+C. Often, (i) the persons must have the requisite thoughts, feelings,
+and intentions, as specified in the procedure, and (ii) if consequent
+conduct is specified, then the relevant parties must so do.</p>
+<hr>
+<p>其中，违反A和B会导致
+<strong>失败（misfire/Versager）</strong>，见（2a），违反C会导致
+<strong>滥用（abuse/Missbrauch）</strong>，见（2b），例子如下：</p>
+<p>(2)  a. (Peter to his ex-wife): I hereby divorce you.
+(离婚需要法律程序，而不是口头通告；前妻不是合适的离婚对象)<br>
+b. (Peter knows that it's better for you if you meet Mary, and says to
+you): I suggest you not meeting Mary.
+(suggest的前提为A诚挚地认为事件X对B好，suggest别人做一件对他来说有害的事是在滥用别人的信任)</p>
+<p>至此，Austin通过两种不同的条件确定了一个句子的两个层面：a)
+由真值条件决定的<strong>真值意义 constative Meaning (Konstative
+Bedeutung)</strong>; b) 由合适条件决定的<strong>行为意义 performative
+meaning (Performative
+Bedeutung)</strong>。而对于行为意义，他又将其细分为显性explicit和隐性implicit两种。对于显性performative，他定义如下：a)必须要有一个performative
+verb，如warn，suggest，say，promise等；b）动词处于第一人称现在时主动态；c）可以与hereby/hiermit联用，可以用抽象式表达如下：</p>
+<p>(3) I (hereby) <span class="math inline">\(V_{perform.}\)</span> you
+(that)...</p>
+<p>然而，我们会观察到，有些实施行为的语句并不包含performative
+verb，见（4a），一个符合（3）形式的句子，不一定会实施performative
+verb的行为，见（4b）
+<strong>有什么更好的例子么？</strong>；而一个（4a）这样的句子，可以改写为explicit
+performative形式，如（4c）</p>
+<p>(4) a. Lesen Sie bitte Kapitel 5! (作为一个命令式句子，本句的speech
+act为命令，但没有显性的命令动词，如auffordern)<br>
+b. Ich verspreche zu kommen.
+（属于versprechen的另一种用法，表达的不是承诺，而是我即将要做的事。）？<br>
+c，Ich fordere Sie hiermit auf, dass Sie den Kapitel 5 lesen.
+（主句符合explicit performative形式）</p>
+<p>因此，Austin认为不仅是符合explicit performative句型的句子引起speech
+act，所有的句子都可引起speech
+act，并将其细分为三种，见（5）。一般来说，我们提到speech
+act是提到其中的一种，illocutionary act。</p>
+<p>(5) speech act的定义，根据Austion（1962):</p>
+<hr>
+<ol type="i">
+<li><strong>locutionary act</strong>: the utterance of a sentence with
+determinate sense and reference;
+也就是由真值条件确定的<strong>真值意义</strong><br>
+</li>
+<li><strong>illocutionary act</strong>: the making of a statement,
+offer, promise, etc. in uttering a sentence, by virtue of the
+conventional <strong>force</strong> associated with it (or with its
+explicit performative paraphrase);
+也就是由合适条件确定的<strong>行为意义</strong><br>
+</li>
+<li><strong>perlocutionary act</strong>: the bringing about of effects
+on the audience by means of uttering the sentence, such effects being
+<strong>special to the circumstances of utterance.</strong></li>
+</ol>
+<hr>
+<p>Illocution和Perlocution的区别在于：前者由合适条件决定，而合适条件通常来说是一般性的，如宣战、结婚誓言等都连结着社会习俗(conventionell
+procedure/Verfahren)，不因特殊情况而改变；而后者是在特定状况下发生的行为。决定性的一点是看这句话能否被改写成explicit
+performative的形式：</p>
+<p>(6)<br>
+a. This fish is too fade. (Give me the salt please.)<br>
+b. Give me the salt please. (I hereby order you to give me the
+salt.)</p>
+<p>Searle (1969)在此基础上进一步把spreech
+act分为四类，这样可以解决句子不同层面的异同点，如同样的illocution可以用不同的proposition实现，同样的proposition可以实现不同的illocution。以下用(7)为例来展示一个句子实施的四种不同行为：</p>
+<p>(7) Ist Martha im kleinen Laden um die Ecke?<br>
+Äußerungsakt(utterance act): [ɪst maɐ̯ta ɪm klaɪnən la:dən ʊm di: ɛkə]
+(句子的语音和语法组成，表层)<br>
+Propositionaler Akt: Die logische Form von (7)
+（句子的逻辑形式，命题层，针对martha，laden和事件e的表达）<br>
+Illokutionärer Akt: Frage（speech act）<br>
+Perlokutionärer Akt: Hörer gibt die Antwort, die der Sprecher
+verlangt.（接收者理解了frage这个act，并依此做出回应）</p>
+<p>除此之外，Searle还细分了合适条件，并且指出，合适条件就是speech
+act本身，如果定义了一个speech act的合适条件，就定义了这个speech
+act，以下用通知（mitteilung）为例表现：</p>
+<p>（8）<strong>Äußerungsakt</strong>: Mitteilung<br>
+<strong>Propositionaler Gehalt</strong>: eine Behauptung B über einen
+Sachverhalt von S （除一个命题P以外，还可以是：S的一个行为，一个事件e
+）<br>
+<strong>Einleitung</strong>: 1. Die Information B ist für H relevant；2.
+S glaubt, dass H B vorher nicht weiß und auch ohne seine Handlung nicht
+allein wissen kann.
+（概括为客观条件，通常是一般性和概念性的，和行为接收者有关）<br>
+<strong>Aufrichtigkeit</strong>: S glaubt, dass B
+(概括为主观条件，和行为主体有关)<br>
+<strong>Wesentlich</strong>: Gilt als Versuch, H dazu zu bringen, B zu
+wissen （对这一act的一个总体概括，可以是：一个尝试，一个保证）</p>
+<h2 id="speech-act和真值语义的关系">speech act和真值语义的关系</h2>
+<h3 id="these-speech-act和真值语义无关无法用真伪来衡量又称wkh-wörtliche-kraft-hypothese">These:
+speech act和真值语义无关，无法用真伪来衡量(又称WKH: Wörtliche Kraft
+Hypothese)</h3>
+<p>在此再总结一下以Austin和Searle为代表的观点，即speech
+act属于行为的领域，和用真值条件衡量的语义领域无关，因此需要用合适条件来单独刻画。语言的形式不仅描述了真伪，还会带来illocutionary
+force，这一力量会实施行为。无论何种语言，总是有一种explicit
+performative形式，据此可以改写implicit
+performative。重要的语言证据是：a)
+陈述句、疑问句、命令句这三种广泛存在于语言之间的句子typ是直接和对应的speech
+act陈述、疑问、命令相关的;b) 同样的locution在不同的performative
+verb下可以表达不同的illocution，因此这类意义的差距和命题的真假无关，跟行为的种类相关，见（9）。</p>
+<p>(9)<br>
+a. I predict that you will go home.<br>
+b. Go home!<br>
+c. Are you going to go home?<br>
+d. I advise you to go home.<br>
+(Example (27) from Levinson 1983: 245)</p>
+<h3 id="antithese-speech-act是可由真值语义导出的">Antithese: speech
+act是可由真值语义导出的</h3>
+<p>首先，Austin的中心观点，speech act和真值无关是错误的。就像<em>I am
+here</em>或<em>I can speak
+chinese</em>一样，这些句子一旦说出就是真的，也就是说，一个explicit
+performative如果被合适的说出，这句话就是真的，此时就不会考虑的假的可能。能够被合适的说出，这就是把握住了动词本身的意义，就可以被语义entailment或presupposition来描述。Anthithese的核心论点是，explicit
+performative的合适条件回到动词语义的一部分；对于implizit
+performative能够被改写为explicit
+performative的解释是，每个句子都有explicit
+performative存在于语法的深层结构中 重要的语言证据如下:</p>
+<h4 id="反身代词的解读">反身代词的解读</h4>
+<p>(10)<br>
+a. The President said that solar energy was invented by God and
+himself.<br>
+b. Solar energy was invented by God and myself.<br>
+c. ? Solar energy was invented by God and herself.<br>
+d. <del>I say to you that</del> Solar energy was invented by God and
+myself.<br>
+(Example (29-32) from Levinson 1983: 248)</p>
+<p>A pronoun in subordinate clause must have its antecedents in the main
+clause, that licensed <em>himself</em> in (10a) to refer to <em>The
+President</em> in the main clause, and also makes (10c) ungrammatical,
+while <em>herself</em> cannot finds anaphoric antecedents. However,
+(10b) is grammatical, and hence <em>myself</em> must refer to something
+underlying in the syntactic structure, i.e. the performative clause in
+(10d).</p>
+<h4 id="speech-acts-adverbiale状语的存在">speech-acts
+adverbiale状语的存在</h4>
+<p>(11)<br>
+a. Frankly, I prefer white meat.<br>
+b. What's the time, because I've got to go out at eight?<br>
+(Example (35-36) from Levinson 1983: 249)</p>
+<p><em>frankly</em> in (11a) modified directly the performative verb in
+underlying performative clause <em>I tell you frankly, I prefer the
+white meat.</em>, as the causal adverbial in (11b) modified not the main
+clause, but the question act, i.e. the performative clause.</p>
+<h3 id="anti-antithese">Anti-Antithese</h3>
+<p>Anti-These提出了一个美好且优雅的愿景，把一个复杂的新现象缩减到已有理论初步发展的语法领域，但综合很多证据来看这一愿景是不准确的，这也是因此我们现在需要独立的语用学研究。一些证据罗列如下：</p>
+<h4 id="陈述句的语义问题">陈述句的语义问题</h4>
+<p>核心问题是如何把握speech
+act的意义上，无论单独真值语义还是单独合适条件都无法准确描述，必须综合考虑</p>
+<p>(12)  a. Snow is green.<br>
+b. I state that snow is green.<br>
+c. I stated that snow is green.<br>
+(Example (44-46) from Levinson 1983: 253)</p>
+<p>If, according to Antithesis, (12b) is always true, then (12a) as its
+subordinate clause and implicit performative clause must also be true,
+which is according to our world knowledge impossible.
+除此之外，（12c）的真值条件与（12b）不同，因为除了满足合适条件外，（12c）还有时态特征，需要在上下文中消解，这迫使我们要么接受state有performative和non-performative两种用法，要么接受递归performative。事实上，三种不同的处理这类句子的语义尝试：a)只要p为真，整句就为真；b）只要state（p）为真，整句就为真；（c）必须p和state（p）都为真，整句才为真，都无法解释Antithese所假设的论点，即speech
+act是从真值语义中可导的。a）会导致These所代表的观点，即speech
+act是和真值条件无关的，这恰恰是Antithese要反驳的核心观点，他们认为speech
+act的合适条件是动词语义真值条件的一部分，如果合适实施了speech
+act，那么state（p）就永远为真，这就陷入循环论证了；b）会导致之前在（12）中讨论的问题，一个人可以合适地说出一个在现实世界中为假的命题p，使得state(p)为真，但并不会因此让p变成真；c）会导致一个命题p不仅本身要为真，还必须被实际合适地说出来，不然就为假，这会导致唯我论，亦即只有当人认识世界，世界才为真。</p>
+<h4 id="speech-act状语的解读问题">speech act状语的解读问题</h4>
+<p>Antithese用作论点的speech act
+adverbial在进一步观察下，作用比假设中复杂。Antithese认为，speech act
+adverbial总是作用于句法结构里最深层唯一的speech act。事实上，一个speech
+act adverbial不一定一直修饰句子表达的speech act，如在<em>In aller Kürze,
+wie war das Ilias-Test?</em> 句中，状语<em>In aller Kürze</em>
+指向的不是问题时间的长短，而是单独作为一个总结或者转移话题的speech
+act存在。在Krifka(2019)中，这类状语被分析成ActP
+Modifer，初始生成于Vorfeld，作用是Spec
+ActP,类似的还有<em>Übrigens</em>。此外，这类状语也可以被解读为manner或者epistemisch，见（13-14）</p>
+<p>(13)<br>
+a. I tell you frankly you're a swine.<br>
+b. Frankly, you're a swine.<br>
+c. John told Bill frankly that he was a swine.</p>
+<p><em>Frankly</em> has three different usages in (13). As according to
+Antithesis <em>frankly</em> modified the performative verb "tell" in the
+performative clause, it acts more like warning in (13b), and in (13c) as
+manner adverbial. Also, the causal adverbial deliver certain problems,
+as described in (14):</p>
+<p>(14)<br>
+a. John's at Sue's house because of his car's outside.<br>
+b. I state John's at Sue's house because of his car's outside.<br>
+c. I know John's at Sue's house because of his car's outside.</p>
+<p>According to Antithesis, the causal adverbial should modify the
+performative verb in (14b), yet there is another alternative in (14c),
+where the adverbial acts epistemically. Rather, it seems to be
+appropriate to provide evidence in such a clause that certain pragmatic
+conditions on the speech act hold.</p>
+<h4 id="句法结构问题">句法结构问题</h4>
+<p>核心问题是Antithese所假设的深层句法结构过于单一和刻板，有且只有一种explicit
+performative的形式</p>
+<p>(14) Hiermit wird das Geheimnis gelüftet, dass Hanno der Gewinner
+ist.</p>
+<p>Der Antithese entsprechend haben Sprechakte immer eine Grundform wie
+Ich hiermit VP (dass) in der syntaktischen Struktur; dementspreched
+bezieht sich das Handlungssubjekt immer auf den Sprecher. Jedoch ist in
+(14) das Handlungssubjekt nur schwer zu identifizieren, weil es hier um
+ein unpersönliches Passiv geht: Das Handlungssubjekt wird in der
+syntaktischen Struktur nicht deutlich gemacht. Es bedarf also neben der
+Standardgrundform für Performativ-Präfixe weiterer Varianten; diese
+Proliferation von möglichen Performativ-Präfixen führt dazu, dass man
+Performativ-Präfixe -anders als von der Antithese angenommen - kaum
+syntaktisch eindeutig rekonstruieren kann.</p>
+<p>(15) Ist Hanno, der ja gar keinen Führerschein hat, den Traktor
+gefahren?</p>
+<p>In (15) handelt es sich um zwei Sprechakte in einem Satz. Dies
+widerspricht der Antithese, dass jeder Satz nur einen illokutionären Akt
+in der unterliegenden syntaktischen Struktur einbettet. Der
+nicht-restriktive Relativsatz, der ja gar keinen Führerschein hat, der
+sich auf Hanno im Matrixsatz bezieht, kann als wahr oder falsch bewertet
+werden und ist daher eine Assertion; dagegen ist der Matrixsatz mit
+seiner Verb-Erst-Stellung und dem Fragezeichen ein Fragesatz. In einem
+Matrixsatz haben wir nun zwei verschiedene Sprechakte: Der eine ist eine
+Assertion im Nebensatz; und der andere ist eine Frage im Matrixsatz.</p>
+<p>(16)<br>
+a. Ich baue alte Tomatensorten an, weil, ganz ehrlich, sie am besten
+schmecken.<br>
+b. Ich sage Dir, dass ich alte Tomatensorten anbaue, weil ich Dir ganz
+ehrlich sage, dass sie am besten schmecken.</p>
+<p>In (16) geht es um die Frage, wie performative Adverbiale
+distributiert sind und interpretiert werden. Diese sollten, unter
+Annahme der Antithese, immer den Sprechakt auf der höchsten Ebene der
+unterliegenden syntaktischen Struktur modifizieren. Geht man von dieser
+Annahme aus, erhält man für (16a) die Interpretation in (16b) als
+Ergebnis. In (16b) modifiziert das weil-Adverbial den assertiven
+Sprechakt. Außerdem muss, ebenso gemäß Antithese, das Sprechaktadverbial
+ganz ehrlich entsprechend auf eine weitere explizite
+Sagen-/Behauptenphrase bezogen werden. Das bedeutet hier, dass das
+Behaupten, alte Tomatensorten würden am besten schmecken, der Grund
+dafür ist, warum man sagt, dass man alte Tomatensorten anbaut.
+Allerdings ist das nicht das, was der ursprüngliche Fall in (16a) meint.
+Das weil-Adverbial modifiziert eigentlich den propositionalen Gehalt des
+Matrixsatzes in (16a) Ich baue alte Tomatensorten an und gibt Auskunft,
+warum der Sprecher alte Tomatensorten anbaut, aber nicht warum der
+Sprecher diese Aussage macht. Außerdem ist der Grund damit nicht selbst
+ein Sagen oder Behaupten. Kurzum, die Interpretation des
+Sprechaktadverbials ganz ehrlich interveniert hier nicht; die durch den
+weil-Satz eingeführte Begründung bezieht sich unabhängig vom
+Sprechaktadverbial auf den propositionalen Gehalt des Matrixsatzes.</p>
+<h1 id="speech-act在语言上的分类">speech act（在语言上）的分类</h1>
+<h2 id="按照searle-1979">按照Searle （1979）</h2>
+<p>Searle distinguishes illocution acts from illocution verbs, the
+latter is language specified, the former is not constrained in one
+single language like English or German, but large-spread phenomena in
+the human language. A classification of illocutionary acts is hence not
+equal to the classification of illocutionary verbs. He suggests 12
+criteria, and three most crucial of them are listed below: a)
+illocutionary points or purpose; b) direction of fit between the worlds
+and words; c) psychological states</p>
+<p><strong>illocutionary points or purpose</strong>: The illocutionary
+point corresponds to the essential conditions. Different then
+illocutionary force, it is one of the most important elements that lead
+to illocutionary force. From this point of view, the illocutionary
+points of question and request are the same, since in both scenarios the
+hearers are obliged to do something.</p>
+<p><strong>direction of fit</strong>: There are two directions, one is
+that words fit the worlds, the so-called <em>word-to-world</em>
+direction, symbolized in <span class="math inline">\(\downarrow\)</span>; one is that worlds fit the
+words, the so-called <em>world-to-word</em> direction, symbolized with
+<span class="math inline">\(\uparrow\)</span>. <strong>(To the notion of
+the symbols, the words are at the top, and the worlds are at the
+bottom.)</strong> Examples for the former case are assertive, for the
+latter are commissive and directive. There are some acts allowing the
+fit from both directions <span class="math inline">\(\updownarrow\)</span> as with declarative or none
+fit <span class="math inline">\(\emptyset\)</span> as with
+expressive.</p>
+<p><strong>psychological states</strong>: In all of the speech acts, the
+speaker brings a certain psychological attitude towards a certain
+proposition, such like belief, regret, intension or desire, this
+corresponds to the sincerity conditions. Linguistical evidence are that
+the speaker cannot deny his psychological state explicitly with
+performative verbs: <em>*I state that p, and I don't believe that.</em>
+In a formal way, the psychological states are* expressed with <span class="math inline">\(B(Belief)\)</span>, <span class="math inline">\(W(want)\)</span>, <span class="math inline">\(I(intend)\)</span> so on.</p>
+<p>例子：Kommisiv Kommissive: <span class="math inline">\(K\uparrow
+A\)</span>(S tut X) - Der Sprecher verpichtet sich auf eine zukunftigte
+Handlung; der Grad der Verpichtung kann variieren. - Die Welt soll sich
+dem propositionalen Gehalt anpassen. - Der Sprecher druckt als seinen
+psychischen Zustand eine Absicht aus. - Beispiele fur Verben zur
+Bezeichnung von Kommissiven: <em>versprechen, drohen, anbieten, . .
+.</em></p>
+<h2 id="searle-1979分类的一些问题">Searle (1979)分类的一些问题</h2>
+<p>最中心的问题是，Searle的分类忽略了广发存在于语言中的三种基础sentence
+typ：陈述、疑问和命令句。这三种句式直接和对应的speech
+act相关联，分类的标准中应该考虑到这些句式的语法特征。Altmann(1993)采取的就是形式功能一一对应的分类策略，每一类句式都对应唯一的speech
+act。</p>
+<ol type="1">
+<li>Seale didn't specify the difference between orders and questions,
+instead of that, he treated them both as subclasses of directive. But,
+these two speech acts have different sentence modus in German:</li>
+</ol>
+<p>(17)<br>
+a. Koch die Hirsebrei!<br>
+b. Kochst du die Hirsebrei?<br>
+c. Du kochst die Hirsebrei.</p>
+<p>It is hard to treat this three sentence-modus (imperative,
+interrogative, declarative) only in two speech act classes.</p>
+<ol start="2" type="1">
+<li>Questions are by Searle attempts by S to get H to answer. This is in
+principle wrong idea since what the speaker expects from his question
+are not the answer this action itself, by the content of the answer. In
+a formal way:</li>
+</ol>
+<p>(18)<br>
+a. Order(H(p))--by Searle same as question<br>
+b. Question(H(Assertive(p)))</p>
+<h2 id="替代方案之一zaefferer2001">替代方案之一：Zaefferer(2001)</h2>
+<p>Zaefferer严格按照三种基础句型来分类，因此他的speech
+act只有三种:Assertive（陈述）, Erotetische（疑问）,
+Direkte（命令），外加Expresseive。这种分类的好处是可以用二叉树和特征标签的方法自上而下的对speech
+act进行区分，并利用了语言自身提供的三种不同基础句型的特点，树形图展示如下：</p>
+<p>Expressive: [+ausdruck, -wunschbasiert] Direktive:
+[+ausdruck,+wuschbasier,-wissensbasiert] Assertive:
+[+ausdruck,+wunschbasiert,+wissensbasiert,-hörerorientiert] Erotetisch:
+[+ausdruck, +wunschbasiert, +wissensbasiert, +hörerorientiert]</p>
+<p>根据以上标准得到的初步分类结果限制在句子结构本身的命题态度上，即上面所示的+-特征。此外，句子所能表达的speech
+act A可以由expressive
+verb如命令，威胁来细分，但大致上这两种都是陈述句句型，因此属于陈述句；如果A在上下文中不恰当，还可以通过推导得到间接speech
+act B, 此时A被称为次级speech act, B被称为首要speech act。间接speech
+act的推导过程,见4.3.2.</p>
+<h1 id="间接speech-act相关问题">间接speech act相关问题</h1>
+<h2 id="literal-force-hypothesis">literal force hypothesis</h2>
+<p>根据Searle (1979)和 Levinson
+(1983)，无论是These还是Antithese，他们都有一个共同的看法，即WKH
+Wörtliche-Kraft-Hypothese (literal force
+hypothesis)。该主张认为一个句子的illocution是可以从句子的形式（句型或词义）推导而来的，也就是说：a)explizit
+performative verb（如：威胁、警告、承诺等）规定一个复杂句的speech act;
+b)语言的三种基本句型分别对应了陈述、疑问和命令。</p>
+<h2 id="一些literal-force-hypothesis的反例">一些literal force
+hypothesis的反例</h2>
+<p>在这样的定义下，如果一个表达U既不符合（a）具备一个表现动词，也不符合(b)具备基本句型，那么U仍然具备speech
+act，但推导的过程与（a-b）不同，是<strong>间接</strong>的。然而对间接speech
+act进一步观察发现，这一现象普遍存在于语言中，不应该被当作例外来对待，而是一种普遍的规则。如(19a-c)都可以被解读成请求，但没有一个表达里有直接的请求出现。</p>
+<p>(19)<br>
+a. 你能关一下门么？<br>
+b. 我想让你关一下门。 c. 我将会很感激，如果你关一下门。</p>
+<p>其次，还可以观察到一些表达的分布被限制在特定的间接speech
+act中，如<em>please</em>只能和请求一起用，<em>frankly</em>只能和陈述一起用。</p>
+<p>(20)  a. Warum liest du nicht im Bett.<br>
+b. Warum nicht im Bett lesen?<br>
+(20a)符合基本句型疑问句的特征，按照WKH应该表达疑问的speech
+act，但该句可以被解读为疑问或者建议；(20b)更是只有建议一种读法，尽管（除了VL的动词位置）也是疑问句的形式。</p>
+<h2 id="一些解决方案">一些解决方案</h2>
+<p>Levinson(1983)给出了以下几种解决方案：</p>
+<h3 id="idiom方案">Idiom方案</h3>
+<p>WKH保持不变，所有的表达都是直接speech act，之前被视为间接speech
+act的其实是很多很多独立的idiomatisch用法。这种观点符合功能主义思想，认为存在形式和功能的一一对应关系，如Altmann(1993)</p>
+<h3 id="inferenz方案">Inferenz方案</h3>
+<p>WKH保持不变，间接speech
+act由上下文和原表达推导而来。这种方案符合结构主义思想，放弃过多的特例用法，保持语言内部深层组成部分的独立性，把上下文和背景知识等因素单独理解为一层，如Implikation和Implikatur的关系一样。代表有Reis(1999)和Krifka(2019)，以下以Searle(1979)的解决方案为例：</p>
+<p>核心观点：<strong>对一个speech act
+X合适条件的询问或陈述就是在表达X本身。</strong></p>
+<p>(i) 会话参与者遵循WKH领会speech act A<br>
+(ii) 根据A的合适条件，如果A在上下文中没有被合适的表达，考虑引入间接speech
+act B<br>
+(iii) 根据B的合适条件，如果A和B的合适条件有关，比如对Einleitung条件的询问，或对Aufrichtigkeit条件的陈述，那么B就是由这些合适条件组成的speech
+act<br>
+(iiii) 特定speech act modifier如bitte将从语用手段介入</p>
+<h3 id="放弃wkh的方案">放弃WKH的方案</h3>
+<h1 id="altmann-1993-satzmodus形式和功能的一一对应">Altmann (1993):
+Satzmodus——形式和功能的一一对应</h1>
+<p>Altmann在这篇影响力很大的文章中主要解决以下核心问题：<strong>句子的结构（属于语法系统的语义和句法）和句子实现的功能（属于语用系统的illocution）究竟存在什么样的对应关系?</strong>
+针对这个问题，他的研究重点放在<strong>基础句式（Satzmodus）</strong>上。之前提到过，在跨语言的范围内广泛存在三大基础句式：陈述句、疑问句、命令句，而传统视角下，句子所能实现的功能也就因此而被确定：陈述、疑问、功能。Altmann首先批评了这样的传统观点，因为同一句式可以对应不同的功能，见（20）；同一功能，可以对应不同的句式，见（19）。综上，Altmann提出了以下核心观点:</p>
+<p>(i) 类比符合学上形式和功能的关系，Altmann系统性地区分一个句子的功能层面和形式层面，并认为两者之间存在一一对应的关系。形式层面被命名为以-satz结尾的句子，同时带上了功能标记；功能层面是形式层面去掉-satz；最后，考虑到两方面的概括被命名为-modus，以（21）为例。<br>
+(ii) 功能层面是由形式层面经过三层级模型系统推导而来：首先考虑表层结构意义（命题层）<span class="math inline">\(\rightarrow\)</span>
+进而考虑句中独立于命题层的表达（performative verb和speech act
+modifer）<span class="math inline">\(\rightarrow\)</span>
+最后考虑上下文和会话情景的影响<br>
+(iii) 形式层面的确定是一系列复杂的语法特征的集合，单独的语法特征无法确定形式（也就无法确定功能，这一点受到Reis
+1993的批评，因为如wh元素是直接导致疑问句的核心因素）；被纳入考虑范围的语法特征有：韵律特征、语序特征、屈折特征和范畴特征(kategoriale
+Füllung)</p>
+<p>(21) Kommmst du?<br>
+a. V1-Frage-Satz（形式层面）<br>
+b. V1-Frage（功能层面）<br>
+c. Fragemodus （两者皆考虑的句式层面）</p>
+<p>接下来，我们将具体阐述(ii)(iii)，并以Fragesatz（modus）为例进行说明。</p>
+<h2 id="功能层面的确定">功能层面的确定</h2>
+<p>Altmann的基本观点是，功能是由形式层面决定的，然而这并不意味着，同样独立的语法特征一定一一对应地实现同样的功能，同样的功能一定一比一地对应独立的语法特征。在Altmann的理论中，只有一系列复杂的语法特征的集合才能决定功能，单个独立的语法特征无法决定功能。Reis
+(1999)对这一核心思想进行了批评，这种形式与功能的对应关系是模糊的，传统的，non-compositional的，而且某些独立语法特征实际上是对句子的功能起决定性作用的。Altmann设想了从句子的形式到功能的三层级模型：</p>
+<ol type="1">
+<li>由一系列复杂语法特征决定的结构意义(Strukturbedeutung)，对应的是一个句子的命题层，类似于Zaefferer(2001)以命题态度为标准进行的第一层分类。<br>
+</li>
+<li>句子中不属于命题层的成分可以修饰(modifizieren)句子的结构意义，例如explizit
+performative verb或speech act
+modifer，类似于Zaefferer(2001)的第二层分类</li>
+<li>上下文或对话情境决定的表达意义(Äußerungsbedeutung)，有gerade（直接）和ungerade（间接）的区分，类似于Searle
+(1979)对间接speech act的推导过程</li>
+</ol>
+<h2 id="形式层面的确定">形式层面的确定</h2>
+<p>之前提到过，形式层面的确定是一系列复杂语法特征的集合(ein Bündel von
+komplexen sprachlichen
+Merkmalen)。这些对形式的确定有直接作用的特征具备以下两个特点：a)只考虑语法特征，不考虑词汇特征，Modalpartikel被视作语法特征;b)至少能区分两个及以上不同的形式。根据语法范畴不同，可以再细分为以下四类：</p>
+<h3 id="韵律intonatorisch特征">韵律(intonatorisch)特征</h3>
+<p>共有以下几类：a)(在wh问句中)普通wh问句重音是中立的，落在VP上，在Echo-w问题中，重音落在wh表达上;b)音高和音量在时间上的函数关系，可用于区分命令式和感叹式，前者音调先达到最高，音量后达到最高，后者音量先达到最高，音调后达到最高;c)音高在时间上的函数关系：fallender（降调）为陈述句，对应tiefer
+offset，steigender（升调）为疑问句，对应hoher
+offset，此特征可用于区分陈述句和Echo-w问题。</p>
+<h3 id="动词语序特征">动词语序特征</h3>
+<p>动词语序特征在德语中扮演重要作用，但不是唯一重要的，因为单独的语序特征不能决定句子形式，每一种句子形式都有V1-，V2-，VL-的变体，语序的主要作用在于区分wh-表达，也就是疑问式。</p>
+<p>一个难点在于如何区分V1和V2，尤其是(22)这样的V1-陈述句.
+影响判断的重要测试有：a)主语是否能在V1的情况下实现在中场;b)主语是否能合理地在前场重新构建，以区分口语中的主语省略。其中，a）更重要</p>
+<p>(22) Wir holen dich schon ein. Gehen wir doch (eh) immer
+schneller.</p>
+<p>并列结构，偏移结构，插入结构不影响动词语序的判断，参考Wöllstein
+(2014).</p>
+<p>wh表达的位置是十分关键的，区分了w-V2问句（wh表达必须出现在前场）和echo-w-问句（wh表达可以出现在中场的任意位置）。</p>
+<h3 id="屈折特征">屈折特征</h3>
+<p>在德语中扮演次要的作用，不是决定性因素。最重要的差别就是[<span class="math inline">\(\pm IND\)</span>][<span class="math inline">\(\pm
+IMP\)</span>]。后者还可以按照动词变位特征进一步细分，大体和命令式变位相同。需要注意的是第三人称单数命令式（一定要有不定人称主语）和第一人称复数命令式（必须有显性主语wir；必须V1-Stellung；动词按照Konjutiv
+I进行变位）。区分命令式和感叹式与疑问式的关键是韵律特征，见5.2.1。</p>
+<h3 id="范畴特征">范畴特征</h3>
+<p>共有六类：a)是否具备动词定式;b)是否具备从句连词(dass,ob,
+w-Interrogativpronomon
+etc.);c)（命令式中）是否具备主语;d)是否具备Modalpartikel;e)（疑问式和感叹式中）是否具备wh表达</p>
+<h2 id="按照altmann1993的德语句型形式总结">按照Altmann(1993)的德语句型形式总结</h2>
+<h3 id="陈述句aussagesatz">陈述句（Aussagesatz）</h3>
+<p>V2-陈述句：V2-Stellung, keine spezische kategoriale Füllung, finites
+Verb: [-IMP], fallender Tonhöhenverlauf in Hauptakzentsilbe, tiefer
+offset, kein Exklamativakzent. V1-疑问句：V1-Stellung, keine spezische
+kategoriale Füllung, finites Verb: [-IMP], fallender Tonhöhenverlauf in
+Hauptakzentsilbe, tiefer offset, kein Exklamativakzent.</p>
+<p>区分V2和V1陈述句的关键:动词的位置 区分陈述句和命令句的关键：[<span class="math inline">\(\pm IMP\)</span>]
+区分陈述句和疑问句的关键：fallender Tonhöhenverlauf in Hauptakzentsilbe,
+tiefer offset 区分陈述句和感叹句的关键： 区分陈述句和祈愿句的关键</p>
+<h3 id="疑问句fragesatz">疑问句（Fragesatz）</h3>
+<p>V1-疑问句：V1-Stellung, keine spezische kategoriale Füllung, finites
+Verb: [-IMP], kein ExklamativakzentV1-Stellung, (in der Regel)
+steigender Tonhöhenverlauf in Hauptakzentsilbe und hoher
+offset；区分V1-疑问句、陈述句、感叹句、祈愿句的关键在韵律特征上。</p>
+<p>V2-w-疑问句：V2-Stellung, kategoriale Füllung durch w-Ausdruck in
+Vorfeldposition, [-IMP], typischerweise fallender Tonhöhenverlauf,
+tiefer offset; <strong>Satzakzent nicht auf dem w-Ausdruck, es sei denn,
+es handelt sich um einen nicht-initialen Fragesatz in einer
+Fragesatzreihung</strong>; kein
+Exklamativakzent；区分V1和w-V2疑问句的关键在动词位置和具备wh表达上</p>
+<p>选择（Alternativ）疑问句：Koordination von V1-Fragesatzen mit
+folgender spezischer Eigenschaft: Nichtletzte Konjunkte haben steigenden
+Tonhöhenverlauf und hohen offset, das letzte Konjunkt hat fallenden
+Tonhöhenverlauf und tiefen offset；功能受限，问题答案只能二选其一。</p>
+<p>ob-VL-疑问句：Vletzt-Stellung, ob-Einleitung, [-IMP], (in der Regel)
+Tonhöhenverlauf in Hauptakzentsilbe und hoher offset.
+功能受限，只能用于deliberative
+Fragen，设问句，目的不是让听者回答的问题。</p>
+<p>w-VL-疑问句： Vletzt-Stellung, kategoriale Füllung durch w-Ausdruck
+im Vorfeld, [-IMP], typischerweise fallender Tonhöhenverlauf, tiefer
+offset; Satzakzent nicht auf dem w-Ausdruck; kein
+Exklamativakzent.功能受限，只能用于deliberative
+Fragen，设问句，目的不是让听者回答的问题。。</p>
+<p>Assertive-疑问句：V2-Stellung, keine spezische kategoriale Füllung,
+[-IMP], steigender Tonhöhenverlauf in Hauptakzentsilbe, hoher
+offset.区分V2-陈述句的关键见V2-陈述句</p>
+<p>Echo-w-疑问句：V2-Stellung, im Vor- oder Mittelfeld positionierter
+interrogativer w-Ausdruck, [-IMP], Satzakzent auf w-Ausdruck, steigender
+Tonhöhenverlauf, hoher
+offset.在Altmann的系统里，Echo-w-疑问句被视作w-VL-疑问句和V2-陈述句的混合类型，Reis对此进行批评，认为这不能作为单独的句型，而是从已有的句型中系统性生成而来。</p>
+<p>Rückfragen: Rückfragen; Wiederholung einer OriginalÄußerung; dabei
+steigender Tonhöhenverlauf auf der vom Original übernommenen
+Hauptakzentsilbe, hoher offset.</p>
+<h3 id="命令句imperativsätze">命令句(Imperativsätze)</h3>
+<p>见5.2.3的讨论</p>
+<h3 id="祈愿句wunschsätze">祈愿句(Wunschsätze)</h3>
+<p>根据动词位置和引导词可以分为: V1-Wunschsatz, dass-Vletzt-Wunschsatz,
+wenn-Vletzt-Wunschsatz.</p>
+<h3 id="感叹句exklamativsatz">感叹句(Exklamativsatz)</h3>
+<p>根据动词位置, <span class="math inline">\(\pm\)</span>w-Ausdruck 以及
+<span class="math inline">\(\pm\)</span>dass可分为:
+V1-/V2-Exklamativsatz, dass-Exklamativsatz,
+w-V2/Vletzt-Exklamativsatz.</p>
+<h1 id="reis-1993-形式到功能的推导关系">Reis (1993):
+形式到功能的推导关系</h1>
+<p>Reis同意Altmann提出的形式与功能之间存在复杂的关系，不能简单地用三种基本句式来概括句子的功能。但与Artmann不同的是，Reis站在生成理论的立场上，认为形式和功能之间的关系不是像Altmann(1993)提议的那样属于简单对应关系，不是描述性地总结一系列复杂语法特征的集合所对应的功能，而应该是规定性、系统性的由语法系统所提供的材料(grammatical
+property)系统性地推导过程。她类比了X-Bar模型里面区分词义层面和功能层面的做法，将IP（而不是CP，根据她选用的理论，德语的某些句子可以没有CP层）专门划为用于确定句子的功能的一个层面（除确定动词变位以外）。同样的，根据生成理论的倒T字模型，Reis认为确定一个句子形式的特征仅限于S-Strucktur，不涉及PF和LF层，因此Altmann(1993)中的韵律特征被放弃了。</p>
+<h2 id="支持reis的形式到功能的推导关系的证据有">支持Reis的形式到功能的推导关系的证据有</h2>
+<ol type="1">
+<li>单个的语法特质，诸如wh元素的出现，系统性地可以用于区分一般疑问句和特殊疑问句，也就是说，直接影响到句子的功能。（另一个例子是降调可以用于区分疑问句和陈述句）</li>
+<li>跨语言的，同样的功能呈现出相似的形式特征，诸如命令式都可以允许第二人称的省略；感叹句都允许独立的Exklamativakzent，常常具备Wh元素。</li>
+<li>诸如Echo-w-疑问句这样混合类型的存在，是一一对应分类论处理的难题，因为这样的句子明显在功能和形式上都和更普遍的句子类型相似（V2-陈述句和w-VL-疑问句的混合），不应该被视作是独立的句型；Reis原则上拒绝了混合类型的存在，认为Echo-Frage只是信息结构上一种特殊情况，本身不是和w-V2一样的疑问句，不能作为独立的句型来看待。认清echo-w结构只是信息结构上的现象以后，很多句型都可以实现类似的Echo效果，详见6.3的讨论。</li>
+<li>Artmann考虑形式层面只考虑主句，但在主从复合句中，从句往往具备独立的功能，但是缺少独立的韵律结构，所以韵律无法作为构建形式层面的特征。</li>
+</ol>
+<h2 id="reis推导理论核心">Reis推导理论核心</h2>
+<p>在Reis的X-bar模型中，深层结构<span class="math inline">\(I_{0}\)</span>中的语法特质用于确定句子的句式，决定性的特征有：
+(1) 陈述句: -WH (V2, V1, V-letzt: subordinierte Deklarativsätze wie
+Relativsätze) (2) 疑问句: +WH (V2: w; V1: Ja/Nein; V-letzt: <span class="math inline">\(\pm\)</span>subordinierte w/Ja/Nein) (3)
+命令句:+IMP (V2/V1)</p>
+<p>这些句子的功能被定义如下： (1) Deklarativmodus：Es gibt ein Ereignis,
+auf das die Satzproposition referiert. (2) Interrogativmodus:
+Ja/Nein-Fragen：Es ist offen, ob es ein Ereignis, auf das die
+Satzproposition referiert, gibt. w-Fragen: Das Ereignis, auf das die
+Satzproposition referiert, ist offen mit Blick auf die von der w-Phrase
+indizierte Variablenposition. (3) Imperativmodus:Es wird eine
+(adressatenbezogene) Norm bezüglich der Existenz des Ereignisses, auf
+das die Satzproposition referiert, gesetzt.</p>
+<p>在这个系统下，所有句子（包括从句）都具备IP用来确定基本句式。在基本句式基础上的变体和特殊功能由其他独立的语法特质（如动词位置、韵律、speech
+act modifer等）系统性地推导/生成而来。</p>
+<h2 id="以wh元素的skopusparadox为例">以wh元素的Skopusparadox为例</h2>
+<p>(22)  a. Wieviel schätz mal, dass das Auto kostet!<br>
+b. Was glaubt Peter, wie viel das Auto kostet?<br>
+c. *Peter glaubt, wie viel das Auto kostet.</p>
+<p>（22b）和（22c）的冲突表明，从句里的wh表达wieviel作用域不是在他表层出现的位置（从句），而是扩展到整个主句，并把整个主句变成了疑问句。同样作用域的悖论还出现在（22a）上，这表明，Reis所设想的深层结构里[+wh]元素的移动是必要的，同时还表明，Altmann在他简单对应关系里的分类没有考虑到深层和表层结构的差异，（22b）这样的wh元素不应该仅仅用他在表层结构上展现的特征来概括。</p>
+<h2 id="以echo-w-frage为例的推导分析">以Echo-w-Frage为例的推导分析</h2>
+<p>(23)<br>
+a. Bei wem hat Karl damals geARbeitet? b. Karl hat damals bei WEM
+gearbeitet?</p>
+<p>与一般的wh-V2-疑问句（23a）不同，Echo-w-疑问句（23b）有以下两个特点；a)句子的重音最小聚焦在w-Phrase的w-Element上，而不是在动词上，说明了除了这一由w-Phrase开启的空位，其余所有信息都被设置(hingestellt)为上下文中已知的背景信息;b)w-Phrase可以出现在中场的任意位置，而不是仅限在前场中；针对以上两个特点，Reis认为，所谓Echo-Effect只是信息结构上的一种特殊情况，跟上下文有关，跟这种句式无关；而w-Phrase不能出现在前场说明Echo-w-疑问句不具备疑问句的基本特征[+wh]，因此从语义+语法的角度考虑，这一句式不能被视作独立的疑问句句型。综合以上两点，Echo-W句式和任意存在于语法深层结构的特征都无关，只是结合上下文在语用层面推导出的特殊用法。具体如何实现这个功能的，Reis并未明确给出，但足以证明认为Echo-w句式是混合句式的错误。</p>
+<h1 id="krifka-2019-以陈述行为为例x-bar理论推导speech-act的系统性尝试">Krifka
+(2019): 以陈述行为为例，X-bar理论推导speech act的系统性尝试</h1>
+<p>Krifka用X-Bar理论，系统地连接了陈述句句法-语义层和它在语用层面上实现的功能。他首先分析了现有的针对陈述句的四种主流理论，分别是：陈述是一种自己在自己提出的命题为真的前提下进行的社交行为；陈述是在信息交换中用于改变common
+ground的行为；陈述是说话人在相信自己提出的命题为真的基础上，意图让接收者相信自己提出命题的真实性的行为；最后，陈述是在社交空间内公开表示对一个命题真实性负责的行为，如果一个人公开对一个命题负责，后来这个命题被证明是错误的，那么这个人就会面临失去信用等一系列社交惩罚（sanction），就像开具了一张假支票一样。Krifka接受最后一种理论，并逐一指出其他三种理论的不足之处，分别是：语言中有超越命题层的成分，比如speech
+act modifer和performative
+verb，不能单纯被视作是一个社交行为；没有具体解释陈述在深层是如何改变common
+ground的，Krifka对此给出了形式语义的分析；即使说话人不相信自己说的真实性，比如谎言，其次，以“不管你信不信”开头，仍然可以进行陈述，其作用不在于让接受者相信自己提出的命题。</p>
+<p>根据最后一个理论，Krifka将一个陈述句分为四个层级，分别对应X-Bar理论中由下之上的生成层级，分别是：TensePhrase（命题层）；JudgementPhrase（主观评判层）；Commitmentphrase（负责层）和ActPhrase（行动层）。下面，我将分别阐释各个层级的特点，功能，和允许出现的修饰词（Modifer）</p>
+<p>informative update和performative update的区别:后者是在common
+ground中，使得ActP[p]生效，世界i发生的最小改变；当说话人A被视作是交际中值得信任的对象，以及无人对ActP[p]提出异议，P即在i中被视作为真，就会发生前者，也就是p生效后，世界i发生的改变。
+## TensePhrase ## JudgementPhrase ## CommitmentPhrase ## ActPhrase ##
+一些支持四层级存在的例子 ### 从句 ### dass-V2从句 ### 回指句子的手段</p>
+<h1 id="reference">Reference：</h1>
+<p>Altmann, Hans. 1993. Satzmodus. In Joachim Jacobs, Arnim von Stechow,
+Wolfgang Sternefeld &amp; Theo Vennemann (eds.), Syntax. Ein
+internationales Handbuch der zeitgenossischen Forschung, 1006-1029.
+Berlin: de Gruyter.</p>
+<p>Austin, John L. (1962). How to Do Things with Words. The William
+James Lectures delivered at Harvard University in 1955. Oxford:
+Clarendon Press</p>
+<p>Levinson, Stephen (1983). Pragmatics. Cambridge: Cambridge University
+Press</p>
+<p>Reis, Marga. 1999. On Sentence Types in German. An Enquiry into the
+Relationship between Grammar and Pragmatics. Interdisciplinary Journal
+for Germanic Linguistics and Semiotic Analysis 4. 195-236.</p>
+<p>Searle, John R. (1969). Speech Acts: An Essay in the Philosophy of
+Language. Cambridge:Cambridge University Press</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>立场先于对错，偏见不分东西 ——《不分东西》读后感</title>
+    <url>/my_blog/2020/04/20/%E7%AB%8B%E5%9C%BA%E5%85%88%E4%BA%8E%E5%AF%B9%E9%94%99%E2%80%94%E2%80%94%E3%80%8A%E4%B8%8D%E5%88%86%E4%B8%9C%E8%A5%BF%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</url>
+    <content><![CDATA[
+<p>本书由一个资深媒体人发表在网络上的博文经过系统性的整理而来，故而由数个不同主题的短篇组成，其内容涵盖了21世纪以来一些和中国发展息息相关的国际热点，事件有大有小，北京奥运火炬传递事件、星巴克入驻故宫、哈佛女孩刘亦婷等轰动一时的舆论风波皆囊括于中，难能可贵的是本书不是简单的几篇博文的杂糅，而是在作者有机编排后形成了论证的思路。全书分为两个部分，第一部分有关于偏见，第二部分有关于媒体人的责任，进而推而广到公民在社会中的言论责任，而这样的责任在如今这样一个特殊的时期是尤为珍贵的。2020年的第一个季度，我们身处的世界因为一场突如其来的疫情发生了剧烈的变化，许多人一生的命运都将被改变，而在这样一个足以影响人类历史进程的大事件中，社交媒体代替传统媒体成了舆论交锋的主战场。在疫情刚刚开始的时候，哪家超市的货架快空了，哪家超市刚刚补过货，不出两分钟就会出现在附近居民的朋友圈里，而第二天才从报纸上看到新闻的人去了超市只能看到空空如也的货架，甚至当晚从电视获取这一信息的人也只能苦笑着一边捡漏，一边安慰自己总好过那些明天才来的人。报纸快过杂志，电视快过报纸，电台快过电视，而谁也快不过动动手指就发布在互联网的微博、朋友圈和群消息。在新媒体的滚滚洪流面前，时间成了媒体手中最珍贵的东西，即使一个报道是不真实的，只要它早于真实情况被放在互联网上，病毒式的传播足以让真相被淹没在茫茫的数据中。而在这样一个只注重时效，又是全民可以参与的媒体环境中，有多少信息是真实的，有多少观念是僵化的，有多少视角是带有偏见的呢？</p>
+<span id="more"></span>
+<p>作者认为，偏见的形成主要有两个原因:一是对于一个问题掌握信息的多少；二是看待问题的角度，前者主要是真伪的问题，后者主要是立场的问题。作者还认为，在讨论立场问题之前，应该先明辨是非的问题。在作者所学的的西方媒体观里，新闻报道只分报道(reporting)和宣传(propaganda)，不分正面和负面。这样的分类方法显然是把报道的真实当成了大前提，一个描述事实真相的文章，如果笔调立足客观批判，那么就可以分为报道一类，反之如果语调带有煽动性，明显地在迎合或讨好某一利益群体，那么就可以分为宣传，但是两者至少在一件事上是有共通点的，那就是真实。可惜在实际操作的过程中，这一大前提却往往难以保证，有的是因为报道者本身专业素养的匮乏，有的则是为了达到特殊的目的而故意为之，甚至睁着眼睛说瞎话。前者作者给出了路透社在新疆报道中用错照片的例子，作为一个有着百年声誉的老牌媒体，这样的情况少之又少，即使有，官方也主动发表了致歉声明，并撤回了图片，修正了报道。在过去的时代里，记者去实地考察，亲身亲历地见证事件的发生，再用文字把自己眼睛看到的东西传达到读者的眼睛里，记者对于知识的获取是感官的，已然是真相经过二次加工后的结果，而读者对知识的获取则更是次级的。在新媒体的环境中，高昂的运营成本和快速的新闻节奏使得很多中小媒体没有能力在现场收集一手信息，作者也提到，就连BBC、CNN这些大牌媒体也都在削减驻外记者的预算，国内新闻还好，国际新闻甚至出现了对报道的报道。一件实际发生的事，经过层层报道，在每一个环节中不同的媒体带着不同的立场重新解读，到了读者手中已经是面目全非，更何况读者也有自己阅读的倾向性，一个极右的读者绝不会在一篇极左的报道上多花一秒的时间，而是立刻转投去符合自己立场的媒体。我个人认为，对于事物的不全面认识导致的不是偏见，而是妖魔化的误解，历史上，基督教对十字架的崇拜最初被视作是邪恶的仪式，白人初到中国被视作有皮肤病，而直到今天，西方还有很多民众认为中国人都是扎辫子的。这样的误解并不可怕，因为这些认识从根本上错误的，只要是错误的认识，就会有在真相面前被澄清的一天，所以这就是作者说的，无论立场如何，都应该首先保证报道的真实。有道是百闻不如一见，给一个仍觉得中国处于封建社会的人一张机票，真伪的问题就不攻自破了。可立场的问题却不是这样非黑即白的，即使把真相原原本本地还原在眼前，我们也很难去说服一个对立立场的人心悦诚服地接纳新的想法，相反，他会无所不用其极地避免接收一切与他自身信念有冲突的信息，无论是真是假，是苦是甜，统统都是“假新闻”。诚然，西方媒体对我国的报道受时间、空间的限制，假新闻是不少的，但如此放松对新闻审查的质量，甚至将错就错，弄虚作假，无疑背后的偏见在作祟了，潜意识里他们也觉得这样的报道更符合自己的价值观，就少了一分探求真相的敏感，反过来，当我们总是抨击外媒带着偏见看我们的时候，这一看法显然也是从自身的立场出发的，也就是一直把自己摆在受偏见地位上的偏见，这一自残式的思维方式不仅无助于民族精神的塑造，更是会让我们在“假媒体”的“真新闻”里蒙蔽了双眼。可惜在这一点上，东西方的读者并没有太大的差别。</p>
+<p>在信息高度发达乃至泛滥的社会中，媒体应该要对自己的稿件负责，做到不偏颇，不煽动，不造谣，不传谣，不是作为党政机关的喉舌而存在，而是作为一把达摩克里斯之剑，悬在社会的不公平、不合理之上，客观中立地起到监督者的作用。作者还说：“在大部分人还没有形成独立思考的习惯之前，媒体追求收视率，吸引眼球，只会让这个社会更加的浮躁，甚至误导民众。媒体是应该拥有社会责任的，特别是中国的媒体，因为中国民众目前的选择并不多”。作者的这一期望无疑是过于理想主义的，因为在十年后的今天，能够发声的远远不止有这些受过专业训练的媒体人，任何一个普通的民众，都能至少让朋友圈的几百号人听到自己的声音，一些直播平台的大V和网红更是动辄就有上百万的粉丝群体，而这其中又有多少人最高学历只有初中毕业呢？学历本不应成为指责他们的理由，但是当一个人的言行能影响到上百万人，本身却没有受过有关言论责任和道德准则的教育，无疑对于整个社会的精神世界来说是一件很有风险的事。公众的注意力是可以被操控的，之前的“标题党”就是通过对新闻内容的重新包装，牢牢地抓住读者猎奇、寻求刺激的心理，一个严肃的性侵案件，标题却看上去像是黄色网页的一条广告一般轻浮，更别提近年来随着技术发展出现的大数据算法推荐，用娱乐、碎片的方式给用户呈现出他们想看的、想听的，经常看着看着几个小时就过去了，因为看起来“一点都不累”。一个合格的媒体，选题应该是彰显自己特色的看家本领，如何找到反应社会现实的问题，再加以专业视角的切入报道，使其成为新闻热点，成了媒体与媒体之间的分水岭，而新媒体的选题则往往是随机的，哪里有社会热点，哪里就有他们的选题，首批十万以上爆文的公众号浪潮工作室就是一个典型的例子。他们逆着舆论浪潮而行，用批判社会热点的方式创造社会热点,选题面杂而广，从人文社科到天文地理无所不谈，表面上有理有据，实际上仍然是以制作热点，吸引眼球为中心。其选择的论据更是处处偏向自己预设好的立场，对显而易见的反面事实视而不见，逻辑上是经不起推敲的。作为一篇评论杂文，无疑他们的文字是失败的，但作为公众号推文，他们却是业界楷模，赚的盆满钵满，他们的商业模式更是被当成商品售卖，创造出更多这样三观不正、价值扭曲的十万爆文。当民众的注意也可以被当成商品来出售的时候，我们已经很难去区分，到底是民众的审美本就是如此，还是媒体假定民众的审美如此，写出了这些文章呢？如果大部分媒体的出发点不是启蒙和引领受众，而只是刻意迎合，如果民众的注意力和爱国情绪总是能够被轻易地操纵，那么这样的社会就存在着极端民族主义的土壤，特别是在没有其他信息渠道进行补充的情况下。</p>
+<p>作者对媒体人的责任要求，推己及人，其实是对这个时代所有网民的要求，反过来也告诉作为读者的我们，要带着独立的思考去接触媒体，不让自己宝贵的注意力成为别人赚钱的工具。</p>
+]]></content>
+      <categories>
+        <category>读后感</category>
+      </categories>
+      <tags>
+        <tag>偏见</tag>
+        <tag>社交媒体</tag>
+        <tag>《不分东西》</tag>
+      </tags>
+  </entry>
+</search>
